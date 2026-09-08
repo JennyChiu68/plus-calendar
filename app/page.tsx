@@ -19,11 +19,9 @@ import {
   Zap,
   Globe2,
   ExternalLink,
-  Clock3,
   Info,
   Download,
   ArrowRight,
-  CalendarClock,
 } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
@@ -63,6 +61,10 @@ const color = (topic: string) =>
   ['blue', 'violet', 'amber', 'green'][topics.indexOf(topic as Topic)] ||
   'blue';
 const dateLabel = (date: string) => date.slice(5).replace('-', '月') + '日';
+const windowLabel = (date: string) =>
+  date.includes('-Q')
+    ? `${date.slice(0, 4)} 年第 ${date.slice(-1)} 季度`
+    : `${date.slice(0, 4)} 年 ${Number(date.slice(5, 7))} 月`;
 export default function Home() {
   const [topic, setTopic] = useState<Topic | '全部'>('全部');
   const [query, setQuery] = useState('');
@@ -70,7 +72,6 @@ export default function Home() {
   const [view, setView] = useState('week');
   const [day, setDay] = useState('');
   const [week, setWeek] = useState('2026-09-07');
-  const [important, setImportant] = useState(false);
   const [mine, setMine] = useState(false);
   const [member, setMember] = useState(true);
   const [selected, setSelected] = useState<CalendarEvent | null>(null);
@@ -149,7 +150,6 @@ export default function Home() {
     (e) =>
       (topic === '全部' || e.topics.includes(topic)) &&
       (kind === '全部' || e.kind === kind) &&
-      (!important || e.importance === 3) &&
       (!mine ||
         saved.includes(e.id) ||
         e.topics.some((t) => subscribed.includes(t))) &&
@@ -173,7 +173,13 @@ export default function Home() {
         a.date.localeCompare(b.date) ||
         (a.time || '99').localeCompare(b.time || '99'),
     );
-  const windows = base.filter((e) => e.status === '待确认');
+  const windows = base
+    .filter((e) => e.status === '待确认')
+    .sort(
+      (a, b) =>
+        a.date.localeCompare(b.date) || a.title.localeCompare(b.title, 'zh-CN'),
+    );
+  const visibleCount = view === 'pending' ? windows.length : scheduled.length;
   const days = Array.from({ length: 7 }, (_, i) => shiftDate(week, i));
   const rangeEvents = events.filter((e) => inWeek(e.date, week));
   function changeWeek(n: number) {
@@ -190,7 +196,6 @@ export default function Home() {
     setTopic('全部');
     setKind('全部');
     setQuery('');
-    setImportant(false);
     setMine(false);
     setDay('');
     setWeek('2026-09-07');
@@ -213,13 +218,16 @@ export default function Home() {
         key={e.id}
       >
         <div className="event-time">
-          <strong>{e.time || '全天'}</strong>
+          <strong>{e.status === '待确认' ? '待定' : e.time || '全天'}</strong>
           <span>{e.region}</span>
         </div>
         <div className="event-main">
           <div className="eyebrow">
             <span className={'tag ' + color(e.topics[0])}>{e.topics[0]}</span>
             <span>{e.kind}</span>
+            {e.status === '待确认' && (
+              <span className="window-period">{windowLabel(e.date)}</span>
+            )}
             <span
               className={'status ' + (e.status === '已改期' ? 'changed' : '')}
             >
@@ -263,13 +271,6 @@ export default function Home() {
           </div>
         </div>
         <div className="row-actions">
-          <span
-            className="importance"
-            aria-label={'重要性 ' + e.importance + ' 星'}
-          >
-            {'★'.repeat(e.importance)}
-            <i>{'★'.repeat(3 - e.importance)}</i>
-          </span>
           <button
             className={
               saved.includes(e.id) ? 'icon-button active' : 'icon-button'
@@ -433,40 +434,44 @@ export default function Home() {
           </aside>
           <section className="calendar-main">
             <div className="main-toolbar">
-              <div className="period-control">
-                <button
-                  className="icon-button"
-                  onClick={() => changeWeek(-1)}
-                  aria-label="上一周"
-                >
-                  <ChevronLeft size={18} />
-                </button>
-                <h2>
-                  {week.slice(0, 4)}年{Number(week.slice(5, 7))}月{' '}
-                  <small>
-                    {view === 'month'
-                      ? '月度总览'
-                      : `${Number(week.slice(8))} — ${Number(shiftDate(week, 6).slice(8))}日`}
-                  </small>
-                </h2>
-                <button
-                  className="icon-button"
-                  onClick={() => changeWeek(1)}
-                  aria-label="下一周"
-                >
-                  <ChevronRight size={18} />
-                </button>
-                <button
-                  className="today-button"
-                  onClick={() => {
-                    setWeek('2026-09-07');
-                    setDay('2026-09-08');
-                    setView('week');
-                  }}
-                >
-                  今日
-                </button>
-              </div>
+              {view === 'pending' ? (
+                <h2 className="pending-heading">日期待定</h2>
+              ) : (
+                <div className="period-control">
+                  <button
+                    className="icon-button"
+                    onClick={() => changeWeek(-1)}
+                    aria-label={view === 'month' ? '上一月' : '上一周'}
+                  >
+                    <ChevronLeft size={18} />
+                  </button>
+                  <h2>
+                    {week.slice(0, 4)}年{Number(week.slice(5, 7))}月{' '}
+                    <small>
+                      {view === 'month'
+                        ? '月度总览'
+                        : `${Number(week.slice(8))} — ${Number(shiftDate(week, 6).slice(8))}日`}
+                    </small>
+                  </h2>
+                  <button
+                    className="icon-button"
+                    onClick={() => changeWeek(1)}
+                    aria-label={view === 'month' ? '下一月' : '下一周'}
+                  >
+                    <ChevronRight size={18} />
+                  </button>
+                  <button
+                    className="today-button"
+                    onClick={() => {
+                      setWeek('2026-09-07');
+                      setDay('2026-09-08');
+                      setView('week');
+                    }}
+                  >
+                    今日
+                  </button>
+                </div>
+              )}
               <Tabs
                 value={view}
                 onValueChange={(v) => {
@@ -482,6 +487,10 @@ export default function Home() {
                 <TabsList className="view-tabs">
                   <TabsTrigger value="week">周历</TabsTrigger>
                   <TabsTrigger value="month">月历</TabsTrigger>
+                  <TabsTrigger value="pending">
+                    日期待定{' '}
+                    <span className="pending-count">{windows.length}</span>
+                  </TabsTrigger>
                 </TabsList>
               </Tabs>
             </div>
@@ -539,14 +548,6 @@ export default function Home() {
                   ))}
                 </SelectContent>
               </Select>
-              <label className="important-toggle" htmlFor="important-only">
-                <Switch
-                  id="important-only"
-                  checked={important}
-                  onCheckedChange={setImportant}
-                />
-                仅重要
-              </label>
             </div>
             <div className="result-bar">
               <span>
@@ -555,11 +556,16 @@ export default function Home() {
                   : topic === '全部'
                     ? '全部主题'
                     : topic}
-                <b>{scheduled.length}</b>项日程
-                {day && <button onClick={() => setDay('')}>查看整周 ×</button>}
+                <b>{visibleCount}</b>项日程
+                {view === 'pending' && <span> · 全部时间窗口</span>}
+                {day && view !== 'pending' && (
+                  <button onClick={() => setDay('')}>查看整周 ×</button>
+                )}
               </span>
             </div>
-            {view === 'week' ? (
+            {view === 'pending' ? (
+              <div className="event-list pending-list">{windows.map(row)}</div>
+            ) : view === 'week' ? (
               <div className="event-list">
                 {days
                   .filter((d) => scheduled.some((e) => e.date === d))
@@ -612,97 +618,21 @@ export default function Home() {
                 ))}
               </div>
             )}
-            {scheduled.length === 0 && (
+            {visibleCount === 0 && (
               <div className="empty-state">
                 <CalendarDays size={36} />
                 <h3>这个范围内暂无匹配日程</h3>
-                <p>试试其他主题或日期。</p>
+                <p>
+                  {view === 'pending'
+                    ? '试试其他主题或关键词。'
+                    : '试试其他主题或日期。'}
+                </p>
                 <button className="outline-button" onClick={reset}>
                   重置筛选
                 </button>
               </div>
             )}
           </section>
-          <aside className="insight-sidebar">
-            <div className="insight-card weekly-focus">
-              <div className="card-title">
-                <h3>本周重点</h3>
-                <span className="plus-word">PLUS</span>
-              </div>
-              {base
-                .filter((e) => e.importance === 3 && inWeek(e.date, week))
-                .sort((a, b) => a.date.localeCompare(b.date))
-                .map((e) => (
-                  <button
-                    className="focus-item"
-                    key={e.id}
-                    onClick={() => setSelected(e)}
-                  >
-                    <span className="focus-date">
-                      {e.date.slice(5).replace('-', '/')}
-                    </span>
-                    <span>
-                      <strong>{e.title}</strong>
-                      <small>
-                        {e.topics[0]} · {e.real ? '官方' : '示例'}
-                      </small>
-                    </span>
-                    <ChevronRight size={14} />
-                  </button>
-                ))}
-              {!base.some(
-                (e) => e.importance === 3 && inWeek(e.date, week),
-              ) && <p className="muted">本周暂无重点事件</p>}
-            </div>
-            <div className="insight-card window-card">
-              <div className="card-title">
-                <h3>
-                  <CalendarClock size={17} />
-                  待确认窗口
-                </h3>
-                <span>{windows.length}</span>
-              </div>
-              {windows.map((e) => (
-                <button
-                  className="window-item"
-                  onClick={() => setSelected(e)}
-                  key={e.id}
-                >
-                  <span className="window-date">
-                    {e.date === '2026-09' ? '9 月窗口' : '第四季度窗口'}
-                    <span>待确认</span>
-                  </span>
-                  <strong>{e.title}</strong>
-                  <span className="window-bottom">
-                    {e.topics[0]}
-                    <ArrowUpRight size={15} />
-                  </span>
-                </button>
-              ))}
-              {windows.length === 0 && (
-                <p className="muted">当前筛选没有待确认事项。</p>
-              )}
-            </div>
-            <div className="insight-card change-card">
-              <h3>
-                <Clock3 size={17} />
-                日程变更
-              </h3>
-              <span className="tag amber">示例</span>
-              <button
-                onClick={() =>
-                  setSelected(events.find((e) => e.id === 'robot-demo') || null)
-                }
-              >
-                机器人技术交流会
-              </button>
-              <div>
-                <del>09.09</del>
-                <ArrowRight size={14} />
-                <b>09.11</b>
-              </div>
-            </div>
-          </aside>
         </div>
       </main>
       <footer className="page-footer">
@@ -735,12 +665,19 @@ export default function Home() {
               <div className="detail-meta">
                 <span>
                   <CalendarDays size={16} />
-                  {selected.date}{' '}
+                  {selected.status === '待确认'
+                    ? windowLabel(selected.date)
+                    : selected.date}{' '}
                   {selected.time ||
                     (selected.status === '待确认' ? '日期待定' : '全天')}
                 </span>
                 <span className="tag blue">{selected.status}</span>
               </div>
+              {selected.oldDate && (
+                <p className="detail-date-change">
+                  原定 {selected.oldDate} → {selected.date}
+                </p>
+              )}
               <div className="detail-tags">
                 {selected.topics.map((t) => (
                   <span className={'tag ' + color(t)} key={t}>
