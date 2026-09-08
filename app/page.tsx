@@ -173,15 +173,7 @@ export default function Home() {
         a.date.localeCompare(b.date) ||
         (a.time || '99').localeCompare(b.time || '99'),
     );
-  const windows = base
-    .filter((e) => e.status === '待确认')
-    .sort(
-      (a, b) =>
-        a.date.localeCompare(b.date) || a.title.localeCompare(b.title, 'zh-CN'),
-    );
-  const visibleCount = view === 'pending' ? windows.length : scheduled.length;
   const days = Array.from({ length: 7 }, (_, i) => shiftDate(week, i));
-  const rangeEvents = events.filter((e) => inWeek(e.date, week));
   function changeWeek(n: number) {
     if (view === 'month') {
       const d = new Date(week.slice(0, 7) + '-01T00:00:00Z');
@@ -218,25 +210,12 @@ export default function Home() {
         key={e.id}
       >
         <div className="event-time">
-          <strong>{e.status === '待确认' ? '待定' : e.time || '全天'}</strong>
+          <strong>{e.time || '全天'}</strong>
           <span>{e.region}</span>
         </div>
         <div className="event-main">
           <div className="eyebrow">
             <span className={'tag ' + color(e.topics[0])}>{e.topics[0]}</span>
-            <span>{e.kind}</span>
-            {e.status === '待确认' && (
-              <span className="window-period">{windowLabel(e.date)}</span>
-            )}
-            <span
-              className={'status ' + (e.status === '已改期' ? 'changed' : '')}
-            >
-              {e.status === '已公布' ? '● ' : ''}
-              {e.status}
-            </span>
-            <span className={e.real ? 'verified' : 'sample'}>
-              {e.real ? '官方' : '示例'}
-            </span>
           </div>
           <button className="event-title" onClick={() => setSelected(e)}>
             {e.title}
@@ -332,7 +311,7 @@ export default function Home() {
             <h1>财经日历</h1>
             <button className="sample-badge" onClick={() => setModal('demo')}>
               <Info size={13} />
-              示例日历
+              示例日历 · 含模拟数据
             </button>
           </div>
           <div className="top-actions">
@@ -403,7 +382,6 @@ export default function Home() {
                   >
                     <Icon size={18} />
                     <span>{t}</span>
-                    <span className={'topic-dot ' + color(t)} />
                   </button>
                   {topic === t && (
                     <button
@@ -434,44 +412,40 @@ export default function Home() {
           </aside>
           <section className="calendar-main">
             <div className="main-toolbar">
-              {view === 'pending' ? (
-                <h2 className="pending-heading">日期待定</h2>
-              ) : (
-                <div className="period-control">
-                  <button
-                    className="icon-button"
-                    onClick={() => changeWeek(-1)}
-                    aria-label={view === 'month' ? '上一月' : '上一周'}
-                  >
-                    <ChevronLeft size={18} />
-                  </button>
-                  <h2>
-                    {week.slice(0, 4)}年{Number(week.slice(5, 7))}月{' '}
-                    <small>
-                      {view === 'month'
-                        ? '月度总览'
-                        : `${Number(week.slice(8))} — ${Number(shiftDate(week, 6).slice(8))}日`}
-                    </small>
-                  </h2>
-                  <button
-                    className="icon-button"
-                    onClick={() => changeWeek(1)}
-                    aria-label={view === 'month' ? '下一月' : '下一周'}
-                  >
-                    <ChevronRight size={18} />
-                  </button>
-                  <button
-                    className="today-button"
-                    onClick={() => {
-                      setWeek('2026-09-07');
-                      setDay('2026-09-08');
-                      setView('week');
-                    }}
-                  >
-                    今日
-                  </button>
-                </div>
-              )}
+              <div className="period-control">
+                <button
+                  className="icon-button"
+                  onClick={() => changeWeek(-1)}
+                  aria-label={view === 'month' ? '上一月' : '上一周'}
+                >
+                  <ChevronLeft size={18} />
+                </button>
+                <h2>
+                  {week.slice(0, 4)}年{Number(week.slice(5, 7))}月{' '}
+                  <small>
+                    {view === 'month'
+                      ? '月度总览'
+                      : `${Number(week.slice(8))} — ${Number(shiftDate(week, 6).slice(8))}日`}
+                  </small>
+                </h2>
+                <button
+                  className="icon-button"
+                  onClick={() => changeWeek(1)}
+                  aria-label={view === 'month' ? '下一月' : '下一周'}
+                >
+                  <ChevronRight size={18} />
+                </button>
+                <button
+                  className="today-button"
+                  onClick={() => {
+                    setWeek('2026-09-07');
+                    setDay('2026-09-08');
+                    setView('week');
+                  }}
+                >
+                  今日
+                </button>
+              </div>
               <Tabs
                 value={view}
                 onValueChange={(v) => {
@@ -487,10 +461,6 @@ export default function Home() {
                 <TabsList className="view-tabs">
                   <TabsTrigger value="week">周历</TabsTrigger>
                   <TabsTrigger value="month">月历</TabsTrigger>
-                  <TabsTrigger value="pending">
-                    日期待定{' '}
-                    <span className="pending-count">{windows.length}</span>
-                  </TabsTrigger>
                 </TabsList>
               </Tabs>
             </div>
@@ -507,19 +477,6 @@ export default function Home() {
                   >
                     <span>周{weekdays[i]}</span>
                     <b>{Number(d.slice(8))}</b>
-                    <div className="date-dots">
-                      {Array.from(
-                        new Set(
-                          rangeEvents
-                            .filter((e) => e.date === d)
-                            .map((e) => color(e.topics[0])),
-                        ),
-                      )
-                        .slice(0, 3)
-                        .map((c) => (
-                          <i className={c} key={c} />
-                        ))}
-                    </div>
                   </button>
                 ))}
               </div>
@@ -556,16 +513,11 @@ export default function Home() {
                   : topic === '全部'
                     ? '全部主题'
                     : topic}
-                <b>{visibleCount}</b>项日程
-                {view === 'pending' && <span> · 全部时间窗口</span>}
-                {day && view !== 'pending' && (
-                  <button onClick={() => setDay('')}>查看整周 ×</button>
-                )}
+                <b>{scheduled.length}</b>项日程
+                {day && <button onClick={() => setDay('')}>查看整周 ×</button>}
               </span>
             </div>
-            {view === 'pending' ? (
-              <div className="event-list pending-list">{windows.map(row)}</div>
-            ) : view === 'week' ? (
+            {view === 'week' ? (
               <div className="event-list">
                 {days
                   .filter((d) => scheduled.some((e) => e.date === d))
@@ -611,22 +563,17 @@ export default function Home() {
                         >
                           <span>{e.time || '全天'}</span>
                           {e.title}
-                          <small>{e.real ? '官方' : '示例'}</small>
                         </button>
                       ))}
                   </div>
                 ))}
               </div>
             )}
-            {visibleCount === 0 && (
+            {scheduled.length === 0 && (
               <div className="empty-state">
                 <CalendarDays size={36} />
                 <h3>这个范围内暂无匹配日程</h3>
-                <p>
-                  {view === 'pending'
-                    ? '试试其他主题或关键词。'
-                    : '试试其他主题或日期。'}
-                </p>
+                <p>试试其他主题或日期。</p>
                 <button className="outline-button" onClick={reset}>
                   重置筛选
                 </button>
@@ -671,7 +618,9 @@ export default function Home() {
                   {selected.time ||
                     (selected.status === '待确认' ? '日期待定' : '全天')}
                 </span>
-                <span className="tag blue">{selected.status}</span>
+                <span className="detail-status">
+                  {selected.kind} · {selected.status}
+                </span>
               </div>
               {selected.oldDate && (
                 <p className="detail-date-change">
