@@ -1,9 +1,4 @@
-export type Topic =
-  | 'AI与算力'
-  | '人形机器人'
-  | '政策与监管'
-  | '能源与电力'
-  | '资金与持仓';
+export type Topic = 'AI与算力' | '人形机器人' | '政策与监管' | '能源与电力';
 export type CalendarEvent = {
   id: string;
   title: string;
@@ -32,7 +27,6 @@ export const topics: Topic[] = [
   '人形机器人',
   '政策与监管',
   '能源与电力',
-  '资金与持仓',
 ];
 export const events: CalendarEvent[] = [
   {
@@ -53,7 +47,7 @@ export const events: CalendarEvent[] = [
     focus: [
       '对比上月及去年同月，留意季节性与汇率影响。',
       '月营收未拆分 AI 收入；需结合季度先进制程占比与管理层说明。',
-      '没有核实的一致预期保持为空，不用编辑判断替代。',
+      '关注实际营收与公司季度指引的对应关系。',
     ],
     chain: ['AI资本开支', '先进制程', '设备与封装'],
     related: 'AI前沿日报',
@@ -95,8 +89,7 @@ export const events: CalendarEvent[] = [
     region: '中国',
     source: '公司公告（演示）',
     url: 'https://www.hkexnews.hk/',
-    summary:
-      '演示结果：公司披露试点进入验收阶段；订单金额和收入确认仍需后续公告支持。',
+    summary: '试点进入验收阶段，关注正式订单、实际交付与收入确认进展。',
     focus: [
       '区分框架协议、正式订单、实际交付和收入确认。',
       '核对交付是否为人形机器人，是否包含其他机器人。',
@@ -159,39 +152,13 @@ export const events: CalendarEvent[] = [
     source: '主办方变更通知（演示）',
     url: 'https://ifr.org/',
     oldDate: '2026-09-09',
-    summary:
-      '演示变更：由 9 月 9 日调整至 9 月 11 日。已订阅用户收到一次改期提示，旧提醒取消。',
+    summary: '关注具身模型、连续作业能力及工业场景部署进展。',
     focus: [
       '关注实际作业时长、故障干预频率与演示条件。',
       '实验室测试结果与工厂部署效果分开说明。',
     ],
     chain: ['具身模型', '整机能力', '场景落地'],
     related: 'AI前沿日报',
-  },
-  {
-    id: 'oil-holdings',
-    title: '原油 ETF 持仓更新',
-    date: '2026-09-08',
-    time: '08:00',
-    topics: ['资金与持仓'],
-    kind: '指标',
-    status: '已公布',
-    importance: 2,
-    region: '美国',
-    source: '基金发行人披露（演示）',
-    url: 'https://www.uscfinvestments.com/uso',
-    summary:
-      '演示数值用于展示公布后的对比结构。持仓受申赎与移仓影响，不直接表示投资者看多或看空。',
-    focus: [
-      '记录持仓所属日期与披露日期。',
-      '区分基金份额、期货合约数量与名义敞口。',
-    ],
-    chain: ['基金申赎', '原油期货', '期限结构'],
-    related: '原油ETF持仓',
-    previous: '12,400',
-    actual: '12,560',
-    unit: '合约（模拟）',
-    period: '模拟观察期',
   },
   {
     id: 'chip-benchmark',
@@ -205,8 +172,7 @@ export const events: CalendarEvent[] = [
     region: '全球',
     source: '评测机构（演示）',
     url: 'https://mlcommons.org/benchmarks/inference-datacenter/',
-    summary:
-      '展示评测发布型指标：必须统一模型、精度、硬件配置和测试场景，才有横向比较意义。',
+    summary: '关注相同模型、精度与硬件配置下的推理性能、延迟和部署成本。',
     focus: [
       '同版本、同场景、同精度才进入对比表。',
       '吞吐量不能单独代表每个请求的延迟。',
@@ -228,7 +194,7 @@ export const events: CalendarEvent[] = [
     source: '企业公开计划（演示）',
     url: 'https://www.nvidia.com/en-us/events/',
     summary:
-      '仅有月份级计划，未公布具体日期。放入观察池，确认后再进入正式日程。',
+      '预计 9 月开放，具体日期待确认。关注开放范围、API 价格与应用能力。',
     focus: [
       '等待企业正式公告，不按历史节奏猜测发布日期。',
       '确认前仅提供状态变更提醒，不设置分钟级提醒。',
@@ -247,8 +213,7 @@ export const events: CalendarEvent[] = [
     region: '中国',
     source: '企业计划（演示）',
     url: 'https://www.hkexnews.hk/',
-    summary:
-      '季度级计划。目标日期、计划产能和已实现交付分别记录，逾期后保留未兑现状态。',
+    summary: '预计第四季度开展试点验收，关注客户反馈、验收公告及后续订单。',
     focus: [
       '客户与供应商披露是否一致。',
       '没有验收公告时保持待确认，不自动改为已完成。',
@@ -268,7 +233,7 @@ export const events: CalendarEvent[] = [
     region: '美国',
     source: '投资者关系公告（演示）',
     url: 'https://investor.nvidia.com/events-and-presentations/events-and-presentations/default.aspx',
-    summary: '演示复盘：结合资本支出、云业务增长与折旧费用评估投入回报。',
+    summary: '关注资本支出、云业务增长与折旧费用，评估算力投入回报。',
     focus: [
       '资本支出采用现金口径还是包含融资租赁。',
       '收入增长是否同步转化为现金流。',

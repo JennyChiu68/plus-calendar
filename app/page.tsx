@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable next/no-html-link-for-pages -- The report is a standalone static HTML document, not a Next route. */
 import { useEffect, useState } from 'react';
 import {
   CalendarDays,
@@ -16,16 +17,13 @@ import {
   Bot,
   Landmark,
   Zap,
-  ChartNoAxesCombined,
   Globe2,
   ExternalLink,
   Clock3,
   Info,
   Download,
   LockKeyhole,
-  FileText,
   ArrowRight,
-  Radio,
   CalendarClock,
 } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -60,12 +58,11 @@ import {
   type Topic,
   type CalendarEvent,
 } from '@/lib/calendar';
-const icons = [Cpu, Bot, Landmark, Zap, ChartNoAxesCombined];
+const icons = [Cpu, Bot, Landmark, Zap];
 const weekdays = ['一', '二', '三', '四', '五', '六', '日'];
 const color = (topic: string) =>
-  ['blue', 'violet', 'amber', 'green', 'rose'][
-    topics.indexOf(topic as Topic)
-  ] || 'blue';
+  ['blue', 'violet', 'amber', 'green'][topics.indexOf(topic as Topic)] ||
+  'blue';
 const dateLabel = (date: string) => date.slice(5).replace('-', '月') + '日';
 export default function Home() {
   const [topic, setTopic] = useState<Topic | '全部'>('全部');
@@ -76,7 +73,6 @@ export default function Home() {
   const [week, setWeek] = useState('2026-09-07');
   const [important, setImportant] = useState(false);
   const [mine, setMine] = useState(false);
-  const [overlay, setOverlay] = useState(false);
   const [member, setMember] = useState(true);
   const [selected, setSelected] = useState<CalendarEvent | null>(null);
   const [modal, setModal] = useState('');
@@ -91,8 +87,13 @@ export default function Home() {
       const data = JSON.parse(
         localStorage.getItem('plus-calendar-demo') || '{}',
       );
+      // eslint-disable-next-line react/react-compiler -- Hydrate browser-only preferences after the static first render.
       setSaved(data.saved || []);
-      setSubscribed(data.subscribed || ['AI与算力']);
+      setSubscribed(
+        (data.subscribed || ['AI与算力']).filter((t: string) =>
+          topics.includes(t as Topic),
+        ),
+      );
       setReminders(data.reminders || {});
     } catch {}
     setLoaded(true);
@@ -227,7 +228,7 @@ export default function Home() {
               {e.status}
             </span>
             <span className={e.real ? 'verified' : 'sample'}>
-              {e.real ? '官方日程样本' : '模拟'}
+              {e.real ? '官方' : '示例'}
             </span>
           </div>
           <button className="event-title" onClick={() => setSelected(e)}>
@@ -254,15 +255,16 @@ export default function Home() {
             <p className="event-summary">{e.summary}</p>
           )}
           <div className="event-foot">
-            <span>{e.source}</span>
+            <span>{e.source.replace('（演示）', '')}</span>
             {e.oldDate && (
               <span className="changed">
                 原定 {dateLabel(e.oldDate)} → {dateLabel(e.date)}
               </span>
             )}
             <button onClick={() => setSelected(e)}>
-              <span className="plus-word">PLUS</span> {e.related} ·{' '}
-              {e.status === '已公布' ? '查看复盘' : '看点前瞻'}
+              <span className="plus-word">PLUS</span>
+              {e.status === '已公布' ? '事件复盘' : '事件前瞻'}{' '}
+              <ArrowUpRight size={14} />
             </button>
           </div>
         </div>
@@ -320,11 +322,6 @@ export default function Home() {
             <a href="https://v.jin10.com/">视频</a>
             <a href="https://datas.jin10.com/">数据</a>
           </nav>
-          <a className="proposal-link" href="/proposal.html">
-            <FileText size={16} />
-            完整产品方案
-            <ArrowUpRight size={15} />
-          </a>
           <button
             className="avatar"
             onClick={() => setModal('demo')}
@@ -334,23 +331,14 @@ export default function Home() {
           </button>
         </div>
       </header>
-      <div className="demo-strip">
-        <span>
-          <Info size={14} /> 产品概念演示 ·
-          除标记的官方日程样本，其余均为模拟数据
-        </span>
-        <button onClick={() => setModal('demo')}>
-          演示说明与会员切换 <ArrowUpRight size={14} />
-        </button>
-      </div>
       <main className="workspace">
         <div className="calendar-top">
           <div className="title-block">
-            <span className="kicker">JIN10 CALENDAR</span>
-            <h1>
-              财经日历<span className="divider">/</span>
-              <em>PLUS 日历</em>
-            </h1>
+            <h1>财经日历</h1>
+            <button className="sample-badge" onClick={() => setModal('demo')}>
+              <Info size={13} />
+              示例日历
+            </button>
           </div>
           <div className="top-actions">
             <span className="timezone">
@@ -393,9 +381,7 @@ export default function Home() {
         </div>
         <div className="workspace-grid">
           <aside className="topic-sidebar">
-            <div className="side-heading">
-              主题日历<span>探索与订阅</span>
-            </div>
+            <div className="side-heading">主题日历</div>
             <button
               className={'topic-button ' + (topic === '全部' ? 'selected' : '')}
               onClick={() => {
@@ -440,38 +426,16 @@ export default function Home() {
                 </div>
               );
             })}
-            <div className="side-separator" />
-            <div className="side-heading">跨日历查看</div>
-            <label className="overlay-switch">
-              <span>叠加宏观日程</span>
-              <Switch checked={overlay} onCheckedChange={setOverlay} />
-            </label>
-            <p className="side-note">
-              把产业节点与宏观背景，放在同一条时间线上。
-            </p>
-            <div className="member-card">
-              <div>
+            <div className="sidebar-bottom">
+              <button
+                className="membership-button"
+                onClick={() => setModal('member')}
+              >
                 <span className="brand-plus">PLUS</span>
-                <span>{member ? '权益体验中' : '免费预览'}</span>
-              </div>
-              <strong>
-                从提前知道，
-                <br />
-                到持续跟进。
-              </strong>
-              <p>
-                主题前瞻 · 节点变化
-                <br />
-                产业链关联 · 结果复盘
-              </p>
-              <button onClick={() => setModal('member')}>
-                查看日历权益 <ArrowRight size={15} />
+                <span>会员权益</span>
+                <ChevronRight size={15} />
               </button>
             </div>
-            <a className="source-link" href="/proposal.html#sources">
-              <ExternalLink size={15} />
-              信源与采编方案
-            </a>
           </aside>
           <section className="calendar-main">
             <div className="main-toolbar">
@@ -506,7 +470,7 @@ export default function Home() {
                     setView('week');
                   }}
                 >
-                  演示今日
+                  今日
                 </button>
               </div>
               <Tabs
@@ -581,8 +545,12 @@ export default function Home() {
                   ))}
                 </SelectContent>
               </Select>
-              <label className="important-toggle">
-                <Switch checked={important} onCheckedChange={setImportant} />
+              <label className="important-toggle" htmlFor="important-only">
+                <Switch
+                  id="important-only"
+                  checked={important}
+                  onCheckedChange={setImportant}
+                />
                 仅重要
               </label>
             </div>
@@ -596,21 +564,7 @@ export default function Home() {
                 <b>{scheduled.length}</b>项日程
                 {day && <button onClick={() => setDay('')}>查看整周 ×</button>}
               </span>
-              <span>指标与事件 · 统一时间线</span>
             </div>
-            {overlay && (
-              <div className="macro-overlay">
-                <Landmark size={18} />
-                <div>
-                  <b>宏观背景 · 叠加示例</b>
-                  <p>本周宏观数据发布窗口 · 时间待接入</p>
-                  <small>正式版复用原日历事件 ID，在此仅展示叠加关系。</small>
-                </div>
-                <a href="https://rili.jin10.com/">
-                  查看现有日历 <ArrowUpRight size={14} />
-                </a>
-              </div>
-            )}
             {view === 'week' ? (
               <div className="event-list">
                 {days
@@ -621,7 +575,7 @@ export default function Home() {
                         <span>
                           {dateLabel(d)}
                           <small>星期{weekdays[days.indexOf(d)]}</small>
-                          {d === '2026-09-08' && <i>演示今日</i>}
+                          {d === '2026-09-08' && <i>今日</i>}
                         </span>
                         <b>{scheduled.filter((e) => e.date === d).length} 项</b>
                       </div>
@@ -657,7 +611,7 @@ export default function Home() {
                         >
                           <span>{e.time || '全天'}</span>
                           {e.title}
-                          <small>{e.real ? '官方样本' : '模拟'}</small>
+                          <small>{e.real ? '官方' : '示例'}</small>
                         </button>
                       ))}
                   </div>
@@ -668,50 +622,43 @@ export default function Home() {
               <div className="empty-state">
                 <CalendarDays size={36} />
                 <h3>这个范围内暂无匹配日程</h3>
-                <p>
-                  演示样本集中在 2026 年 9 月 7—13
-                  日。可调整筛选，或查看右侧待确认窗口。
-                </p>
+                <p>试试其他主题或日期。</p>
                 <button className="outline-button" onClick={reset}>
-                  恢复演示日程
+                  重置筛选
                 </button>
               </div>
             )}
-            <div className="list-footer">
-              <span className="status-dot" />
-              计划与结果分开记录，时间变化持续留痕。
-              <a href="/proposal.html#rules">
-                查看收录规则 <ArrowUpRight size={14} />
-              </a>
-            </div>
           </section>
           <aside className="insight-sidebar">
             <div className="insight-card weekly-focus">
-              <div className="card-kicker">
-                <Radio size={16} />
-                本周观察<span className="plus-word">PLUS</span>
+              <div className="card-title">
+                <h3>本周重点</h3>
+                <span className="plus-word">PLUS</span>
               </div>
-              <h3>
-                AI 投入，
-                <br />
-                如何走向产业兑现？
-              </h3>
-              <p>沿着三个可核验节点，关注从算力支出到实际交付的进展。</p>
-              <div className="focus-path">
-                <span>
-                  <i>01</i>资本开支与需求
-                </span>
-                <span>
-                  <i>02</i>营收与产能验证
-                </span>
-                <span>
-                  <i>03</i>交付与客户验收
-                </span>
-              </div>
-              <button onClick={() => setSelected(events[0])}>
-                查看本周重点 <ArrowRight size={16} />
-              </button>
-              <small>编辑观察示例 · 非投资建议</small>
+              {base
+                .filter((e) => e.importance === 3 && inWeek(e.date, week))
+                .sort((a, b) => a.date.localeCompare(b.date))
+                .map((e) => (
+                  <button
+                    className="focus-item"
+                    key={e.id}
+                    onClick={() => setSelected(e)}
+                  >
+                    <span className="focus-date">
+                      {e.date.slice(5).replace('-', '/')}
+                    </span>
+                    <span>
+                      <strong>{e.title}</strong>
+                      <small>
+                        {e.topics[0]} · {e.real ? '官方' : '示例'}
+                      </small>
+                    </span>
+                    <ChevronRight size={14} />
+                  </button>
+                ))}
+              {!base.some(
+                (e) => e.importance === 3 && inWeek(e.date, week),
+              ) && <p className="muted">本周暂无重点事件</p>}
             </div>
             <div className="insight-card window-card">
               <div className="card-title">
@@ -721,7 +668,6 @@ export default function Home() {
                 </h3>
                 <span>{windows.length}</span>
               </div>
-              <p className="muted">日期未定，确认后进入日程</p>
               {windows.map((e) => (
                 <button
                   className="window-item"
@@ -746,10 +692,14 @@ export default function Home() {
             <div className="insight-card change-card">
               <h3>
                 <Clock3 size={17} />
-                日程有变化
+                日程变更
               </h3>
-              <span className="tag amber">改期示例</span>
-              <button onClick={() => setSelected(events[5])}>
+              <span className="tag amber">示例</span>
+              <button
+                onClick={() =>
+                  setSelected(events.find((e) => e.id === 'robot-demo') || null)
+                }
+              >
                 机器人技术交流会
               </button>
               <div>
@@ -757,20 +707,15 @@ export default function Home() {
                 <ArrowRight size={14} />
                 <b>09.11</b>
               </div>
-              <p>一次变更通知，自动替换旧提醒。</p>
-            </div>
-            <div className="side-bottom">
-              <span>信息有出处 · 变化可追溯</span>
-              <a href="/proposal.html">
-                阅读完整产品构思 <ArrowUpRight size={14} />
-              </a>
             </div>
           </aside>
         </div>
       </main>
       <footer className="page-footer">
-        金十 PLUS 日历 · 产品讨论稿{' '}
-        <span>研究截至 2026.09.08 · 无实时行情与通知服务</span>
+        <span>金十 PLUS 日历</span>
+        <a href="/proposal.html">
+          产品方案 <ArrowUpRight size={13} />
+        </a>
       </footer>
       <Sheet
         open={!!selected}
@@ -782,13 +727,13 @@ export default function Home() {
           <SheetHeader>
             <div className="detail-kicker">
               <span className="brand-plus">PLUS</span>
-              <span>事件研究卡</span>
+              <span>事件详情</span>
             </div>
             <SheetTitle>{selected?.title}</SheetTitle>
             <SheetDescription>
               {selected?.real
                 ? '官方日程样本 · 来源核验于 2026-09-08'
-                : '模拟内容 · 用于演示事件生命周期'}
+                : '示例事件 · 非真实日程'}
             </SheetDescription>
           </SheetHeader>
           {selected && (
@@ -827,7 +772,7 @@ export default function Home() {
                 </div>
               )}
               <section className="detail-section">
-                <h3>这件事，重点看什么</h3>
+                <h3>关注要点</h3>
                 {member ? (
                   <ol>
                     {selected.focus.map((f) => (
@@ -864,50 +809,6 @@ export default function Home() {
                       ))}
                     </div>
                   </section>
-                  <section className="detail-section">
-                    <h3>全过程跟进</h3>
-                    <div className="lifecycle">
-                      <div className="done">
-                        <i />
-                        <strong>收录 / 前瞻</strong>
-                        <p>
-                          {selected.real
-                            ? '已核对官方发布时间表'
-                            : '模拟公告与关注要点已整理'}
-                        </p>
-                      </div>
-                      <div
-                        className={selected.status === '已公布' ? 'done' : ''}
-                      >
-                        <i />
-                        <strong>
-                          {selected.status === '已改期'
-                            ? '时间变更'
-                            : '发布 / 截止'}
-                        </strong>
-                        <p>
-                          {selected.oldDate
-                            ? `${selected.oldDate} → ${selected.date}`
-                            : selected.status === '待确认'
-                              ? '等待正式日期，暂不倒计时'
-                              : selected.status === '已公布'
-                                ? '模拟结果已回填'
-                                : '等待日程发生后核验结果'}
-                        </p>
-                      </div>
-                      <div>
-                        <i />
-                        <strong>复盘 / 下一节点</strong>
-                        <p>
-                          {selected.kind === '政策'
-                            ? '继续跟进正式发布与实际实施'
-                            : selected.status === '已公布'
-                              ? '继续核验兑现与后续披露'
-                              : '回看前瞻问题是否得到回答'}
-                        </p>
-                      </div>
-                    </div>
-                  </section>
                 </>
               )}
               <section className="source-proof">
@@ -919,10 +820,10 @@ export default function Home() {
                 <p>
                   {selected.real
                     ? '官方页面列示 2026-09-10 13:30，时区 Asia/Taipei，与北京时间同为 UTC+8。前值取官方 2026 年月营收页。'
-                    : '以下链接为真实候选信源入口，并不证明本条模拟事件或日期。正式产品必须链接到具体公告。'}
+                    : '示例事件；链接仅供信源参考，不代表该事件已获确认。'}
                 </p>
                 <a href={selected.url} target="_blank" rel="noreferrer">
-                  {selected.real ? '查看官方日程' : '查看候选信源入口'}
+                  {selected.real ? '查看官方日程' : '查看参考来源'}
                   <ArrowUpRight size={15} />
                 </a>
                 {selected.real && (
@@ -936,13 +837,6 @@ export default function Home() {
                   </a>
                 )}
               </section>
-              <div className="related-content">
-                <FileText size={19} />
-                <div>
-                  <b>{selected.related}</b>
-                  <p>正式版在此关联已发布的前瞻与复盘</p>
-                </div>
-              </div>
               <div className="detail-buttons">
                 <button
                   className="primary-button"
@@ -991,30 +885,30 @@ export default function Home() {
               {modal === 'demo'
                 ? '演示说明'
                 : modal === 'member'
-                  ? 'PLUS 日历权益建议'
+                  ? 'PLUS 日历权益'
                   : modal === 'subscriptions'
                     ? '管理主题订阅'
                     : '设置日程提醒'}
             </DialogTitle>
             <DialogDescription>
-              {modal === 'member'
-                ? '建议纳入现有 PLUS，实际会员互通关系需内部核对。'
-                : '以下设置仅保存在本浏览器，不触发真实通知或支付。'}
+              设置仅保存在此浏览器，不发送实际通知或产生费用。
             </DialogDescription>
           </DialogHeader>
           {modal === 'demo' && (
             <div className="dialog-body">
               <p>
-                体验流程：选择主题 → 查看事件 → 设置提醒 →
-                切换月历。官方样本为台积电营收日程，其余事件与结果均为模拟。
+                当前为 2026 年 9
+                月样例日历。台积电营收日程已核对官方来源，其余事件与结果均为模拟。
               </p>
-              <label className="setting-line">
+              <label className="setting-line" htmlFor="member-view">
                 <span>体验 PLUS 会员视角</span>
-                <Switch checked={member} onCheckedChange={setMember} />
+                <Switch
+                  id="member-view"
+                  checked={member}
+                  onCheckedChange={setMember}
+                />
               </label>
-              <p className="muted">
-                关闭后可查看免费预览及权益提示。会员切换只是演示，不代表账户真实状态。
-              </p>
+              <p className="muted">会员切换仅用于体验。</p>
               <a className="primary-button" href="/proposal.html">
                 阅读完整产品方案 <ArrowUpRight size={16} />
               </a>
@@ -1034,9 +928,6 @@ export default function Home() {
                   <p>主题订阅、变化提醒、核验要点、研究关联与复盘</p>
                 </div>
               </div>
-              <p>
-                首期建议不单独收费，验证是否提升现有会员使用与续费。当前未接入购买流程。
-              </p>
               <button
                 className="primary-button"
                 onClick={() => {
@@ -1054,21 +945,24 @@ export default function Home() {
               {topics.map((t, i) => {
                 const Icon = icons[i];
                 return (
-                  <label className="setting-line" key={t}>
+                  <label
+                    className="setting-line"
+                    key={t}
+                    htmlFor={`subscription-${i}`}
+                  >
                     <span>
                       <Icon size={18} />
                       {t}
                     </span>
                     <Switch
+                      id={`subscription-${i}`}
                       checked={subscribed.includes(t)}
                       onCheckedChange={() => subscribe(t)}
                     />
                   </label>
                 );
               })}
-              <p className="muted">
-                已订阅主题将出现在“我的日历”。主题订阅与单条自选互不覆盖。
-              </p>
+              <p className="muted">已订阅主题会出现在“我的日历”。</p>
               <button
                 className="primary-button"
                 onClick={() => {
@@ -1115,9 +1009,7 @@ export default function Home() {
                   </Select>
                 </>
               )}
-              <p className="muted">
-                全天事件按当地日期提醒；无精确时间时不生成分钟倒计时。演示不进行后台推送。
-              </p>
+              <p className="muted">提醒设置仅供体验。</p>
               <button
                 className="primary-button"
                 onClick={() => {
@@ -1153,10 +1045,10 @@ export default function Home() {
         </DialogContent>
       </Dialog>
       {toast && (
-        <div className="toast" role="status">
+        <output className="toast">
           <Check size={17} />
           {toast}
-        </div>
+        </output>
       )}
     </div>
   );
