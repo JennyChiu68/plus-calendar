@@ -16,7 +16,7 @@ while i<len(lines):
     if not s:i+=1;continue
     if s.startswith('#'):
         m=re.match(r'(#{1,6}) (.*)',s);n=len(m[1]);label=m[2];anchor=re.search(r'\s*\{#([^}]+)\}',label)
-        slug=anchor[1] if anchor else 'section-'+str(len(toc)+1)
+        slug=anchor[1] if anchor else ('section-'+str(len(toc)+1) if n==2 else 'heading-'+str(i))
         label=re.sub(r'\s*\{#[^}]+\}','',label)
         if n==2:toc.append((slug,label))
         output.append(f'<h{n} id="{slug}">{inline(label)}</h{n}>');i+=1;continue
