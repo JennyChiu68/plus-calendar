@@ -13,9 +13,6 @@ export type CalendarEvent = {
   url: string;
   real?: boolean;
   summary: string;
-  focus: string[];
-  chain: string[];
-  related: string;
   previous?: string;
   actual?: string;
   unit?: string;
@@ -42,15 +39,7 @@ export const events: CalendarEvent[] = [
     source: '台积电投资者关系',
     url: 'https://investor.tsmc.com/chinese/financial-calendar',
     real: true,
-    summary:
-      '观察先进制程需求的月度线索。总营收同时包含多种终端需求，不能直接等同于 AI 收入。',
-    focus: [
-      '对比上月及去年同月，留意季节性与汇率影响。',
-      '月营收未拆分 AI 收入；需结合季度先进制程占比与管理层说明。',
-      '关注实际营收与公司季度指引的对应关系。',
-    ],
-    chain: ['AI资本开支', '先进制程', '设备与封装'],
-    related: 'AI前沿日报',
+    summary: '发布 2026 年 8 月合并营收，统计范围涵盖公司各类终端业务。',
     previous: '467,580',
     unit: '百万新台币',
     period: '2026年8月',
@@ -67,15 +56,7 @@ export const events: CalendarEvent[] = [
     region: '全球',
     source: '主办方议程（演示）',
     url: 'https://www.nvidia.com/en-us/events/',
-    summary:
-      '从模型能力演示进一步观察商业可用性：价格、开放范围、延迟与调用限制。',
-    focus: [
-      '是否开放正式 API，而非仅有研究预览。',
-      '在相同输入输出长度下比较成本与延迟。',
-      '明确测试版本、测试集与使用条件，避免仅以榜单名次判断。',
-    ],
-    chain: ['模型服务', 'AI应用', '企业软件'],
-    related: 'AI前沿日报',
+    summary: '开发者活动，议程包括推理服务、API 开放与 Agent 应用。',
   },
   {
     id: 'robot-results',
@@ -89,14 +70,7 @@ export const events: CalendarEvent[] = [
     region: '中国',
     source: '公司公告（演示）',
     url: 'https://www.hkexnews.hk/',
-    summary: '试点进入验收阶段，关注正式订单、实际交付与收入确认进展。',
-    focus: [
-      '区分框架协议、正式订单、实际交付和收入确认。',
-      '核对交付是否为人形机器人，是否包含其他机器人。',
-      '客户现场验收与复购比演示视频更值得持续跟进。',
-    ],
-    chain: ['整机交付', '执行器', '传感器'],
-    related: 'PLUS文章',
+    summary: '半年度经营交流，议程包括订单、交付和客户试点进展。',
   },
   {
     id: 'power-grid',
@@ -110,13 +84,7 @@ export const events: CalendarEvent[] = [
     region: '美国',
     source: '监管机构公告（演示）',
     url: 'https://www.federalregister.gov/',
-    summary: '关注接入容量、电网改造分摊与审批进度，听证本身不代表项目获批。',
-    focus: [
-      '项目申报容量与实际投运容量分开记录。',
-      '审批通过后仍需观察施工和并网节点。',
-    ],
-    chain: ['算力扩建', '电网接入', '电力设备'],
-    related: 'PLUS文章',
+    summary: '数据中心配套用电项目公开听证，涉及接入容量与电网改造安排。',
   },
   {
     id: 'robot-standard',
@@ -129,15 +97,7 @@ export const events: CalendarEvent[] = [
     region: '中国',
     source: '标准主管部门（演示）',
     url: 'https://std.miit.gov.cn/',
-    summary:
-      '征求意见结束只是政策过程中的一个节点，正式发布与实施日期尚需确认。',
-    focus: [
-      '分清推荐性与强制性标准的性质。',
-      '草案中的技术要求可能改变；不能直接作为最终合规要求。',
-      '持续跟进审查、发布、生效三个后续节点。',
-    ],
-    chain: ['安全要求', '整机认证', '核心零部件'],
-    related: 'PLUS文章',
+    summary: '人形机器人安全标准草案公开征求意见截止；正式实施日期待定。',
   },
   {
     id: 'robot-demo',
@@ -152,13 +112,7 @@ export const events: CalendarEvent[] = [
     source: '主办方变更通知（演示）',
     url: 'https://ifr.org/',
     oldDate: '2026-09-09',
-    summary: '关注具身模型、连续作业能力及工业场景部署进展。',
-    focus: [
-      '关注实际作业时长、故障干预频率与演示条件。',
-      '实验室测试结果与工厂部署效果分开说明。',
-    ],
-    chain: ['具身模型', '整机能力', '场景落地'],
-    related: 'AI前沿日报',
+    summary: '行业技术交流活动，议程包括具身模型、整机技术与工业应用。',
   },
   {
     id: 'chip-benchmark',
@@ -172,13 +126,7 @@ export const events: CalendarEvent[] = [
     region: '全球',
     source: '评测机构（演示）',
     url: 'https://mlcommons.org/benchmarks/inference-datacenter/',
-    summary: '关注相同模型、精度与硬件配置下的推理性能、延迟和部署成本。',
-    focus: [
-      '同版本、同场景、同精度才进入对比表。',
-      '吞吐量不能单独代表每个请求的延迟。',
-    ],
-    chain: ['推理效率', '部署成本', '芯片需求'],
-    related: 'AI前沿日报',
+    summary: '公布本轮数据中心推理性能评测结果，数值按测试场景分别列示。',
     unit: '依测试场景',
     period: '本轮评测',
   },
@@ -193,14 +141,7 @@ export const events: CalendarEvent[] = [
     region: '全球',
     source: '企业公开计划（演示）',
     url: 'https://www.nvidia.com/en-us/events/',
-    summary:
-      '预计 9 月开放，具体日期待确认。关注开放范围、API 价格与应用能力。',
-    focus: [
-      '等待企业正式公告，不按历史节奏猜测发布日期。',
-      '确认前仅提供状态变更提醒，不设置分钟级提醒。',
-    ],
-    chain: ['模型发布', '开发者生态', '应用落地'],
-    related: 'AI前沿日报',
+    summary: '计划于 9 月开放下一代模型，具体日期尚未公布。',
   },
   {
     id: 'robot-window',
@@ -213,13 +154,7 @@ export const events: CalendarEvent[] = [
     region: '中国',
     source: '企业计划（演示）',
     url: 'https://www.hkexnews.hk/',
-    summary: '预计第四季度开展试点验收，关注客户反馈、验收公告及后续订单。',
-    focus: [
-      '客户与供应商披露是否一致。',
-      '没有验收公告时保持待确认，不自动改为已完成。',
-    ],
-    chain: ['试点部署', '验收', '收入确认'],
-    related: 'PLUS文章',
+    summary: '计划于第四季度开展客户试点验收，具体日期尚未公布。',
   },
   {
     id: 'cloud-results',
@@ -233,13 +168,7 @@ export const events: CalendarEvent[] = [
     region: '美国',
     source: '投资者关系公告（演示）',
     url: 'https://investor.nvidia.com/events-and-presentations/events-and-presentations/default.aspx',
-    summary: '关注资本支出、云业务增长与折旧费用，评估算力投入回报。',
-    focus: [
-      '资本支出采用现金口径还是包含融资租赁。',
-      '收入增长是否同步转化为现金流。',
-    ],
-    chain: ['资本支出', '算力设备', '云收入'],
-    related: 'PLUS日报',
+    summary: '云计算企业业绩说明会，披露季度经营情况与资本支出安排。',
   },
   {
     id: 'power-data',
@@ -252,14 +181,7 @@ export const events: CalendarEvent[] = [
     region: '中国',
     source: '主管部门公告（演示）',
     url: 'https://www.nea.gov.cn/',
-    summary:
-      '观察电力需求结构。总量不是数据中心专属用电量，需保留地区与行业口径。',
-    focus: [
-      '单位、统计范围及同比基期需一致。',
-      '若没有单列数据中心，不从总量推算 AI 用电。',
-    ],
-    chain: ['用电需求', '发电供给', '电网投资'],
-    related: 'PLUS日报',
+    summary: '发布重点地区 8 月全社会用电量及分行业统计。',
     unit: '亿千瓦时',
     period: '2026年8月',
   },
@@ -275,14 +197,7 @@ export const events: CalendarEvent[] = [
     region: '全球',
     source: '行业协会（演示）',
     url: 'https://www.wsts.org/61/Forecasts',
-    summary:
-      '总行业销售作为景气背景。需说明是否为三个月移动平均，以及是否含存储周期影响。',
-    focus: [
-      '月值和移动平均值不能直接拼接。',
-      '分产品、分地区拆解后才能支持主题判断。',
-    ],
-    chain: ['芯片销售', '库存周期', '设备投资'],
-    related: 'AI前沿日报',
+    summary: '发布半导体行业月度销售数据。',
     unit: '亿美元',
     period: '模拟观察期',
   },
@@ -297,14 +212,7 @@ export const events: CalendarEvent[] = [
     region: '中国',
     source: '主管部门申报通知（演示）',
     url: 'https://www.miit.gov.cn/',
-    summary:
-      '申报截止后还存在评审、公示和拨款环节，不能把预算总额当作已落地投资。',
-    focus: [
-      '明确地区、适用主体、申报条件与材料截止时间。',
-      '跟进公示名单和实际拨款进展。',
-    ],
-    chain: ['产业预算', '项目评审', '资金拨付'],
-    related: 'PLUS文章',
+    summary: '产业专项资金项目申报截止，后续安排以主管部门通知为准。',
   },
 ];
 

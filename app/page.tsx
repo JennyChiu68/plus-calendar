@@ -22,7 +22,6 @@ import {
   Clock3,
   Info,
   Download,
-  LockKeyhole,
   ArrowRight,
   CalendarClock,
 } from 'lucide-react';
@@ -155,7 +154,7 @@ export default function Home() {
         saved.includes(e.id) ||
         e.topics.some((t) => subscribed.includes(t))) &&
       (!query ||
-        [e.title, e.source, ...e.topics, ...e.chain]
+        [e.title, e.source, ...e.topics]
           .join(' ')
           .toLowerCase()
           .includes(query.toLowerCase())),
@@ -261,11 +260,6 @@ export default function Home() {
                 原定 {dateLabel(e.oldDate)} → {dateLabel(e.date)}
               </span>
             )}
-            <button onClick={() => setSelected(e)}>
-              <span className="plus-word">PLUS</span>
-              {e.status === '已公布' ? '事件复盘' : '事件前瞻'}{' '}
-              <ArrowUpRight size={14} />
-            </button>
           </div>
         </div>
         <div className="row-actions">
@@ -525,8 +519,8 @@ export default function Home() {
               <div className="search-box">
                 <Search size={16} />
                 <input
-                  aria-label="搜索事件、公司或产业链"
-                  placeholder="搜索事件、公司、产业链"
+                  aria-label="搜索事件、来源或主题"
+                  placeholder="搜索事件、来源、主题"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                 />
@@ -771,50 +765,10 @@ export default function Home() {
                   </p>
                 </div>
               )}
-              <section className="detail-section">
-                <h3>关注要点</h3>
-                {member ? (
-                  <ol>
-                    {selected.focus.map((f) => (
-                      <li key={f}>{f}</li>
-                    ))}
-                  </ol>
-                ) : (
-                  <div className="locked-block">
-                    <LockKeyhole size={22} />
-                    <p>解锁核验要点、产业链关联和跟进提醒</p>
-                    <button
-                      className="primary-button"
-                      onClick={() => setModal('member')}
-                    >
-                      查看 PLUS 日历权益
-                    </button>
-                  </div>
-                )}
-              </section>
-              {member && (
-                <>
-                  <section className="detail-section">
-                    <h3>
-                      产业传导路径 <small>研究关联，不代表股价方向</small>
-                    </h3>
-                    <div className="chain">
-                      {selected.chain.map((c, i) => (
-                        <div key={c}>
-                          <span>{c}</span>
-                          {i < selected.chain.length - 1 && (
-                            <ArrowRight size={16} />
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </section>
-                </>
-              )}
               <section className="source-proof">
                 <h3>
                   <ExternalLink size={16} />
-                  信源与证据
+                  信息来源
                 </h3>
                 <b>{selected.source}</b>
                 <p>
@@ -924,8 +878,8 @@ export default function Home() {
                 </div>
                 <div>
                   <span className="plus-word">PLUS</span>
-                  <b>前瞻与持续跟进</b>
-                  <p>主题订阅、变化提醒、核验要点、研究关联与复盘</p>
+                  <b>更多主题日历</b>
+                  <p>AI、机器人、政策、能源等主题，支持订阅与日程提醒</p>
                 </div>
               </div>
               <button

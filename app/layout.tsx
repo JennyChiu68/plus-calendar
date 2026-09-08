@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: '金十 PLUS 日历 · 主题研究工作台',
+  title: '金十 PLUS 日历 · 多维主题日历',
   description:
     '金十 PLUS 多维主题日历概念演示：事件、指标、政策进程与订阅。含模拟数据。',
   robots: { index: false, follow: false },
