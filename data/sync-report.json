@@ -2,16 +2,6 @@
   "attemptedAt": "2026-09-09T03:05:28+00:00",
   "sources": [
     {
-      "id": "eia",
-      "name": "美国能源信息署 EIA",
-      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
-      "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
-      "count": 5,
-      "status": "ok",
-      "hash": "ce0a5cd7fa5fc699c8bb9c9897054dd2a8ab94161eb397ea45c81bcd24751536"
-    },
-    {
       "id": "ras",
       "name": "IEEE 机器人与自动化学会",
       "url": "https://www.ieee-ras.org/events/month/2026-09/",
@@ -117,7 +107,7 @@
       "url": "https://www.iea.org/events",
       "mode": "automated",
       "checkedAt": "2026-09-09T03:05:28+00:00",
-      "count": 3,
+      "count": 2,
       "status": "ok",
       "hash": "460fd7e030944787fed83b5320c7fd2a88fd5bd76830e817f272fe5b9bfc6c01"
     },
@@ -152,5 +142,7 @@
       "note": "官方网页人工核对；程序直接访问受限。"
     }
   ],
-  "datasetWritten": true
+  "datasetWritten": true,
+  "scopeReviewedAt": "2026-09-09T03:44:50+00:00",
+  "excludedByScope": 6
 }

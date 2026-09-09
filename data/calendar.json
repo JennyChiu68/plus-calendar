@@ -5,16 +5,6 @@
   "updateMode": "发布时采集；部分来源人工核对，尚未启用定时更新",
   "sources": [
     {
-      "id": "eia",
-      "name": "美国能源信息署 EIA",
-      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
-      "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
-      "count": 5,
-      "status": "ok",
-      "hash": "ce0a5cd7fa5fc699c8bb9c9897054dd2a8ab94161eb397ea45c81bcd24751536"
-    },
-    {
       "id": "ras",
       "name": "IEEE 机器人与自动化学会",
       "url": "https://www.ieee-ras.org/events/month/2026-09/",
@@ -120,7 +110,7 @@
       "url": "https://www.iea.org/events",
       "mode": "automated",
       "checkedAt": "2026-09-09T03:05:28+00:00",
-      "count": 3,
+      "count": 2,
       "status": "ok",
       "hash": "460fd7e030944787fed83b5320c7fd2a88fd5bd76830e817f272fe5b9bfc6c01"
     },
@@ -199,27 +189,6 @@
       "checkedAt": "2026-09-09T03:05:28+00:00",
       "acquisition": "automated",
       "sourceHash": "519cc50dc44cc7ebc2dd81554e1d5452963c364b59bf0cde84cd82133874e1b6"
-    },
-    {
-      "id": "eia-steo-2026-09",
-      "title": "EIA 9 月短期能源展望发布",
-      "date": "2026-09-09",
-      "topics": [
-        "能源与电力"
-      ],
-      "kind": "事件",
-      "region": "美国",
-      "summary": "美国能源信息署发布月度能源供需展望。",
-      "timeNote": "日期为官方报告日（美国当地日期）；未提供本期确定发布时间。",
-      "evidence": "September 2026 09/09/2026",
-      "sourceId": "eia",
-      "source": "美国能源信息署 EIA",
-      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
-      "status": "已确认",
-      "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
-      "acquisition": "automated",
-      "sourceHash": "ce0a5cd7fa5fc699c8bb9c9897054dd2a8ab94161eb397ea45c81bcd24751536"
     },
     {
       "id": "tsmc-2026-08",
@@ -311,27 +280,6 @@
       "real": true,
       "checkedAt": "2026-09-09T03:05:08+00:00",
       "acquisition": "manual"
-    },
-    {
-      "id": "iea-omr-2026-09",
-      "title": "IEA 9 月石油市场报告发布",
-      "topics": [
-        "能源与电力"
-      ],
-      "region": "全球",
-      "summary": "国际能源署发布月度石油市场报告。",
-      "kind": "事件",
-      "timeNote": "官方仅列报告发布日；本站收录公开发布日程，不转载付费报告。",
-      "url": "https://www.iea.org/events/oil-market-report-september-2026",
-      "date": "2026-09-11",
-      "evidence": "11 Sep 2026 Oil Market Report",
-      "sourceId": "iea",
-      "source": "国际能源署 IEA",
-      "status": "已确认",
-      "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
-      "acquisition": "automated",
-      "sourceHash": "460fd7e030944787fed83b5320c7fd2a88fd5bd76830e817f272fe5b9bfc6c01"
     },
     {
       "id": "miit-computer-deadline",
@@ -533,27 +481,6 @@
       "sourceHash": "519cc50dc44cc7ebc2dd81554e1d5452963c364b59bf0cde84cd82133874e1b6"
     },
     {
-      "id": "eia-steo-2026-10",
-      "title": "EIA 10 月短期能源展望发布",
-      "date": "2026-10-06",
-      "topics": [
-        "能源与电力"
-      ],
-      "kind": "事件",
-      "region": "美国",
-      "summary": "美国能源信息署发布月度能源供需展望。",
-      "timeNote": "日期为官方报告日（美国当地日期）；未提供本期确定发布时间。",
-      "evidence": "October 2026 10/06/2026",
-      "sourceId": "eia",
-      "source": "美国能源信息署 EIA",
-      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
-      "status": "已确认",
-      "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
-      "acquisition": "automated",
-      "sourceHash": "ce0a5cd7fa5fc699c8bb9c9897054dd2a8ab94161eb397ea45c81bcd24751536"
-    },
-    {
       "id": "tsmc-2026-09",
       "title": "台积电 9 月营收报告",
       "topics": [
@@ -664,27 +591,6 @@
       "real": true,
       "checkedAt": "2026-09-09T03:05:08+00:00",
       "acquisition": "manual"
-    },
-    {
-      "id": "eia-steo-2026-11",
-      "title": "EIA 11 月短期能源展望发布",
-      "date": "2026-11-10",
-      "topics": [
-        "能源与电力"
-      ],
-      "kind": "事件",
-      "region": "美国",
-      "summary": "美国能源信息署发布月度能源供需展望。",
-      "timeNote": "日期为官方报告日（美国当地日期）；未提供本期确定发布时间。",
-      "evidence": "November 2026 11/10/2026",
-      "sourceId": "eia",
-      "source": "美国能源信息署 EIA",
-      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
-      "status": "已确认",
-      "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
-      "acquisition": "automated",
-      "sourceHash": "ce0a5cd7fa5fc699c8bb9c9897054dd2a8ab94161eb397ea45c81bcd24751536"
     },
     {
       "id": "ignite-2026",
@@ -798,27 +704,6 @@
       "sourceHash": "4066e53107a16dc7ccb164ff05eab274292a3e41c38fcdfc57bb635a49df7dc8"
     },
     {
-      "id": "eia-steo-2026-12",
-      "title": "EIA 12 月短期能源展望发布",
-      "date": "2026-12-08",
-      "topics": [
-        "能源与电力"
-      ],
-      "kind": "事件",
-      "region": "美国",
-      "summary": "美国能源信息署发布月度能源供需展望。",
-      "timeNote": "日期为官方报告日（美国当地日期）；未提供本期确定发布时间。",
-      "evidence": "December 2026 12/08/2026",
-      "sourceId": "eia",
-      "source": "美国能源信息署 EIA",
-      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
-      "status": "已确认",
-      "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
-      "acquisition": "automated",
-      "sourceHash": "ce0a5cd7fa5fc699c8bb9c9897054dd2a8ab94161eb397ea45c81bcd24751536"
-    },
-    {
       "id": "tsmc-2026-11",
       "title": "台积电 11 月营收报告",
       "topics": [
@@ -884,27 +769,7 @@
       "real": true,
       "checkedAt": "2026-09-09T03:05:08+00:00",
       "acquisition": "manual"
-    },
-    {
-      "id": "eia-steo-2027-01",
-      "title": "EIA 1 月短期能源展望发布",
-      "date": "2027-01-12",
-      "topics": [
-        "能源与电力"
-      ],
-      "kind": "事件",
-      "region": "美国",
-      "summary": "美国能源信息署发布月度能源供需展望。",
-      "timeNote": "日期为官方报告日（美国当地日期）；未提供本期确定发布时间。",
-      "evidence": "January 2027 01/12/2027",
-      "sourceId": "eia",
-      "source": "美国能源信息署 EIA",
-      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
-      "status": "已确认",
-      "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
-      "acquisition": "automated",
-      "sourceHash": "ce0a5cd7fa5fc699c8bb9c9897054dd2a8ab94161eb397ea45c81bcd24751536"
     }
-  ]
+  ],
+  "scopeReviewedAt": "2026-09-09T03:44:50+00:00"
 }

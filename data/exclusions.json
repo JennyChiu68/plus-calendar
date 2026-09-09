@@ -1,0 +1,30 @@
+[
+  {
+    "id": "eia-steo",
+    "reason": "用户确认金十免费日历已覆盖，PLUS 不重复收录。",
+    "idPrefixes": [
+      "eia-steo-"
+    ],
+    "urlContains": [
+      "eia.gov/outlooks/steo/"
+    ],
+    "titlePatterns": [
+      "EIA.*短期能源展望",
+      "Short.Term Energy Outlook"
+    ]
+  },
+  {
+    "id": "iea-omr",
+    "reason": "用户确认金十免费日历已覆盖，PLUS 不重复收录。",
+    "idPrefixes": [
+      "iea-omr-"
+    ],
+    "urlContains": [
+      "iea.org/events/oil-market-report"
+    ],
+    "titlePatterns": [
+      "IEA.*石油市场报告",
+      "Oil Market Report"
+    ]
+  }
+]

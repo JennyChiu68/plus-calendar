@@ -9,6 +9,11 @@ class ImportTests(unittest.TestCase):
  def test_changed_source_stops_extraction(self):
   source=next(s for s in json.loads((sync.ROOT/'data/sources.json').read_text()) if s['id']=='miit')
   with self.assertRaises(ValueError):sync.extract(source,'<p>公告已撤回</p>')
+ def test_free_calendar_series_cannot_be_reimported(self):
+  future=[dict(id='eia-steo-2027-05',title='发布日程',sourceId='eia'),dict(id='new-id',title='IEA 10 月石油市场报告发布',sourceId='iea'),dict(id='different-id',title='Release',url='https://www.iea.org/events/oil-market-report-october-2027',sourceId='iea')]
+  webinar=dict(id='iea-webinar',title='IEA 企业能效研讨会',url='https://www.iea.org/events/webinar',sourceId='iea')
+  kept,reports=sync.apply_scope(future+[webinar],[dict(id='eia',count=1),dict(id='iea',count=3)])
+  self.assertEqual(kept,[webinar]);self.assertEqual(reports,[dict(id='iea',count=1)])
  def test_duplicate_ids_are_rejected(self):
   e=json.loads((sync.ROOT/'data/calendar.json').read_text())['events'][0]
   with self.assertRaises(ValueError):sync.validate([e,e])

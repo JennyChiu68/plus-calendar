@@ -21,18 +21,10 @@ def match(pattern,text):
  m=re.search(pattern,text,re.I)
  if not m:raise ValueError('Date evidence no longer matches; review source before publishing')
  return m
-MONTHS={x.lower():i+1 for i,x in enumerate(['January','February','March','April','May','June','July','August','September','October','November','December'])}
 def dt(y,m,d):return datetime(int(y),int(m),int(d)).date().isoformat()
 def extract(source,raw):
  text=re.sub(r'20(\d)\s+(\d)', r'20\1\2', plain(raw));out=[]
- if source['adapter']=='eia-table':
-  rows=re.findall(r'([A-Za-z]+) (202[6-9])\s+(\d{2})/(\d{2})/(\d{4})',text)
-  if not rows:raise ValueError('No release rows found')
-  for mon,y,m,d,year in rows:
-   date=dt(year,m,d)
-   if not '2026-09-01'<=date<='2027-01-31':continue
-   out.append(dict(id=f'eia-steo-{y}-{MONTHS[mon.lower()]:02}',title=f'EIA {int(m)} 月短期能源展望发布',date=date,topics=['能源与电力'],kind='事件',region='美国',summary='美国能源信息署发布月度能源供需展望。',timeNote='日期为官方报告日（美国当地日期）；未提供本期确定发布时间。',evidence=f'{mon} {y} {m}/{d}/{year}'))
- elif source['adapter']=='ras-jsonld':
+ if source['adapter']=='ras-jsonld':
   mapping=source['events']
   for block in re.findall(r'<script[^>]+type="application/ld\+json"[^>]*>(.*?)</script>',raw,re.S):
    items=json.loads(block)
@@ -55,6 +47,20 @@ def extract(source,raw):
  for e in out:
   e.update(sourceId=source['id'],source=source['name'],url=e.get('url',source['url']),status='已确认',real=True,checkedAt=source['checkedAt'],acquisition='automated',sourceHash=source['hash'])
  return out
+
+def exclusion_reason(event):
+ # Apply before publishing any automatically collected or manually added entry.
+ for rule in json.loads((ROOT/'data/exclusions.json').read_text()):
+  if (any(event.get('id','').startswith(p) for p in rule['idPrefixes'])
+      or any(p in event.get('url','').lower() for p in rule['urlContains'])
+      or any(re.search(p,event.get('title',''),re.I) for p in rule['titlePatterns'])):
+   return rule['id']
+ return None
+
+def apply_scope(events,reports):
+ kept=[e for e in events if not exclusion_reason(e)]
+ counts={r['id']:sum(e['sourceId']==r['id'] for e in kept) for r in reports}
+ return kept,[dict(r,count=counts[r['id']]) for r in reports if counts[r['id']]]
 
 def validate(events):
  ids=set()
@@ -88,7 +94,7 @@ def main():
  failed=[r for r in reports if r['status']=='error']
  (ROOT/'data/sync-report.json').write_text(json.dumps(dict(attemptedAt=now,sources=reports,datasetWritten=False),ensure_ascii=False,indent=2)+'\n')
  if failed:sys.exit('Source errors: existing public dataset remains unchanged.')
- events+=manual['events'];reports+=manual['sources'];validate(events)
+ events+=manual['events'];reports+=manual['sources'];events,reports=apply_scope(events,reports);validate(events)
  events.sort(key=lambda e:(e['date'],e.get('time','99:99'),e['id']))
  result=dict(updatedAt=now,coverageStart=min(e['date'] for e in events),coverageEnd=max(e.get('endDate',e['date']) for e in events),updateMode='发布时采集；部分来源人工核对，尚未启用定时更新',sources=reports,events=events)
  out=Path(args.output);temp=out.with_suffix('.tmp');temp.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');temp.replace(out)
