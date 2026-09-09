@@ -20,7 +20,7 @@
         "id": "taros-2026",
         "title": "TAROS 2026 自主机器人系统会议",
         "topics": [
-          "人形机器人"
+          "机器人与具身智能"
         ],
         "region": "英国",
         "summary": "自主机器人研究与应用会议，涵盖机器人感知、控制与学习。",
@@ -30,7 +30,7 @@
         "id": "icdl-2026",
         "title": "IEEE ICDL 2026 发展与学习会议",
         "topics": [
-          "人形机器人",
+          "机器人与具身智能",
           "AI与算力"
         ],
         "region": "日本",
@@ -41,7 +41,7 @@
         "id": "iros-2026",
         "title": "IEEE/RSJ IROS 2026 智能机器人与系统会议",
         "topics": [
-          "人形机器人",
+          "机器人与具身智能",
           "AI与算力"
         ],
         "region": "美国",
@@ -61,7 +61,7 @@
         "id": "humanoids-2026",
         "title": "IEEE Humanoids 2026 人形机器人大会",
         "topics": [
-          "人形机器人"
+          "机器人与具身智能"
         ],
         "region": "美国",
         "summary": "在加州圣克拉拉举行，聚焦人形机器人研究与技术。",
@@ -86,7 +86,7 @@
         "id": "corl-2026",
         "title": "CoRL 2026 机器人学习大会",
         "topics": [
-          "人形机器人",
+          "机器人与具身智能",
           "AI与算力"
         ],
         "region": "美国",
@@ -267,7 +267,7 @@
         "id": "miit-deadline",
         "title": "国家人形机器人产业标准体系建设指南征求意见截止",
         "topics": [
-          "人形机器人",
+          "机器人与具身智能",
           "政策与监管"
         ],
         "region": "中国",
@@ -340,6 +340,737 @@
         },
         "pattern": "(?P<d>17) Sep (?P<y>2026) 14:00",
         "url": "https://www.iea.org/events/improving-the-quality-of-energy-prices-data-webinar"
+      }
+    ]
+  },
+  {
+    "id": "ras-oct",
+    "cacheKey": "ras-oct",
+    "name": "IEEE RAS 10 月日历",
+    "url": "https://www.ieee-ras.org/events/month/2026-10/",
+    "adapter": "ras-jsonld",
+    "events": {
+      "ICAIRS": {
+        "id": "icairs-2026",
+        "title": "ICAIRS 人工智能与机器人系统会议",
+        "topics": [
+          "机器人与具身智能",
+          "AI与算力"
+        ],
+        "region": "中国",
+        "summary": "在天津举行，聚焦 AI 与机器人系统。",
+        "kind": "事件"
+      }
+    }
+  },
+  {
+    "id": "ras-nov",
+    "cacheKey": "ras-nov",
+    "name": "IEEE RAS 11 月日历",
+    "url": "https://www.ieee-ras.org/events/month/2026-11/",
+    "adapter": "ras-jsonld",
+    "events": {
+      "SSRR": {
+        "id": "ssrr-2026",
+        "title": "IEEE SSRR 安全与救援机器人会议",
+        "topics": [
+          "机器人与具身智能"
+        ],
+        "region": "韩国",
+        "summary": "在仁川举行，关注救援与安全机器人。",
+        "kind": "事件"
+      },
+      "iSpaRo": {
+        "id": "isparo-2026",
+        "title": "iSpaRo 空间机器人大会",
+        "topics": [
+          "商业航天",
+          "机器人与具身智能"
+        ],
+        "region": "德国",
+        "summary": "在科隆举行，聚焦空间机器人。",
+        "kind": "事件"
+      },
+      "ICRCV": {
+        "id": "icrcv-2026",
+        "title": "ICRCV 机器人与计算机视觉会议",
+        "topics": [
+          "机器人与具身智能",
+          "AI与算力"
+        ],
+        "region": "中国",
+        "summary": "在江苏举行，聚焦机器人视觉。",
+        "kind": "事件"
+      },
+      "ROBOT": {
+        "id": "robot-2026",
+        "title": "ROBOT 伊比利亚机器人大会",
+        "topics": [
+          "机器人与具身智能"
+        ],
+        "region": "西班牙",
+        "summary": "在巴塞罗那举行，交流机器人研究与应用。",
+        "kind": "事件"
+      }
+    }
+  },
+  {
+    "id": "ras-dec",
+    "cacheKey": "ras-dec",
+    "name": "IEEE RAS 12 月日历",
+    "url": "https://www.ieee-ras.org/events/month/2026-12/",
+    "adapter": "ras-jsonld",
+    "events": {
+      "ISR/SIAS": {
+        "id": "isrsias-2026",
+        "title": "ISR/SIAS 机器人智能与工业自动化安全会议",
+        "topics": [
+          "机器人与具身智能"
+        ],
+        "region": "日本",
+        "summary": "在大阪举行，关注机器人与自动化系统安全。",
+        "kind": "事件"
+      },
+      "ROBIO": {
+        "id": "robio-2026",
+        "title": "IEEE ROBIO 机器人与仿生学大会",
+        "topics": [
+          "机器人与具身智能"
+        ],
+        "region": "中国",
+        "summary": "在腾冲举行，交流机器人与仿生技术。",
+        "kind": "事件"
+      }
+    }
+  },
+  {
+    "id": "neurips",
+    "cacheKey": "neurips",
+    "name": "NeurIPS 主办方",
+    "url": "https://nips.cc/Conferences/2026",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "neurips-2026",
+        "title": "NeurIPS 2026 悉尼主会",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "澳大利亚",
+        "summary": "神经信息处理系统大会悉尼主会及研讨会。",
+        "kind": "事件",
+        "pattern": "Sydney \\(Main\\) Dec (?P<d>\\d+) - (?P<ed>\\d+)",
+        "dateDefaults": {
+          "y": 2026,
+          "m": 12
+        },
+        "requires": [
+          "NeurIPS 2026"
+        ],
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "emnlp",
+    "cacheKey": "emnlp",
+    "name": "ACL SIGDAT / EMNLP",
+    "url": "https://2026.emnlp.org/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "emnlp-2026",
+        "title": "EMNLP 2026 自然语言处理大会",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "匈牙利",
+        "summary": "在布达佩斯举行，涵盖主会、教程与研讨会。",
+        "kind": "事件",
+        "pattern": "October (?P<d>\\d+)th to October (?P<ed>\\d+)th\\s*,\\s*(?P<y>2026)",
+        "dateDefaults": {
+          "m": 10
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "ash",
+    "cacheKey": "ash",
+    "name": "美国血液学会 ASH",
+    "url": "https://www.hematology.org/meetings/annual-meeting",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "ash-2026",
+        "title": "ASH 2026 血液学年会",
+        "topics": [
+          "创新药与医疗"
+        ],
+        "region": "美国",
+        "summary": "在新奥尔良及线上举行。",
+        "kind": "事件",
+        "pattern": "December (?P<d>\\d+)[–-](?P<ed>\\d+), (?P<y>2026)",
+        "dateDefaults": {
+          "m": 12
+        },
+        "allDay": true
+      },
+      {
+        "id": "ash-abstracts-2026",
+        "title": "ASH 常规研究摘要公开",
+        "topics": [
+          "创新药与医疗"
+        ],
+        "region": "美国",
+        "summary": "血液学年会常规研究摘要上线。",
+        "kind": "事件",
+        "pattern": "November (?P<d>4), (?P<y>2026), at 9:00 a.m. Eastern time Abstracts Available Online",
+        "dateDefaults": {
+          "m": 11
+        },
+        "time": "22:00",
+        "timeNote": "美东标准时间 11 月 4 日 09:00，对应北京时间 22:00。"
+      },
+      {
+        "id": "ash-lba-2026",
+        "title": "ASH 最新突破研究摘要公开",
+        "topics": [
+          "创新药与医疗"
+        ],
+        "region": "美国",
+        "summary": "年会 Late-Breaking Abstracts 公开。",
+        "kind": "事件",
+        "pattern": "December (?P<d>7), (?P<y>2026) Late-Breaking Abstracts Available Online",
+        "dateDefaults": {
+          "m": 12
+        },
+        "timeNote": "官方列示公开日期，本站未收录具体时刻。"
+      }
+    ]
+  },
+  {
+    "id": "sitc",
+    "cacheKey": "sitc",
+    "name": "肿瘤免疫治疗学会 SITC",
+    "url": "https://www.sitcancer.org/2026/home",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "sitc-2026",
+        "title": "SITC 2026 肿瘤免疫治疗年会",
+        "topics": [
+          "创新药与医疗"
+        ],
+        "region": "美国",
+        "summary": "在凤凰城举行，涵盖年会与会前项目。",
+        "kind": "事件",
+        "pattern": "Nov\\. (?P<d>4)[–-](?P<ed>8), (?P<y>2026)",
+        "dateDefaults": {
+          "m": 11
+        },
+        "allDay": true
+      },
+      {
+        "id": "sitc-abstracts-2026",
+        "title": "SITC 常规研究完整摘要公开",
+        "topics": [
+          "创新药与医疗"
+        ],
+        "region": "美国",
+        "summary": "常规及青年研究者摘要解除禁发并公开全文。",
+        "kind": "事件",
+        "pattern": "Nov\\. (?P<d>3), (?P<y>2026) Embargo Lifted",
+        "dateDefaults": {
+          "m": 11
+        },
+        "requires": [
+          "Public at 9 a.m. ET"
+        ],
+        "time": "22:00",
+        "timeNote": "美东标准时间 11 月 3 日 09:00，对应北京时间 22:00。"
+      }
+    ]
+  },
+  {
+    "id": "fda-ped",
+    "cacheKey": "fda-ped",
+    "name": "FDA 儿科咨询委员会",
+    "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/pediatric-advisory-committee-meeting-announcement-09162026",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "fda-ped-2026",
+        "title": "FDA 儿科咨询委员会会议",
+        "topics": [
+          "创新药与医疗",
+          "政策与监管"
+        ],
+        "region": "美国",
+        "summary": "讨论上市后儿科安全监测事项。",
+        "kind": "事件",
+        "pattern": "Date: September (?P<d>16), (?P<y>2026) Time: 10:00",
+        "dateDefaults": {
+          "m": 9
+        },
+        "time": "22:00",
+        "timeNote": "美东夏令时 10:00，对应北京时间 22:00。"
+      }
+    ]
+  },
+  {
+    "id": "fda-gen",
+    "cacheKey": "fda-gen",
+    "name": "FDA 分子与临床遗传学专家组",
+    "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/september-23-2026-molecular-and-clinical-genetics-panel-medical-devices-advisory-committee-meeting",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "fda-gen-2026",
+        "title": "FDA 分子与临床遗传学专家组会议",
+        "topics": [
+          "创新药与医疗",
+          "政策与监管"
+        ],
+        "region": "美国",
+        "summary": "医疗器械咨询委员会分子与临床遗传学专家组会议。",
+        "kind": "事件",
+        "pattern": "Date: September (?P<d>23), (?P<y>2026) Time: 9:00",
+        "dateDefaults": {
+          "m": 9
+        },
+        "time": "21:00",
+        "timeNote": "美东夏令时 09:00，对应北京时间 21:00。"
+      }
+    ]
+  },
+  {
+    "id": "windchina",
+    "cacheKey": "windchina",
+    "name": "北京国际风能大会主办方",
+    "url": "https://www.chinawind.org.cn/index_en",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "windchina-2026",
+        "title": "CWP 2026 北京国际风能大会暨展览会",
+        "topics": [
+          "能源与电力"
+        ],
+        "region": "中国",
+        "summary": "在北京顺义举行，展示风电技术与设备。",
+        "kind": "事件",
+        "pattern": "CWP (?P<y>2026) will take place from October (?P<d>14) to (?P<ed>16)",
+        "dateDefaults": {
+          "m": 10
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "replus",
+    "cacheKey": "replus",
+    "name": "RE+ 主办方",
+    "url": "https://www.re-plus.com/attend/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "replus-2026",
+        "title": "RE+ 2026 清洁能源大会",
+        "topics": [
+          "能源与电力"
+        ],
+        "region": "美国",
+        "summary": "在拉斯维加斯举行，16 日教育活动开始，17 日展区开放。",
+        "kind": "事件",
+        "pattern": "November (?P<d>16)\\s*[–-]\\s*(?P<ed>19), (?P<y>2026)",
+        "dateDefaults": {
+          "m": 11
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "windjapan",
+    "cacheKey": "windjapan",
+    "name": "RX Japan / WIND EXPO",
+    "url": "https://www.wsew.jp/hub/ja-jp/about/wd.html",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "windjapan-2026",
+        "title": "WIND EXPO 日本秋季风电展",
+        "topics": [
+          "能源与电力"
+        ],
+        "region": "日本",
+        "summary": "在幕张展览馆举行，聚焦风电产业。",
+        "kind": "事件",
+        "pattern": "(?P<y>2026)年(?P<m>9)月(?P<d>9)日（水）～(?P<ed>11)日",
+        "dateDefaults": {},
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "energyeurope",
+    "cacheKey": "energyeurope",
+    "name": "Battery & Energy Storage Tech Europe",
+    "url": "https://www.batterytechexpoeurope.com/buy-your-ticket/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "energyeurope-2026",
+        "title": "欧洲电池与储能技术展",
+        "topics": [
+          "智能汽车与电池",
+          "能源与电力"
+        ],
+        "region": "西班牙",
+        "summary": "在巴塞罗那举行，涵盖电池与储能技术。",
+        "kind": "事件",
+        "pattern": "(?P<d>8)-(?P<ed>9) September (?P<y>2026)",
+        "dateDefaults": {
+          "m": 9
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "batteryshow",
+    "cacheKey": "batteryshow",
+    "name": "The Battery Show 主办方",
+    "url": "https://www.thebatteryshow.com/attend/why-attend/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "batteryshow-2026",
+        "title": "北美电池与电动汽车技术展",
+        "topics": [
+          "智能汽车与电池"
+        ],
+        "region": "美国",
+        "summary": "在底特律举行，含会前研讨及展览。",
+        "kind": "事件",
+        "pattern": "OCTOBER (?P<d>12)-(?P<ed>15), (?P<y>2026)",
+        "dateDefaults": {
+          "m": 10
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "paris",
+    "cacheKey": "paris",
+    "name": "巴黎车展主办方",
+    "url": "https://mondial.paris/en/practical-info",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "paris-2026",
+        "title": "2026 巴黎国际车展",
+        "topics": [
+          "智能汽车与电池"
+        ],
+        "region": "法国",
+        "summary": "12 日为媒体日，13–18 日向公众开放。",
+        "kind": "事件",
+        "pattern": "October (?P<d>12)[–-](?P<ed>18), (?P<y>2026)",
+        "dateDefaults": {
+          "m": 10
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "guangzhou",
+    "cacheKey": "guangzhou",
+    "name": "广州国际车展主办方",
+    "url": "https://www.autoguangzhou.org.cn/index.html",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "guangzhou-2026",
+        "title": "2026 广州国际汽车展览会",
+        "topics": [
+          "智能汽车与电池"
+        ],
+        "region": "中国",
+        "summary": "在广交会展馆举行，27 日为媒体日。",
+        "kind": "事件",
+        "pattern": "(?P<y>2026)\\.(?P<m>11)\\.(?P<d>27)-(?P<em>12)\\.(?P<ed>6)\\(整车\\)",
+        "dateDefaults": {},
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "eliv",
+    "cacheKey": "eliv",
+    "name": "德国工程师协会 VDI",
+    "url": "https://www.vdiconference.com/eliv/program/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "eliv-2026",
+        "title": "ELIV 汽车电子大会",
+        "topics": [
+          "智能汽车与电池",
+          "AI与算力"
+        ],
+        "region": "德国",
+        "summary": "在巴登巴登举行，涵盖汽车 AI、辅助驾驶与软件定义汽车。",
+        "kind": "事件",
+        "pattern": "October (?P<d>14) - (?P<ed>15), (?P<y>2026)",
+        "dateDefaults": {
+          "m": 10
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "iac",
+    "cacheKey": "iac",
+    "name": "国际宇航大会主办方",
+    "url": "https://iac2026.org/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "iac-2026",
+        "title": "IAC 2026 国际宇航大会",
+        "topics": [
+          "商业航天"
+        ],
+        "region": "土耳其",
+        "summary": "在安塔利亚举行，交流航天科技与商业合作。",
+        "kind": "事件",
+        "pattern": "(?P<d>5)-(?P<ed>9) OCTOBER (?P<y>2026)",
+        "dateDefaults": {
+          "m": 10
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "spacetech",
+    "cacheKey": "spacetech",
+    "name": "Space Tech Expo Europe 主办方",
+    "url": "https://www.spacetechexpo-europe.com/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "spacetech-2026",
+        "title": "欧洲航天技术博览会",
+        "topics": [
+          "商业航天"
+        ],
+        "region": "德国",
+        "summary": "在不来梅举行，面向航天产业供应链。",
+        "kind": "事件",
+        "pattern": "(?P<d>17)\\s*[–-]\\s*(?P<ed>19) November (?P<y>2026)",
+        "dateDefaults": {
+          "m": 11
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "wsbw",
+    "cacheKey": "wsbw",
+    "name": "Novaspace / WSBW",
+    "url": "https://wsbw.com/about/about-wsbw/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "wsbw-2026",
+        "title": "世界航天商业周 WSBW",
+        "topics": [
+          "商业航天"
+        ],
+        "region": "法国",
+        "summary": "在巴黎举行，议程涵盖卫星融资与商业航天。",
+        "kind": "事件",
+        "pattern": "SEPTEMBER (?P<d>14)-(?P<ed>17), (?P<y>2026)",
+        "dateDefaults": {
+          "m": 9
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "nasaexpo",
+    "cacheKey": "nasaexpo",
+    "name": "美国国家航空航天局 NASA",
+    "url": "https://www.nasa.gov/news-release/nasa-announces-max-power-americas-newest-aerospace-expo-airshow/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "nasaexpo-2026",
+        "title": "NASA MAX POWER 航空航天技术展",
+        "topics": [
+          "商业航天"
+        ],
+        "region": "美国",
+        "summary": "在肯尼迪航天中心周边举行，展示航空航天与自主系统技术。",
+        "kind": "事件",
+        "pattern": "Nov\\. (?P<d>7) and Nov\\. (?P<ed>8)",
+        "dateDefaults": {
+          "y": 2026,
+          "m": 11
+        },
+        "requires": [
+          "Aug 14, 2026",
+          "MAX POWER"
+        ],
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "q2b",
+    "cacheKey": "q2b",
+    "name": "QC Ware / Q2B",
+    "url": "https://q2b.qcware.com/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "q2b-copenhagen-2026",
+        "title": "Q2B 哥本哈根量子科技大会",
+        "topics": [
+          "量子科技"
+        ],
+        "region": "丹麦",
+        "summary": "交流量子技术及其产业应用。",
+        "kind": "事件",
+        "pattern": "September (?P<d>9)-(?P<ed>10), (?P<y>2026) Q2B Copenhagen",
+        "dateDefaults": {
+          "m": 9
+        },
+        "allDay": true
+      },
+      {
+        "id": "q2b-chicago-2026",
+        "title": "Q2B 芝加哥量子科技大会",
+        "topics": [
+          "量子科技"
+        ],
+        "region": "美国",
+        "summary": "在芝加哥举行，交流量子计算商业应用。",
+        "kind": "事件",
+        "pattern": "December (?P<d>8)-9-(?P<ed>10) (?P<y>2026) Q2B Chicago",
+        "dateDefaults": {
+          "m": 12
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "qweek",
+    "cacheKey": "qweek",
+    "name": "IEEE Quantum Week 主办方",
+    "url": "https://qce.quantum.ieee.org/2026/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "qweek-2026",
+        "title": "IEEE Quantum Week 量子计算与工程大会",
+        "topics": [
+          "量子科技"
+        ],
+        "region": "加拿大",
+        "summary": "在多伦多举行，涵盖量子计算与工程技术。",
+        "kind": "事件",
+        "pattern": "(?P<d>13) - (?P<ed>18) September (?P<y>2026)",
+        "dateDefaults": {
+          "m": 9
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "cern",
+    "cacheKey": "cern",
+    "name": "欧洲核子研究中心 CERN",
+    "url": "https://quantum.cern/events/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "cern-2026",
+        "title": "QT4HEP 量子技术与高能物理大会",
+        "topics": [
+          "量子科技"
+        ],
+        "region": "瑞士",
+        "summary": "在 CERN 举行，讨论量子技术在高能物理中的应用。",
+        "kind": "事件",
+        "pattern": "(?P<d>23)[–-](?P<ed>27) November (?P<y>2026)",
+        "dateDefaults": {
+          "m": 11
+        },
+        "allDay": true
+      }
+    ]
+  },
+  {
+    "id": "eqtc",
+    "cacheKey": "eqtc",
+    "name": "EQTC 主办方",
+    "url": "https://www.eqtc2026.eu/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "eqtc-2026",
+        "title": "欧洲量子技术大会 EQTC",
+        "topics": [
+          "量子科技"
+        ],
+        "region": "爱尔兰",
+        "summary": "在都柏林举行，交流量子技术研究、产业与政策。",
+        "kind": "事件",
+        "pattern": "(?P<d>30) November - (?P<ed>03) December (?P<y>2026)",
+        "dateDefaults": {
+          "m": 11,
+          "em": 12
+        },
+        "allDay": true,
+        "sourceNote": "采用主办方当前公布的 11 月 30 日至 12 月 3 日。"
+      }
+    ]
+  },
+  {
+    "id": "cra",
+    "cacheKey": "cra",
+    "name": "欧盟委员会",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "cra-2026",
+        "title": "欧盟 CRA 漏洞与严重安全事件报告义务开始适用",
+        "topics": [
+          "网络安全",
+          "政策与监管"
+        ],
+        "region": "欧盟",
+        "summary": "数字产品制造商的相关漏洞及严重安全事件报告义务开始适用。",
+        "kind": "政策",
+        "pattern": "As of (?P<d>11) September (?P<y>2026)",
+        "dateDefaults": {
+          "m": 9
+        },
+        "timeNote": "适用日期来自欧盟委员会；与 2027 年主体义务全面适用日期区分。"
       }
     ]
   }

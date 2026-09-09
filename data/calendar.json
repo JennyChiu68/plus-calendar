@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-09T03:05:28+00:00",
+  "updatedAt": "2026-09-09T04:01:31+00:00",
   "coverageStart": "2026-09-07",
-  "coverageEnd": "2027-01-12",
+  "coverageEnd": "2027-01-08",
   "updateMode": "发布时采集；部分来源人工核对，尚未启用定时更新",
   "sources": [
     {
@@ -9,110 +9,370 @@
       "name": "IEEE 机器人与自动化学会",
       "url": "https://www.ieee-ras.org/events/month/2026-09/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "count": 4,
       "status": "ok",
-      "hash": "519cc50dc44cc7ebc2dd81554e1d5452963c364b59bf0cde84cd82133874e1b6"
+      "hash": "65c12ee503a4ceb44e6a5b7f03117a37e4a1ef8e789796aa3282d5490d71d97b"
     },
     {
       "id": "humanoids",
       "name": "IEEE Humanoids 主办方",
       "url": "https://2026.ieee-humanoids.org/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:00+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "4066e53107a16dc7ccb164ff05eab274292a3e41c38fcdfc57bb635a49df7dc8"
+      "hash": "0f6092d9e6eb7d22ac358e0224a90f8728242aebd475d9572ba2976a4df5e9c0"
     },
     {
       "id": "corl",
       "name": "CoRL 主办方",
       "url": "https://2026.corl.org/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "fe8d5f4d4ebc6b6fe6beb5d62b21332e736de2696290f041342d27658adfb189"
+      "hash": "e11166370e58ba79f7bf9c389a2bf74a0d2a2cd95d732e8257adcd4dc6c74381"
     },
     {
       "id": "huawei",
       "name": "华为活动官网",
       "url": "https://www.huawei.com/cn/events/huaweiconnect",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:56:59+00:00",
       "count": 2,
       "status": "ok",
-      "hash": "bbc379ce5a8161b58b7a8d86f4410aaea23866611161d3ae8d428f51c228a33f"
+      "hash": "d095799abbee9b74d40be1470e573adb309382f7ace2ce2782c0c29680f7ab4f"
     },
     {
       "id": "apsara",
       "name": "阿里云云栖大会官网",
       "url": "https://www.alibabacloud.com/en/apsara-conference/2026-about",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:00+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "ee905115c0abae2302cd5572657ecd3154480c81858fe9b940edc4084c67fc25"
+      "hash": "4e7f530280d8a3c3de506671393ba18faebb1b0ddd2812b0f90fd44e3c064660"
     },
     {
       "id": "nvidia",
       "name": "NVIDIA GTC 官网",
       "url": "https://www.nvidia.com/gtc/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "count": 2,
       "status": "ok",
-      "hash": "1f806fc53724a15d78055d1ba5d78ba8caeee47e0c3e49b8bb3a0536ddacaff7"
+      "hash": "84ca14b5f0dbfb7378fcab9ee36c63354a4cd5c9fcdc2298fbb305917a339c54"
     },
     {
       "id": "ms",
       "name": "微软活动官网",
       "url": "https://www.microsoft.com/en-us/events",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:05+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "25da9e464c9207ce35a1427eaf72e79977e7706faf91e3d23a59cc9c9d95221e"
+      "hash": "4136f9cb5864d67e7510b845b09a7b35ce3ad71d33dff3c53d06d57faec9474e"
     },
     {
       "id": "aws",
       "name": "AWS re:Invent 官网",
       "url": "https://aws.amazon.com/events/reinvent/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:03+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "5d8d4c2e694a33b18391f35cc5ed6380e976d6eab9182b4637d55c4caa492077"
+      "hash": "c317e49cc3724e75d57014a3c804122b6a1bb21a1e9c76375d4235e8cc36e34e"
     },
     {
       "id": "miit",
       "name": "工业和信息化部",
       "url": "https://wap.miit.gov.cn/gzcy/yjzj/art/2026/art_cb9cca921b2946c595d897b14bf520a6.html",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:56:58+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "622494875c9fd8eb1904c136181cfe37a798d90e04ca160c9ed2c6d3656e5bf7"
+      "hash": "b25f70697019d4a34dce23c63dbfb7bbcebe029d5c6a2ecf4ad83c3f5ac8888f"
     },
     {
       "id": "miit-computer",
       "name": "工业和信息化部",
       "url": "https://wap.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_e87f52b06edd430abb90fa6e35670f93.html",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:56:58+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "8c3c08b5253f5e9adccedc4168c4e9a39e65a1a08df85d2927bc2c5508ec9424"
+      "hash": "6ada8ba565da2370db1900bdd4d765d09b59a7f9d94819903dfc1efdfd4ccfa2"
     },
     {
       "id": "iea",
       "name": "国际能源署 IEA",
       "url": "https://www.iea.org/events",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:05+00:00",
       "count": 2,
       "status": "ok",
       "hash": "460fd7e030944787fed83b5320c7fd2a88fd5bd76830e817f272fe5b9bfc6c01"
+    },
+    {
+      "id": "ras-oct",
+      "name": "IEEE RAS 10 月日历",
+      "url": "https://www.ieee-ras.org/events/month/2026-10/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "0f50cc0c7ad234eaa4d4aa7e74da7c0010e4eb6cc357aaabe7bd1b504094e223"
+    },
+    {
+      "id": "ras-nov",
+      "name": "IEEE RAS 11 月日历",
+      "url": "https://www.ieee-ras.org/events/month/2026-11/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:30+00:00",
+      "count": 4,
+      "status": "ok",
+      "hash": "73cd73079ac519023d0c510f608d2d751aa474a57b5234a8bbef710cb0e8802c"
+    },
+    {
+      "id": "ras-dec",
+      "name": "IEEE RAS 12 月日历",
+      "url": "https://www.ieee-ras.org/events/month/2026-12/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "count": 2,
+      "status": "ok",
+      "hash": "7b21b7d6e7821cf459eb3762b90cdff86ce7818c02e5b36bfef485114b9d2de0"
+    },
+    {
+      "id": "neurips",
+      "name": "NeurIPS 主办方",
+      "url": "https://nips.cc/Conferences/2026",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:32+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "9fdb5ceee7f44d083a62b3f568ce4bfa739548c239d094ef2d6dcf742ee7a01f"
+    },
+    {
+      "id": "emnlp",
+      "name": "ACL SIGDAT / EMNLP",
+      "url": "https://2026.emnlp.org/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:33+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "870d36e2ab39acac9ff95504f77013bc5c6610858ce3d2f477912f006c2d5887"
+    },
+    {
+      "id": "ash",
+      "name": "美国血液学会 ASH",
+      "url": "https://www.hematology.org/meetings/annual-meeting",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "count": 3,
+      "status": "ok",
+      "hash": "d9ec35910e71ef10e5b79fcff2f9e7bdd59f908e40dd1c0cff76d57a462b993d"
+    },
+    {
+      "id": "sitc",
+      "name": "肿瘤免疫治疗学会 SITC",
+      "url": "https://www.sitcancer.org/2026/home",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:29+00:00",
+      "count": 2,
+      "status": "ok",
+      "hash": "f7160b510417ab53d35f5ac053af5408d6299ef3a8aa6fa488c7c2154d077649"
+    },
+    {
+      "id": "fda-ped",
+      "name": "FDA 儿科咨询委员会",
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/pediatric-advisory-committee-meeting-announcement-09162026",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:50+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "e09b74bd59b238727b62898941390b9d5c9aa8219f244cfddf76312b056fec9b"
+    },
+    {
+      "id": "fda-gen",
+      "name": "FDA 分子与临床遗传学专家组",
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/september-23-2026-molecular-and-clinical-genetics-panel-medical-devices-advisory-committee-meeting",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:51+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "d09fa6de1e236f9f85f0821c0c5cfae02eda7bd7758bd0746667c6fd7a645795"
+    },
+    {
+      "id": "windchina",
+      "name": "北京国际风能大会主办方",
+      "url": "https://www.chinawind.org.cn/index_en",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:33+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "d1670714ba41d74bab8d454517e48c5d705562f2c3e57f1f23a687fd4c472eb9"
+    },
+    {
+      "id": "replus",
+      "name": "RE+ 主办方",
+      "url": "https://www.re-plus.com/attend/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "94c1f96168ae0d7452fa0e500b4c7050d7114d505f23fad922bd3fe178f0c7e8"
+    },
+    {
+      "id": "windjapan",
+      "name": "RX Japan / WIND EXPO",
+      "url": "https://www.wsew.jp/hub/ja-jp/about/wd.html",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:37+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "374ae862c22c8d3f53b0d90928a7f8ac8095b04323e9035d29fc71b734424e29"
+    },
+    {
+      "id": "energyeurope",
+      "name": "Battery & Energy Storage Tech Europe",
+      "url": "https://www.batterytechexpoeurope.com/buy-your-ticket/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "21aa4f1fda3d565ea6f268d776c395bea0659baaae493ccf7a6af6465b8038fd"
+    },
+    {
+      "id": "batteryshow",
+      "name": "The Battery Show 主办方",
+      "url": "https://www.thebatteryshow.com/attend/why-attend/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:34+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "cd9c5980bce51e704e9e3d0fa20acc3692673deeecb0e95e41ba69a0206bc18a"
+    },
+    {
+      "id": "paris",
+      "name": "巴黎车展主办方",
+      "url": "https://mondial.paris/en/practical-info",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:47+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "af89b23a2ab1618ee746c066c06b405c1e638a1ac2334ccbd66750234a2b1b02"
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州国际车展主办方",
+      "url": "https://www.autoguangzhou.org.cn/index.html",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:44+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "e8e285351060f85968eb9a4dcb0876144e7d5a53263cb7e27db5a26572ae1b2c"
+    },
+    {
+      "id": "eliv",
+      "name": "德国工程师协会 VDI",
+      "url": "https://www.vdiconference.com/eliv/program/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:48+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "78e984fc1da0379a72b825fd9ed6a64f8b0779b1ab21ab9d1f9464664e473b82"
+    },
+    {
+      "id": "iac",
+      "name": "国际宇航大会主办方",
+      "url": "https://iac2026.org/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:31+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "e38bcf66068e8b195d53893bbb96aec58c35770a820c7d12f087892e27430f14"
+    },
+    {
+      "id": "spacetech",
+      "name": "Space Tech Expo Europe 主办方",
+      "url": "https://www.spacetechexpo-europe.com/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:46+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "7f81b2a4cbd085dfac6ce299fd8cfea0733adb5c56a19ad0f71c11b80b80c354"
+    },
+    {
+      "id": "wsbw",
+      "name": "Novaspace / WSBW",
+      "url": "https://wsbw.com/about/about-wsbw/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:49+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "708c6036efad297201736468f7c521b6df46fb29145040a34016af5bec0f310e"
+    },
+    {
+      "id": "nasaexpo",
+      "name": "美国国家航空航天局 NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-max-power-americas-newest-aerospace-expo-airshow/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "491ad9c021a5a6c08c070b627d28aea15bfd9717bc9651bcc4032b63f8b8c505"
+    },
+    {
+      "id": "q2b",
+      "name": "QC Ware / Q2B",
+      "url": "https://q2b.qcware.com/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:49+00:00",
+      "count": 2,
+      "status": "ok",
+      "hash": "2fb8f132addf4d158db0a00d06f5add9bb320a7e60190d3f35be9c7e49a7d6ac"
+    },
+    {
+      "id": "qweek",
+      "name": "IEEE Quantum Week 主办方",
+      "url": "https://qce.quantum.ieee.org/2026/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:48+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "cdcac7642677303b9ae9d83487b5efc22747f0decf2f28adf20ba888ce124330"
+    },
+    {
+      "id": "cern",
+      "name": "欧洲核子研究中心 CERN",
+      "url": "https://quantum.cern/events/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:52+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "a86358114da48cd4fba886d05e2f53688141f4450b2e70f019ff863d457187c4"
+    },
+    {
+      "id": "eqtc",
+      "name": "EQTC 主办方",
+      "url": "https://www.eqtc2026.eu/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:51+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "0be8509af7f36085612fc5e07368c950e2d722ea1944ba1abc92c319c9070d39"
+    },
+    {
+      "id": "cra",
+      "name": "欧盟委员会",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:52:52+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "2f90ab655dd54beba73df3d3624cc094faffaad0b61ac0799ed0bf69bc921fb1"
     },
     {
       "id": "tsmc",
@@ -143,6 +403,76 @@
       "count": 4,
       "status": "reviewed",
       "note": "官方网页人工核对；程序直接访问受限。"
+    },
+    {
+      "id": "aha",
+      "name": "美国心脏协会 AHA",
+      "url": "https://professional.heart.org/en/meetings/scientific-sessions",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "emove",
+      "name": "eMove360 主办方",
+      "url": "https://www.emove360.com/ready-for-the-next-chapter-emove360-europe-2026-ai-is-driving-the-mobility/",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "semi",
+      "name": "SEMI 官方活动日历",
+      "url": "https://www.semi.org/en/expositions-events/calendar",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 13,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "blackhat-eu",
+      "name": "Black Hat Europe 主办方",
+      "url": "https://blackhat.com/europe/registration.html",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "blackhatmea",
+      "name": "Black Hat MEA 主办方",
+      "url": "https://blackhatmea.com/overview",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "sector",
+      "name": "SecTor 主办方",
+      "url": "https://blackhat.com/sector/",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "rsac",
+      "name": "RSA Conference 官方活动",
+      "url": "https://www.rsaconference.com/en",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 3,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
     }
   ],
   "events": [
@@ -164,15 +494,15 @@
       "source": "IEEE 机器人与自动化学会",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "acquisition": "automated",
-      "sourceHash": "519cc50dc44cc7ebc2dd81554e1d5452963c364b59bf0cde84cd82133874e1b6"
+      "sourceHash": "65c12ee503a4ceb44e6a5b7f03117a37e4a1ef8e789796aa3282d5490d71d97b"
     },
     {
       "id": "taros-2026",
       "title": "TAROS 2026 自主机器人系统会议",
       "topics": [
-        "人形机器人"
+        "机器人与具身智能"
       ],
       "region": "英国",
       "summary": "自主机器人研究与应用会议，涵盖机器人感知、控制与学习。",
@@ -186,14 +516,102 @@
       "source": "IEEE 机器人与自动化学会",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "acquisition": "automated",
-      "sourceHash": "519cc50dc44cc7ebc2dd81554e1d5452963c364b59bf0cde84cd82133874e1b6"
+      "sourceHash": "65c12ee503a4ceb44e6a5b7f03117a37e4a1ef8e789796aa3282d5490d71d97b"
+    },
+    {
+      "id": "energyeurope-2026",
+      "title": "欧洲电池与储能技术展",
+      "topics": [
+        "智能汽车与电池",
+        "能源与电力"
+      ],
+      "region": "西班牙",
+      "summary": "在巴塞罗那举行，涵盖电池与储能技术。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-09-08",
+      "endDate": "2026-09-09",
+      "evidence": "8-9 September 2026",
+      "sourceId": "energyeurope",
+      "source": "Battery & Energy Storage Tech Europe",
+      "url": "https://www.batterytechexpoeurope.com/buy-your-ticket/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "acquisition": "automated",
+      "sourceHash": "21aa4f1fda3d565ea6f268d776c395bea0659baaae493ccf7a6af6465b8038fd"
+    },
+    {
+      "id": "future-computing-2026",
+      "title": "Future of Computing 2026",
+      "topics": [
+        "半导体",
+        "AI与算力"
+      ],
+      "region": "美国",
+      "summary": "计算技术论坛。",
+      "kind": "事件",
+      "date": "2026-09-09",
+      "url": "https://www.semi.org/en/event/future-computing-2026",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-09"
+    },
+    {
+      "id": "q2b-copenhagen-2026",
+      "title": "Q2B 哥本哈根量子科技大会",
+      "topics": [
+        "量子科技"
+      ],
+      "region": "丹麦",
+      "summary": "交流量子技术及其产业应用。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-09-09",
+      "endDate": "2026-09-10",
+      "evidence": "September 9-10, 2026 Q2B Copenhagen",
+      "sourceId": "q2b",
+      "source": "QC Ware / Q2B",
+      "url": "https://q2b.qcware.com/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:49+00:00",
+      "acquisition": "automated",
+      "sourceHash": "2fb8f132addf4d158db0a00d06f5add9bb320a7e60190d3f35be9c7e49a7d6ac"
+    },
+    {
+      "id": "windjapan-2026",
+      "title": "WIND EXPO 日本秋季风电展",
+      "topics": [
+        "能源与电力"
+      ],
+      "region": "日本",
+      "summary": "在幕张展览馆举行，聚焦风电产业。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-09-09",
+      "endDate": "2026-09-11",
+      "evidence": "2026年9月9日（水）～11日",
+      "sourceId": "windjapan",
+      "source": "RX Japan / WIND EXPO",
+      "url": "https://www.wsew.jp/hub/ja-jp/about/wd.html",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:37+00:00",
+      "acquisition": "automated",
+      "sourceHash": "374ae862c22c8d3f53b0d90928a7f8ac8095b04323e9035d29fc71b734424e29"
     },
     {
       "id": "tsmc-2026-08",
       "title": "台积电 8 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -231,7 +649,7 @@
       "source": "国际能源署 IEA",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:05+00:00",
       "acquisition": "automated",
       "sourceHash": "460fd7e030944787fed83b5320c7fd2a88fd5bd76830e817f272fe5b9bfc6c01"
     },
@@ -282,6 +700,70 @@
       "acquisition": "manual"
     },
     {
+      "id": "rsac-leadership-2026",
+      "title": "RSAC 网络安全领导力与人才研讨会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "线上",
+      "summary": "网络安全管理与人才发展。",
+      "kind": "事件",
+      "date": "2026-09-10",
+      "url": "https://www.rsaconference.com/library/virtual%20seminar/hds-24-cyber-leadership-workforce-development",
+      "sourceId": "rsac",
+      "source": "RSA Conference 官方活动",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-10"
+    },
+    {
+      "id": "genai-chip-2026",
+      "title": "生成式 AI 芯片设计与安全研讨会",
+      "topics": [
+        "半导体",
+        "AI与算力",
+        "网络安全"
+      ],
+      "region": "线上",
+      "summary": "芯片设计与安全验证。",
+      "kind": "事件",
+      "date": "2026-09-11",
+      "url": "https://www.semi.org/en/event/esd-alliance-webinar-gen-ai-chip-design-and-security",
+      "time": "00:00",
+      "timeNote": "官方为美西夏令时 9 月 10 日 09:00；北京时间为 9 月 11 日 00:00。",
+      "evidence": "2026-09-10 09:00:00 America/Los_Angeles",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "cra-2026",
+      "title": "欧盟 CRA 漏洞与严重安全事件报告义务开始适用",
+      "topics": [
+        "网络安全",
+        "政策与监管"
+      ],
+      "region": "欧盟",
+      "summary": "数字产品制造商的相关漏洞及严重安全事件报告义务开始适用。",
+      "kind": "政策",
+      "timeNote": "适用日期来自欧盟委员会；与 2027 年主体义务全面适用日期区分。",
+      "date": "2026-09-11",
+      "evidence": "As of 11 September 2026",
+      "sourceId": "cra",
+      "source": "欧盟委员会",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:52+00:00",
+      "acquisition": "automated",
+      "sourceHash": "2f90ab655dd54beba73df3d3624cc094faffaad0b61ac0799ed0bf69bc921fb1"
+    },
+    {
       "id": "miit-computer-deadline",
       "title": "通用计算机性能评测方法等 25 项标准报批公示截止",
       "topics": [
@@ -299,15 +781,59 @@
       "url": "https://wap.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_e87f52b06edd430abb90fa6e35670f93.html",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:56:58+00:00",
       "acquisition": "automated",
-      "sourceHash": "8c3c08b5253f5e9adccedc4168c4e9a39e65a1a08df85d2927bc2c5508ec9424"
+      "sourceHash": "6ada8ba565da2370db1900bdd4d765d09b59a7f9d94819903dfc1efdfd4ccfa2"
+    },
+    {
+      "id": "qweek-2026",
+      "title": "IEEE Quantum Week 量子计算与工程大会",
+      "topics": [
+        "量子科技"
+      ],
+      "region": "加拿大",
+      "summary": "在多伦多举行，涵盖量子计算与工程技术。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-09-13",
+      "endDate": "2026-09-18",
+      "evidence": "13 - 18 September 2026",
+      "sourceId": "qweek",
+      "source": "IEEE Quantum Week 主办方",
+      "url": "https://qce.quantum.ieee.org/2026/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:48+00:00",
+      "acquisition": "automated",
+      "sourceHash": "cdcac7642677303b9ae9d83487b5efc22747f0decf2f28adf20ba888ce124330"
+    },
+    {
+      "id": "wsbw-2026",
+      "title": "世界航天商业周 WSBW",
+      "topics": [
+        "商业航天"
+      ],
+      "region": "法国",
+      "summary": "在巴黎举行，议程涵盖卫星融资与商业航天。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-09-14",
+      "endDate": "2026-09-17",
+      "evidence": "SEPTEMBER 14-17, 2026",
+      "sourceId": "wsbw",
+      "source": "Novaspace / WSBW",
+      "url": "https://wsbw.com/about/about-wsbw/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:49+00:00",
+      "acquisition": "automated",
+      "sourceHash": "708c6036efad297201736468f7c521b6df46fb29145040a34016af5bec0f310e"
     },
     {
       "id": "icdl-2026",
       "title": "IEEE ICDL 2026 发展与学习会议",
       "topics": [
-        "人形机器人",
+        "机器人与具身智能",
         "AI与算力"
       ],
       "region": "日本",
@@ -322,9 +848,9 @@
       "source": "IEEE 机器人与自动化学会",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "acquisition": "automated",
-      "sourceHash": "519cc50dc44cc7ebc2dd81554e1d5452963c364b59bf0cde84cd82133874e1b6"
+      "sourceHash": "65c12ee503a4ceb44e6a5b7f03117a37e4a1ef8e789796aa3282d5490d71d97b"
     },
     {
       "id": "huawei-kunling-2026",
@@ -344,9 +870,72 @@
       "url": "https://www.huawei.com/cn/events/huaweiconnect",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:56:59+00:00",
       "acquisition": "automated",
-      "sourceHash": "bbc379ce5a8161b58b7a8d86f4410aaea23866611161d3ae8d428f51c228a33f"
+      "sourceHash": "d095799abbee9b74d40be1470e573adb309382f7ace2ce2782c0c29680f7ab4f"
+    },
+    {
+      "id": "fda-ped-2026",
+      "title": "FDA 儿科咨询委员会会议",
+      "topics": [
+        "创新药与医疗",
+        "政策与监管"
+      ],
+      "region": "美国",
+      "summary": "讨论上市后儿科安全监测事项。",
+      "kind": "事件",
+      "time": "22:00",
+      "timeNote": "美东夏令时 10:00，对应北京时间 22:00。",
+      "date": "2026-09-16",
+      "evidence": "Date: September 16, 2026 Time: 10:00",
+      "sourceId": "fda-ped",
+      "source": "FDA 儿科咨询委员会",
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/pediatric-advisory-committee-meeting-announcement-09162026",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:50+00:00",
+      "acquisition": "automated",
+      "sourceHash": "e09b74bd59b238727b62898941390b9d5c9aa8219f244cfddf76312b056fec9b"
+    },
+    {
+      "id": "mstc-2026",
+      "title": "MSTC 微机电与传感器技术大会",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "传感器技术交流。",
+      "kind": "事件",
+      "date": "2026-09-16",
+      "url": "https://www.semi.org/en/connect/events/mems-and-sensors-technical-congress-mstc",
+      "endDate": "2026-09-17",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-16 / 2026-09-17"
+    },
+    {
+      "id": "rsac-telecom-2026",
+      "title": "RSAC 电信骨干网隐蔽威胁研讨会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "线上",
+      "summary": "讨论电信基础设施的安全威胁。",
+      "kind": "事件",
+      "date": "2026-09-16",
+      "url": "https://www.rsaconference.com/library/top-rated-session-follow-up/sleeper-cells-in-the-telecom-backbone-covert-ops",
+      "sourceId": "rsac",
+      "source": "RSA Conference 官方活动",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-16"
     },
     {
       "id": "iea-prices-2026",
@@ -366,7 +955,7 @@
       "source": "国际能源署 IEA",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:05+00:00",
       "acquisition": "automated",
       "sourceHash": "460fd7e030944787fed83b5320c7fd2a88fd5bd76830e817f272fe5b9bfc6c01"
     },
@@ -409,9 +998,49 @@
       "url": "https://www.huawei.com/cn/events/huaweiconnect",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:56:59+00:00",
       "acquisition": "automated",
-      "sourceHash": "bbc379ce5a8161b58b7a8d86f4410aaea23866611161d3ae8d428f51c228a33f"
+      "sourceHash": "d095799abbee9b74d40be1470e573adb309382f7ace2ce2782c0c29680f7ab4f"
+    },
+    {
+      "id": "semicon-india-2026",
+      "title": "SEMICON India 半导体展",
+      "topics": [
+        "半导体"
+      ],
+      "region": "印度",
+      "summary": "半导体产业展览。",
+      "kind": "事件",
+      "date": "2026-09-17",
+      "url": "https://www.semiconindia.org/",
+      "endDate": "2026-09-19",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-17 / 2026-09-19"
+    },
+    {
+      "id": "3dpi-2026",
+      "title": "SEMI 北美三维封装与集成标准会议",
+      "topics": [
+        "半导体"
+      ],
+      "region": "线上",
+      "summary": "三维封装标准讨论。",
+      "kind": "事件",
+      "date": "2026-09-22",
+      "url": "https://www.semi.org/en/event/3dpi-north-america-tc-chapter-fall-meeting-2026",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-22"
     },
     {
       "id": "apsara-2026",
@@ -431,15 +1060,58 @@
       "url": "https://www.alibabacloud.com/en/apsara-conference/2026-about",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:00+00:00",
       "acquisition": "automated",
-      "sourceHash": "ee905115c0abae2302cd5572657ecd3154480c81858fe9b940edc4084c67fc25"
+      "sourceHash": "4e7f530280d8a3c3de506671393ba18faebb1b0ddd2812b0f90fd44e3c064660"
+    },
+    {
+      "id": "rsac-frontier-2026",
+      "title": "RSAC 前沿 AI 时代的网络风险研讨会",
+      "topics": [
+        "网络安全",
+        "AI与算力"
+      ],
+      "region": "线上",
+      "summary": "探讨前沿 AI 带来的网络风险。",
+      "kind": "事件",
+      "date": "2026-09-22",
+      "url": "https://www.rsaconference.com/library/webcast/231-rethinking-cyber-risk-in-the-age-of-frontier-ai",
+      "sourceId": "rsac",
+      "source": "RSA Conference 官方活动",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-22"
+    },
+    {
+      "id": "fda-gen-2026",
+      "title": "FDA 分子与临床遗传学专家组会议",
+      "topics": [
+        "创新药与医疗",
+        "政策与监管"
+      ],
+      "region": "美国",
+      "summary": "医疗器械咨询委员会分子与临床遗传学专家组会议。",
+      "kind": "事件",
+      "time": "21:00",
+      "timeNote": "美东夏令时 09:00，对应北京时间 21:00。",
+      "date": "2026-09-23",
+      "evidence": "Date: September 23, 2026 Time: 9:00",
+      "sourceId": "fda-gen",
+      "source": "FDA 分子与临床遗传学专家组",
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/september-23-2026-molecular-and-clinical-genetics-panel-medical-devices-advisory-committee-meeting",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:51+00:00",
+      "acquisition": "automated",
+      "sourceHash": "d09fa6de1e236f9f85f0821c0c5cfae02eda7bd7758bd0746667c6fd7a645795"
     },
     {
       "id": "miit-deadline",
       "title": "国家人形机器人产业标准体系建设指南征求意见截止",
       "topics": [
-        "人形机器人",
+        "机器人与具身智能",
         "政策与监管"
       ],
       "region": "中国",
@@ -453,15 +1125,15 @@
       "url": "https://wap.miit.gov.cn/gzcy/yjzj/art/2026/art_cb9cca921b2946c595d897b14bf520a6.html",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:56:58+00:00",
       "acquisition": "automated",
-      "sourceHash": "622494875c9fd8eb1904c136181cfe37a798d90e04ca160c9ed2c6d3656e5bf7"
+      "sourceHash": "b25f70697019d4a34dce23c63dbfb7bbcebe029d5c6a2ecf4ad83c3f5ac8888f"
     },
     {
       "id": "iros-2026",
       "title": "IEEE/RSJ IROS 2026 智能机器人与系统会议",
       "topics": [
-        "人形机器人",
+        "机器人与具身智能",
         "AI与算力"
       ],
       "region": "美国",
@@ -476,14 +1148,98 @@
       "source": "IEEE 机器人与自动化学会",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "acquisition": "automated",
-      "sourceHash": "519cc50dc44cc7ebc2dd81554e1d5452963c364b59bf0cde84cd82133874e1b6"
+      "sourceHash": "65c12ee503a4ceb44e6a5b7f03117a37e4a1ef8e789796aa3282d5490d71d97b"
+    },
+    {
+      "id": "semi-agents-2026",
+      "title": "AI Agent 半导体设施维护研讨会",
+      "topics": [
+        "半导体",
+        "AI与算力"
+      ],
+      "region": "线上",
+      "summary": "智能设施维护。",
+      "kind": "事件",
+      "date": "2026-09-29",
+      "url": "https://www.semi.org/en/event/scaling-smarter-maintenance-semiconductor-facilities-ai-agents",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-29"
+    },
+    {
+      "id": "printed-electronics-2026",
+      "title": "FEMC 印刷电子与量子器件研讨会",
+      "topics": [
+        "半导体",
+        "量子科技"
+      ],
+      "region": "线上",
+      "summary": "印刷电子技术。",
+      "kind": "事件",
+      "date": "2026-09-30",
+      "url": "https://www.semi.org/en/event/femc31-advancing-printed-electronics-technology-macroelectronics-quantum-devices",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-30"
+    },
+    {
+      "id": "iac-2026",
+      "title": "IAC 2026 国际宇航大会",
+      "topics": [
+        "商业航天"
+      ],
+      "region": "土耳其",
+      "summary": "在安塔利亚举行，交流航天科技与商业合作。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-10-05",
+      "endDate": "2026-10-09",
+      "evidence": "5-9 OCTOBER 2026",
+      "sourceId": "iac",
+      "source": "国际宇航大会主办方",
+      "url": "https://iac2026.org/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:31+00:00",
+      "acquisition": "automated",
+      "sourceHash": "e38bcf66068e8b195d53893bbb96aec58c35770a820c7d12f087892e27430f14"
+    },
+    {
+      "id": "sector-2026",
+      "title": "SecTor 2026 网络安全大会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "加拿大",
+      "summary": "在多伦多举行，6 日为主题峰会，7–8 日为技术大会。",
+      "kind": "事件",
+      "date": "2026-10-06",
+      "endDate": "2026-10-08",
+      "allDay": true,
+      "sourceId": "sector",
+      "source": "SecTor 主办方",
+      "url": "https://blackhat.com/sector/",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-06 / 2026-10-08"
     },
     {
       "id": "tsmc-2026-09",
       "title": "台积电 9 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -502,6 +1258,178 @@
       "real": true,
       "checkedAt": "2026-09-09T03:05:08+00:00",
       "acquisition": "manual"
+    },
+    {
+      "id": "batteryshow-2026",
+      "title": "北美电池与电动汽车技术展",
+      "topics": [
+        "智能汽车与电池"
+      ],
+      "region": "美国",
+      "summary": "在底特律举行，含会前研讨及展览。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-10-12",
+      "endDate": "2026-10-15",
+      "evidence": "OCTOBER 12-15, 2026",
+      "sourceId": "batteryshow",
+      "source": "The Battery Show 主办方",
+      "url": "https://www.thebatteryshow.com/attend/why-attend/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:34+00:00",
+      "acquisition": "automated",
+      "sourceHash": "cd9c5980bce51e704e9e3d0fa20acc3692673deeecb0e95e41ba69a0206bc18a"
+    },
+    {
+      "id": "paris-2026",
+      "title": "2026 巴黎国际车展",
+      "topics": [
+        "智能汽车与电池"
+      ],
+      "region": "法国",
+      "summary": "12 日为媒体日，13–18 日向公众开放。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-10-12",
+      "endDate": "2026-10-18",
+      "evidence": "October 12–18, 2026",
+      "sourceId": "paris",
+      "source": "巴黎车展主办方",
+      "url": "https://mondial.paris/en/practical-info",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:47+00:00",
+      "acquisition": "automated",
+      "sourceHash": "af89b23a2ab1618ee746c066c06b405c1e638a1ac2334ccbd66750234a2b1b02"
+    },
+    {
+      "id": "emove-2026",
+      "title": "eMove360 电动与自动驾驶出行大会",
+      "topics": [
+        "智能汽车与电池",
+        "AI与算力"
+      ],
+      "region": "德国",
+      "summary": "在慕尼黑举行，主题为 AI 驱动出行。",
+      "kind": "事件",
+      "date": "2026-10-13",
+      "endDate": "2026-10-14",
+      "allDay": true,
+      "sourceId": "emove",
+      "source": "eMove360 主办方",
+      "url": "https://www.emove360.com/ready-for-the-next-chapter-emove360-europe-2026-ai-is-driving-the-mobility/",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-13 / 2026-10-14"
+    },
+    {
+      "id": "semicon-west-2026",
+      "title": "SEMICON West 半导体展",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "在旧金山举行。",
+      "kind": "事件",
+      "date": "2026-10-13",
+      "url": "https://www.semiconwest.org/",
+      "endDate": "2026-10-15",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-13 / 2026-10-15"
+    },
+    {
+      "id": "eliv-2026",
+      "title": "ELIV 汽车电子大会",
+      "topics": [
+        "智能汽车与电池",
+        "AI与算力"
+      ],
+      "region": "德国",
+      "summary": "在巴登巴登举行，涵盖汽车 AI、辅助驾驶与软件定义汽车。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-10-14",
+      "endDate": "2026-10-15",
+      "evidence": "October 14 - 15, 2026",
+      "sourceId": "eliv",
+      "source": "德国工程师协会 VDI",
+      "url": "https://www.vdiconference.com/eliv/program/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:48+00:00",
+      "acquisition": "automated",
+      "sourceHash": "78e984fc1da0379a72b825fd9ed6a64f8b0779b1ab21ab9d1f9464664e473b82"
+    },
+    {
+      "id": "powernext-2026",
+      "title": "Power Next 微电网与电网韧性论坛",
+      "topics": [
+        "能源与电力"
+      ],
+      "region": "中国台湾",
+      "summary": "微电网技术交流。",
+      "kind": "事件",
+      "date": "2026-10-14",
+      "url": "https://www.semi.org/zh/node/173961",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-14"
+    },
+    {
+      "id": "testvision-2026",
+      "title": "Test Vision 半导体测试技术论坛",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "芯片测试技术交流。",
+      "kind": "事件",
+      "date": "2026-10-14",
+      "url": "https://www.semi.org/en/connect/events/test-vision-symposium",
+      "endDate": "2026-10-15",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-14 / 2026-10-15"
+    },
+    {
+      "id": "windchina-2026",
+      "title": "CWP 2026 北京国际风能大会暨展览会",
+      "topics": [
+        "能源与电力"
+      ],
+      "region": "中国",
+      "summary": "在北京顺义举行，展示风电技术与设备。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-10-14",
+      "endDate": "2026-10-16",
+      "evidence": "CWP 2026 will take place from October 14 to 16",
+      "sourceId": "windchina",
+      "source": "北京国际风能大会主办方",
+      "url": "https://www.chinawind.org.cn/index_en",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:33+00:00",
+      "acquisition": "automated",
+      "sourceHash": "d1670714ba41d74bab8d454517e48c5d705562f2c3e57f1f23a687fd4c472eb9"
     },
     {
       "id": "ferc-2026-10-15",
@@ -542,15 +1470,258 @@
       "url": "https://www.nvidia.com/gtc/",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "acquisition": "automated",
-      "sourceHash": "1f806fc53724a15d78055d1ba5d78ba8caeee47e0c3e49b8bb3a0536ddacaff7"
+      "sourceHash": "84ca14b5f0dbfb7378fcab9ee36c63354a4cd5c9fcdc2298fbb305917a339c54"
+    },
+    {
+      "id": "icairs-2026",
+      "title": "ICAIRS 人工智能与机器人系统会议",
+      "topics": [
+        "机器人与具身智能",
+        "AI与算力"
+      ],
+      "region": "中国",
+      "summary": "在天津举行，聚焦 AI 与机器人系统。",
+      "kind": "事件",
+      "date": "2026-10-23",
+      "endDate": "2026-10-25",
+      "url": "https://www.ieee-ras.org/event/2026-international-conference-on-artificial-intelligence-and-robotic-systems-icairs-72058/",
+      "allDay": true,
+      "evidence": "2026-10-23 / 2026-10-25",
+      "sourceId": "ras-oct",
+      "source": "IEEE RAS 10 月日历",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "acquisition": "automated",
+      "sourceHash": "0f50cc0c7ad234eaa4d4aa7e74da7c0010e4eb6cc357aaabe7bd1b504094e223"
+    },
+    {
+      "id": "emnlp-2026",
+      "title": "EMNLP 2026 自然语言处理大会",
+      "topics": [
+        "AI与算力"
+      ],
+      "region": "匈牙利",
+      "summary": "在布达佩斯举行，涵盖主会、教程与研讨会。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-10-24",
+      "endDate": "2026-10-29",
+      "evidence": "October 24th to October 29th , 2026",
+      "sourceId": "emnlp",
+      "source": "ACL SIGDAT / EMNLP",
+      "url": "https://2026.emnlp.org/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:33+00:00",
+      "acquisition": "automated",
+      "sourceHash": "870d36e2ab39acac9ff95504f77013bc5c6610858ce3d2f477912f006c2d5887"
+    },
+    {
+      "id": "itpc-2026",
+      "title": "ITPC 国际半导体贸易伙伴大会",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "产业伙伴交流。",
+      "kind": "事件",
+      "date": "2026-11-01",
+      "url": "https://www.semi.org/en/event/international-trade-partners-conference-itpc",
+      "endDate": "2026-11-04",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-11-01 / 2026-11-04"
+    },
+    {
+      "id": "ssrr-2026",
+      "title": "IEEE SSRR 安全与救援机器人会议",
+      "topics": [
+        "机器人与具身智能"
+      ],
+      "region": "韩国",
+      "summary": "在仁川举行，关注救援与安全机器人。",
+      "kind": "事件",
+      "date": "2026-11-02",
+      "endDate": "2026-11-04",
+      "url": "https://www.ieee-ras.org/event/2026-ieee-international-symposium-on-safety-security-rescue-robotics-ssrr-71773/",
+      "allDay": true,
+      "evidence": "2026-11-02 / 2026-11-04",
+      "sourceId": "ras-nov",
+      "source": "IEEE RAS 11 月日历",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:30+00:00",
+      "acquisition": "automated",
+      "sourceHash": "73cd73079ac519023d0c510f608d2d751aa474a57b5234a8bbef710cb0e8802c"
+    },
+    {
+      "id": "sitc-abstracts-2026",
+      "title": "SITC 常规研究完整摘要公开",
+      "topics": [
+        "创新药与医疗"
+      ],
+      "region": "美国",
+      "summary": "常规及青年研究者摘要解除禁发并公开全文。",
+      "kind": "事件",
+      "time": "22:00",
+      "timeNote": "美东标准时间 11 月 3 日 09:00，对应北京时间 22:00。",
+      "date": "2026-11-03",
+      "evidence": "Nov. 3, 2026 Embargo Lifted",
+      "sourceId": "sitc",
+      "source": "肿瘤免疫治疗学会 SITC",
+      "url": "https://www.sitcancer.org/2026/home",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:29+00:00",
+      "acquisition": "automated",
+      "sourceHash": "f7160b510417ab53d35f5ac053af5408d6299ef3a8aa6fa488c7c2154d077649"
+    },
+    {
+      "id": "isparo-2026",
+      "title": "iSpaRo 空间机器人大会",
+      "topics": [
+        "商业航天",
+        "机器人与具身智能"
+      ],
+      "region": "德国",
+      "summary": "在科隆举行，聚焦空间机器人。",
+      "kind": "事件",
+      "date": "2026-11-03",
+      "endDate": "2026-11-06",
+      "url": "https://www.ieee-ras.org/event/2026-international-conference-on-space-robotics-isparo-72011/",
+      "allDay": true,
+      "evidence": "2026-11-03 / 2026-11-06",
+      "sourceId": "ras-nov",
+      "source": "IEEE RAS 11 月日历",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:30+00:00",
+      "acquisition": "automated",
+      "sourceHash": "73cd73079ac519023d0c510f608d2d751aa474a57b5234a8bbef710cb0e8802c"
+    },
+    {
+      "id": "ash-abstracts-2026",
+      "title": "ASH 常规研究摘要公开",
+      "topics": [
+        "创新药与医疗"
+      ],
+      "region": "美国",
+      "summary": "血液学年会常规研究摘要上线。",
+      "kind": "事件",
+      "time": "22:00",
+      "timeNote": "美东标准时间 11 月 4 日 09:00，对应北京时间 22:00。",
+      "date": "2026-11-04",
+      "evidence": "November 4, 2026, at 9:00 a.m. Eastern time Abstracts Available Online",
+      "sourceId": "ash",
+      "source": "美国血液学会 ASH",
+      "url": "https://www.hematology.org/meetings/annual-meeting",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "acquisition": "automated",
+      "sourceHash": "d9ec35910e71ef10e5b79fcff2f9e7bdd59f908e40dd1c0cff76d57a462b993d"
+    },
+    {
+      "id": "sitc-2026",
+      "title": "SITC 2026 肿瘤免疫治疗年会",
+      "topics": [
+        "创新药与医疗"
+      ],
+      "region": "美国",
+      "summary": "在凤凰城举行，涵盖年会与会前项目。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-11-04",
+      "endDate": "2026-11-08",
+      "evidence": "Nov. 4–8, 2026",
+      "sourceId": "sitc",
+      "source": "肿瘤免疫治疗学会 SITC",
+      "url": "https://www.sitcancer.org/2026/home",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:29+00:00",
+      "acquisition": "automated",
+      "sourceHash": "f7160b510417ab53d35f5ac053af5408d6299ef3a8aa6fa488c7c2154d077649"
+    },
+    {
+      "id": "aha-2026",
+      "title": "AHA 2026 心血管科学年会",
+      "topics": [
+        "创新药与医疗"
+      ],
+      "region": "美国",
+      "summary": "在芝加哥举行，发布心血管研究进展。",
+      "kind": "事件",
+      "date": "2026-11-06",
+      "endDate": "2026-11-09",
+      "allDay": true,
+      "sourceId": "aha",
+      "source": "美国心脏协会 AHA",
+      "url": "https://professional.heart.org/en/meetings/scientific-sessions",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-11-06 / 2026-11-09"
+    },
+    {
+      "id": "icrcv-2026",
+      "title": "ICRCV 机器人与计算机视觉会议",
+      "topics": [
+        "机器人与具身智能",
+        "AI与算力"
+      ],
+      "region": "中国",
+      "summary": "在江苏举行，聚焦机器人视觉。",
+      "kind": "事件",
+      "date": "2026-11-06",
+      "endDate": "2026-11-08",
+      "url": "https://www.ieee-ras.org/event/2026-8th-international-conference-on-robotics-and-computer-vision-icrcv-71437/",
+      "allDay": true,
+      "evidence": "2026-11-06 / 2026-11-08",
+      "sourceId": "ras-nov",
+      "source": "IEEE RAS 11 月日历",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:30+00:00",
+      "acquisition": "automated",
+      "sourceHash": "73cd73079ac519023d0c510f608d2d751aa474a57b5234a8bbef710cb0e8802c"
+    },
+    {
+      "id": "nasaexpo-2026",
+      "title": "NASA MAX POWER 航空航天技术展",
+      "topics": [
+        "商业航天"
+      ],
+      "region": "美国",
+      "summary": "在肯尼迪航天中心周边举行，展示航空航天与自主系统技术。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-11-07",
+      "endDate": "2026-11-08",
+      "evidence": "Nov. 7 and Nov. 8",
+      "sourceId": "nasaexpo",
+      "source": "美国国家航空航天局 NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-max-power-americas-newest-aerospace-expo-airshow/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "acquisition": "automated",
+      "sourceHash": "491ad9c021a5a6c08c070b627d28aea15bfd9717bc9651bcc4032b63f8b8c505"
     },
     {
       "id": "corl-2026",
       "title": "CoRL 2026 机器人学习大会",
       "topics": [
-        "人形机器人",
+        "机器人与具身智能",
         "AI与算力"
       ],
       "region": "美国",
@@ -565,14 +1736,15 @@
       "url": "https://2026.corl.org/",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "acquisition": "automated",
-      "sourceHash": "fe8d5f4d4ebc6b6fe6beb5d62b21332e736de2696290f041342d27658adfb189"
+      "sourceHash": "e11166370e58ba79f7bf9c389a2bf74a0d2a2cd95d732e8257adcd4dc6c74381"
     },
     {
       "id": "tsmc-2026-10",
       "title": "台积电 10 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -593,6 +1765,70 @@
       "acquisition": "manual"
     },
     {
+      "id": "esgs-2026",
+      "title": "ESGS 电子特种气体与系统大会",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "电子特种气体技术交流。",
+      "kind": "事件",
+      "date": "2026-11-10",
+      "url": "https://www.semi.org/en/event/electronic-specialty-gases-and-systems-conference-esgs",
+      "endDate": "2026-11-12",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-11-10 / 2026-11-12"
+    },
+    {
+      "id": "semicon-europa-2026",
+      "title": "SEMICON Europa 半导体展",
+      "topics": [
+        "半导体"
+      ],
+      "region": "德国",
+      "summary": "在慕尼黑举行。",
+      "kind": "事件",
+      "date": "2026-11-10",
+      "url": "https://www.semiconeuropa.org/",
+      "endDate": "2026-11-13",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-11-10 / 2026-11-13"
+    },
+    {
+      "id": "replus-2026",
+      "title": "RE+ 2026 清洁能源大会",
+      "topics": [
+        "能源与电力"
+      ],
+      "region": "美国",
+      "summary": "在拉斯维加斯举行，16 日教育活动开始，17 日展区开放。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-11-16",
+      "endDate": "2026-11-19",
+      "evidence": "November 16 – 19, 2026",
+      "sourceId": "replus",
+      "source": "RE+ 主办方",
+      "url": "https://www.re-plus.com/attend/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "acquisition": "automated",
+      "sourceHash": "94c1f96168ae0d7452fa0e500b4c7050d7114d505f23fad922bd3fe178f0c7e8"
+    },
+    {
       "id": "ignite-2026",
       "title": "Microsoft Ignite 2026",
       "topics": [
@@ -610,9 +1846,53 @@
       "url": "https://www.microsoft.com/en-us/events",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:05+00:00",
       "acquisition": "automated",
-      "sourceHash": "25da9e464c9207ce35a1427eaf72e79977e7706faf91e3d23a59cc9c9d95221e"
+      "sourceHash": "4136f9cb5864d67e7510b845b09a7b35ce3ad71d33dff3c53d06d57faec9474e"
+    },
+    {
+      "id": "spacetech-2026",
+      "title": "欧洲航天技术博览会",
+      "topics": [
+        "商业航天"
+      ],
+      "region": "德国",
+      "summary": "在不来梅举行，面向航天产业供应链。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-11-17",
+      "endDate": "2026-11-19",
+      "evidence": "17 – 19 November 2026",
+      "sourceId": "spacetech",
+      "source": "Space Tech Expo Europe 主办方",
+      "url": "https://www.spacetechexpo-europe.com/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:46+00:00",
+      "acquisition": "automated",
+      "sourceHash": "7f81b2a4cbd085dfac6ce299fd8cfea0733adb5c56a19ad0f71c11b80b80c354"
+    },
+    {
+      "id": "robot-2026",
+      "title": "ROBOT 伊比利亚机器人大会",
+      "topics": [
+        "机器人与具身智能"
+      ],
+      "region": "西班牙",
+      "summary": "在巴塞罗那举行，交流机器人研究与应用。",
+      "kind": "事件",
+      "date": "2026-11-18",
+      "endDate": "2026-11-20",
+      "url": "https://www.ieee-ras.org/event/2026-9th-iberian-robotics-conference-robot-71646/",
+      "allDay": true,
+      "evidence": "2026-11-18 / 2026-11-20",
+      "sourceId": "ras-nov",
+      "source": "IEEE RAS 11 月日历",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:30+00:00",
+      "acquisition": "automated",
+      "sourceHash": "73cd73079ac519023d0c510f608d2d751aa474a57b5234a8bbef710cb0e8802c"
     },
     {
       "id": "ferc-2026-11-19",
@@ -636,6 +1916,73 @@
       "acquisition": "manual"
     },
     {
+      "id": "cern-2026",
+      "title": "QT4HEP 量子技术与高能物理大会",
+      "topics": [
+        "量子科技"
+      ],
+      "region": "瑞士",
+      "summary": "在 CERN 举行，讨论量子技术在高能物理中的应用。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-11-23",
+      "endDate": "2026-11-27",
+      "evidence": "23–27 November 2026",
+      "sourceId": "cern",
+      "source": "欧洲核子研究中心 CERN",
+      "url": "https://quantum.cern/events/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:52+00:00",
+      "acquisition": "automated",
+      "sourceHash": "a86358114da48cd4fba886d05e2f53688141f4450b2e70f019ff863d457187c4"
+    },
+    {
+      "id": "guangzhou-2026",
+      "title": "2026 广州国际汽车展览会",
+      "topics": [
+        "智能汽车与电池"
+      ],
+      "region": "中国",
+      "summary": "在广交会展馆举行，27 日为媒体日。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-11-27",
+      "endDate": "2026-12-06",
+      "evidence": "2026.11.27-12.6(整车)",
+      "sourceId": "guangzhou",
+      "source": "广州国际车展主办方",
+      "url": "https://www.autoguangzhou.org.cn/index.html",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:44+00:00",
+      "acquisition": "automated",
+      "sourceHash": "e8e285351060f85968eb9a4dcb0876144e7d5a53263cb7e27db5a26572ae1b2c"
+    },
+    {
+      "id": "eqtc-2026",
+      "title": "欧洲量子技术大会 EQTC",
+      "topics": [
+        "量子科技"
+      ],
+      "region": "爱尔兰",
+      "summary": "在都柏林举行，交流量子技术研究、产业与政策。",
+      "kind": "事件",
+      "allDay": true,
+      "sourceNote": "采用主办方当前公布的 11 月 30 日至 12 月 3 日。",
+      "date": "2026-11-30",
+      "endDate": "2026-12-03",
+      "evidence": "30 November - 03 December 2026",
+      "sourceId": "eqtc",
+      "source": "EQTC 主办方",
+      "url": "https://www.eqtc2026.eu/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:51+00:00",
+      "acquisition": "automated",
+      "sourceHash": "0be8509af7f36085612fc5e07368c950e2d722ea1944ba1abc92c319c9070d39"
+    },
+    {
       "id": "gtc-dc-2026",
       "title": "NVIDIA GTC 华盛顿",
       "topics": [
@@ -654,9 +2001,9 @@
       "url": "https://www.nvidia.com/gtc/",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:02+00:00",
       "acquisition": "automated",
-      "sourceHash": "1f806fc53724a15d78055d1ba5d78ba8caeee47e0c3e49b8bb3a0536ddacaff7"
+      "sourceHash": "84ca14b5f0dbfb7378fcab9ee36c63354a4cd5c9fcdc2298fbb305917a339c54"
     },
     {
       "id": "reinvent-2026",
@@ -676,15 +2023,58 @@
       "url": "https://aws.amazon.com/events/reinvent/",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:03+00:00",
       "acquisition": "automated",
-      "sourceHash": "5d8d4c2e694a33b18391f35cc5ed6380e976d6eab9182b4637d55c4caa492077"
+      "sourceHash": "c317e49cc3724e75d57014a3c804122b6a1bb21a1e9c76375d4235e8cc36e34e"
+    },
+    {
+      "id": "blackhat-mea-2026",
+      "title": "Black Hat MEA 网络安全大会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "沙特阿拉伯",
+      "summary": "在利雅得举行。",
+      "kind": "事件",
+      "date": "2026-12-01",
+      "endDate": "2026-12-03",
+      "allDay": true,
+      "sourceId": "blackhatmea",
+      "source": "Black Hat MEA 主办方",
+      "url": "https://blackhatmea.com/overview",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-12-01 / 2026-12-03"
+    },
+    {
+      "id": "isrsias-2026",
+      "title": "ISR/SIAS 机器人智能与工业自动化安全会议",
+      "topics": [
+        "机器人与具身智能"
+      ],
+      "region": "日本",
+      "summary": "在大阪举行，关注机器人与自动化系统安全。",
+      "kind": "事件",
+      "date": "2026-12-02",
+      "endDate": "2026-12-04",
+      "url": "https://www.ieee-ras.org/event/2026-ieee-international-conference-on-intelligence-and-safety-for-robotics-safety-of-industrial-automated-systems-isr-sias-70464/",
+      "allDay": true,
+      "evidence": "2026-12-02 / 2026-12-04",
+      "sourceId": "ras-dec",
+      "source": "IEEE RAS 12 月日历",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "acquisition": "automated",
+      "sourceHash": "7b21b7d6e7821cf459eb3762b90cdff86ce7818c02e5b36bfef485114b9d2de0"
     },
     {
       "id": "humanoids-2026",
       "title": "IEEE Humanoids 2026 人形机器人大会",
       "topics": [
-        "人形机器人"
+        "机器人与具身智能"
       ],
       "region": "美国",
       "summary": "在加州圣克拉拉举行，聚焦人形机器人研究与技术。",
@@ -699,14 +2089,101 @@
       "url": "https://2026.ieee-humanoids.org/",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "checkedAt": "2026-09-09T02:57:00+00:00",
       "acquisition": "automated",
-      "sourceHash": "4066e53107a16dc7ccb164ff05eab274292a3e41c38fcdfc57bb635a49df7dc8"
+      "sourceHash": "0f6092d9e6eb7d22ac358e0224a90f8728242aebd475d9572ba2976a4df5e9c0"
+    },
+    {
+      "id": "neurips-2026",
+      "title": "NeurIPS 2026 悉尼主会",
+      "topics": [
+        "AI与算力"
+      ],
+      "region": "澳大利亚",
+      "summary": "神经信息处理系统大会悉尼主会及研讨会。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-12-06",
+      "endDate": "2026-12-12",
+      "evidence": "Sydney (Main) Dec 6 - 12",
+      "sourceId": "neurips",
+      "source": "NeurIPS 主办方",
+      "url": "https://nips.cc/Conferences/2026",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:32+00:00",
+      "acquisition": "automated",
+      "sourceHash": "9fdb5ceee7f44d083a62b3f568ce4bfa739548c239d094ef2d6dcf742ee7a01f"
+    },
+    {
+      "id": "ash-lba-2026",
+      "title": "ASH 最新突破研究摘要公开",
+      "topics": [
+        "创新药与医疗"
+      ],
+      "region": "美国",
+      "summary": "年会 Late-Breaking Abstracts 公开。",
+      "kind": "事件",
+      "timeNote": "官方列示公开日期，本站未收录具体时刻。",
+      "date": "2026-12-07",
+      "evidence": "December 7, 2026 Late-Breaking Abstracts Available Online",
+      "sourceId": "ash",
+      "source": "美国血液学会 ASH",
+      "url": "https://www.hematology.org/meetings/annual-meeting",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "acquisition": "automated",
+      "sourceHash": "d9ec35910e71ef10e5b79fcff2f9e7bdd59f908e40dd1c0cff76d57a462b993d"
+    },
+    {
+      "id": "blackhat-eu-2026",
+      "title": "Black Hat Europe 网络安全大会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "英国",
+      "summary": "在伦敦举行，含培训及技术大会。",
+      "kind": "事件",
+      "date": "2026-12-07",
+      "endDate": "2026-12-10",
+      "allDay": true,
+      "sourceId": "blackhat-eu",
+      "source": "Black Hat Europe 主办方",
+      "url": "https://blackhat.com/europe/registration.html",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-12-07 / 2026-12-10"
+    },
+    {
+      "id": "q2b-chicago-2026",
+      "title": "Q2B 芝加哥量子科技大会",
+      "topics": [
+        "量子科技"
+      ],
+      "region": "美国",
+      "summary": "在芝加哥举行，交流量子计算商业应用。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-12-08",
+      "endDate": "2026-12-10",
+      "evidence": "December 8-9-10 2026 Q2B Chicago",
+      "sourceId": "q2b",
+      "source": "QC Ware / Q2B",
+      "url": "https://q2b.qcware.com/",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:52:49+00:00",
+      "acquisition": "automated",
+      "sourceHash": "2fb8f132addf4d158db0a00d06f5add9bb320a7e60190d3f35be9c7e49a7d6ac"
     },
     {
       "id": "tsmc-2026-11",
       "title": "台积电 11 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -725,6 +2202,50 @@
       "real": true,
       "checkedAt": "2026-09-09T03:05:08+00:00",
       "acquisition": "manual"
+    },
+    {
+      "id": "ash-2026",
+      "title": "ASH 2026 血液学年会",
+      "topics": [
+        "创新药与医疗"
+      ],
+      "region": "美国",
+      "summary": "在新奥尔良及线上举行。",
+      "kind": "事件",
+      "allDay": true,
+      "date": "2026-12-12",
+      "endDate": "2026-12-15",
+      "evidence": "December 12–15, 2026",
+      "sourceId": "ash",
+      "source": "美国血液学会 ASH",
+      "url": "https://www.hematology.org/meetings/annual-meeting",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "acquisition": "automated",
+      "sourceHash": "d9ec35910e71ef10e5b79fcff2f9e7bdd59f908e40dd1c0cff76d57a462b993d"
+    },
+    {
+      "id": "robio-2026",
+      "title": "IEEE ROBIO 机器人与仿生学大会",
+      "topics": [
+        "机器人与具身智能"
+      ],
+      "region": "中国",
+      "summary": "在腾冲举行，交流机器人与仿生技术。",
+      "kind": "事件",
+      "date": "2026-12-16",
+      "endDate": "2026-12-20",
+      "url": "https://www.ieee-ras.org/event/2026-ieee-international-conference-on-robotics-and-biomimetics-robio-70439/",
+      "allDay": true,
+      "evidence": "2026-12-16 / 2026-12-20",
+      "sourceId": "ras-dec",
+      "source": "IEEE RAS 12 月日历",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "acquisition": "automated",
+      "sourceHash": "7b21b7d6e7821cf459eb3762b90cdff86ce7818c02e5b36bfef485114b9d2de0"
     },
     {
       "id": "ferc-2026-12-17",
@@ -751,6 +2272,7 @@
       "id": "tsmc-2026-12",
       "title": "台积电 12 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -770,6 +2292,5 @@
       "checkedAt": "2026-09-09T03:05:08+00:00",
       "acquisition": "manual"
     }
-  ],
-  "scopeReviewedAt": "2026-09-09T03:44:50+00:00"
+  ]
 }

@@ -21,6 +21,12 @@ import {
   ExternalLink,
   Info,
   Download,
+  CircuitBoard,
+  Car,
+  Rocket,
+  HeartPulse,
+  Atom,
+  ShieldCheck,
   ArrowRight,
 } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -59,11 +65,32 @@ import {
   type Topic,
   type CalendarEvent,
 } from '@/lib/calendar';
-const icons = [Cpu, Bot, Landmark, Zap];
+const icons = [
+  Cpu,
+  Bot,
+  CircuitBoard,
+  Car,
+  Rocket,
+  HeartPulse,
+  Atom,
+  ShieldCheck,
+  Zap,
+  Landmark,
+];
 const weekdays = ['一', '二', '三', '四', '五', '六', '日'];
 const color = (topic: string) =>
-  ['blue', 'violet', 'amber', 'green'][topics.indexOf(topic as Topic)] ||
-  'blue';
+  [
+    'blue',
+    'violet',
+    'blue',
+    'green',
+    'blue',
+    'violet',
+    'violet',
+    'blue',
+    'green',
+    'amber',
+  ][topics.indexOf(topic as Topic)] || 'blue';
 const dateLabel = (date: string) => date.slice(5).replace('-', '月') + '日';
 const windowLabel = (date: string) =>
   date.includes('-Q')
@@ -103,9 +130,9 @@ export default function Home() {
         ),
       );
       setSubscribed(
-        (data.subscribed || ['AI与算力']).filter((t: string) =>
-          topics.includes(t as Topic),
-        ),
+        (data.subscribed || ['AI与算力'])
+          .map((t: string) => (t === '人形机器人' ? '机器人与具身智能' : t))
+          .filter((t: string) => topics.includes(t as Topic)),
       );
       setReminders(
         Object.fromEntries(
@@ -246,7 +273,7 @@ export default function Home() {
       >
         <div className="event-time">
           <strong className={!e.time && !e.allDay ? 'date-only-label' : ''}>
-            {e.time || (e.allDay ? '全天' : '时间未公布')}
+            {e.time || (e.allDay ? '全天' : '按日期')}
           </strong>
           <span>{e.region}</span>
         </div>
@@ -424,6 +451,7 @@ export default function Home() {
                   >
                     <Icon size={18} />
                     <span>{t}</span>
+                    <b>{events.filter((e) => e.topics.includes(t)).length}</b>
                   </button>
                   {topic === t && (
                     <button
@@ -607,7 +635,7 @@ export default function Home() {
                           key={e.id}
                         >
                           <span>
-                            {e.time || (e.allDay ? '全天' : '时间未公布')}
+                            {e.time || (e.allDay ? '全天' : '按日期')}
                           </span>
                           {e.title}
                         </button>
@@ -666,7 +694,7 @@ export default function Home() {
                   {selected.endDate && selected.endDate !== selected.date
                     ? ' — ' + selected.endDate
                     : ''}{' '}
-                  {selected.time || (selected.allDay ? '全天' : '时间未公布')}
+                  {selected.time || (selected.allDay ? '全天' : '按日期')}
                 </span>
                 <span className="detail-status">
                   {selected.kind} ·{' '}
@@ -711,7 +739,12 @@ export default function Home() {
                   信息来源
                 </h3>
                 <b>{selected.source}</b>
-                <p>{selected.timeNote || '日期以主办方当地日程为准。'}</p>
+                <p>
+                  {selected.timeNote ||
+                    (selected.allDay
+                      ? '日期以主办方当地日程为准。'
+                      : '本站收录主办方当地日期，具体时刻尚未收录。')}
+                </p>
                 {selected.sourceNote && <p>{selected.sourceNote}</p>}
                 <p>
                   {selected.acquisition === 'automated'
@@ -793,7 +826,7 @@ export default function Home() {
             <div className="dialog-body">
               <p>
                 已收录 {events.length} 项真实日程，来自 {dataset.sources.length}{' '}
-                个官方来源页面，覆盖 {dataset.coverageStart} 至{' '}
+                个官方信源入口，覆盖 {dataset.coverageStart} 至{' '}
                 {dataset.coverageEnd}。当前为{' '}
                 {beijingToday(new Date(dataset.updatedAt))}{' '}
                 采集快照，尚未启用定时更新；营收等公布数值尚未接入。
@@ -840,7 +873,7 @@ export default function Home() {
                 <div>
                   <span className="plus-word">PLUS</span>
                   <b>更多主题日历</b>
-                  <p>AI、机器人、政策、能源等主题，支持订阅与日程提醒</p>
+                  <p>{topics.length} 类产业主题，支持订阅与日程提醒</p>
                 </div>
               </div>
               <button

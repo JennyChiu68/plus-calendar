@@ -1,5 +1,15 @@
 import calendarData from '../data/calendar.json' with { type: 'json' };
-export type Topic = 'AI与算力' | '人形机器人' | '政策与监管' | '能源与电力';
+export type Topic =
+  | 'AI与算力'
+  | '机器人与具身智能'
+  | '半导体'
+  | '智能汽车与电池'
+  | '商业航天'
+  | '创新药与医疗'
+  | '量子科技'
+  | '网络安全'
+  | '能源与电力'
+  | '政策与监管';
 export type CalendarEvent = {
   id: string;
   title: string;
@@ -30,9 +40,15 @@ export type CalendarEvent = {
 };
 export const topics: Topic[] = [
   'AI与算力',
-  '人形机器人',
-  '政策与监管',
+  '机器人与具身智能',
+  '半导体',
+  '智能汽车与电池',
+  '商业航天',
+  '创新药与医疗',
+  '量子科技',
+  '网络安全',
   '能源与电力',
+  '政策与监管',
 ];
 export const dataset = calendarData;
 export const events = calendarData.events as CalendarEvent[];

@@ -63,10 +63,11 @@ def apply_scope(events,reports):
  return kept,[dict(r,count=counts[r['id']]) for r in reports if counts[r['id']]]
 
 def validate(events):
- ids=set()
+ ids=set();allowed=set(json.loads((ROOT/'data/topics.json').read_text()))
  for e in events:
   if e['id'] in ids:raise ValueError('Duplicate event id: '+e['id'])
   ids.add(e['id']);datetime.strptime(e['date'],'%Y-%m-%d')
+  if not set(e['topics'])<=allowed:raise ValueError('Unknown topic: '+e['id'])
   if e.get('endDate') and e['endDate']<e['date']:raise ValueError('End before start')
   if not e.get('url','').startswith('https://') or not e.get('evidence') or not e.get('checkedAt'):raise ValueError('Missing source evidence')
   if not e.get('real') or not e.get('topics'):raise ValueError('Unverified or unclassified event')

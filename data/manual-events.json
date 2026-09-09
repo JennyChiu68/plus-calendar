@@ -29,6 +29,76 @@
       "count": 4,
       "status": "reviewed",
       "note": "官方网页人工核对；程序直接访问受限。"
+    },
+    {
+      "id": "aha",
+      "name": "美国心脏协会 AHA",
+      "url": "https://professional.heart.org/en/meetings/scientific-sessions",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "emove",
+      "name": "eMove360 主办方",
+      "url": "https://www.emove360.com/ready-for-the-next-chapter-emove360-europe-2026-ai-is-driving-the-mobility/",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "semi",
+      "name": "SEMI 官方活动日历",
+      "url": "https://www.semi.org/en/expositions-events/calendar",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 13,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "blackhat-eu",
+      "name": "Black Hat Europe 主办方",
+      "url": "https://blackhat.com/europe/registration.html",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "blackhatmea",
+      "name": "Black Hat MEA 主办方",
+      "url": "https://blackhatmea.com/overview",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "sector",
+      "name": "SecTor 主办方",
+      "url": "https://blackhat.com/sector/",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "rsac",
+      "name": "RSA Conference 官方活动",
+      "url": "https://www.rsaconference.com/en",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "count": 3,
+      "status": "reviewed",
+      "note": "已核对官方日程；本来源未建立自动解析适配。"
     }
   ],
   "events": [
@@ -36,6 +106,7 @@
       "id": "tsmc-2026-08",
       "title": "台积电 8 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -59,6 +130,7 @@
       "id": "tsmc-2026-09",
       "title": "台积电 9 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -82,6 +154,7 @@
       "id": "tsmc-2026-10",
       "title": "台积电 10 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -105,6 +178,7 @@
       "id": "tsmc-2026-11",
       "title": "台积电 11 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -128,6 +202,7 @@
       "id": "tsmc-2026-12",
       "title": "台积电 12 月营收报告",
       "topics": [
+        "半导体",
         "AI与算力"
       ],
       "region": "中国台湾",
@@ -276,6 +351,438 @@
       "real": true,
       "checkedAt": "2026-09-09T03:05:08+00:00",
       "acquisition": "manual"
+    },
+    {
+      "id": "aha-2026",
+      "title": "AHA 2026 心血管科学年会",
+      "topics": [
+        "创新药与医疗"
+      ],
+      "region": "美国",
+      "summary": "在芝加哥举行，发布心血管研究进展。",
+      "kind": "事件",
+      "date": "2026-11-06",
+      "endDate": "2026-11-09",
+      "allDay": true,
+      "sourceId": "aha",
+      "source": "美国心脏协会 AHA",
+      "url": "https://professional.heart.org/en/meetings/scientific-sessions",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-11-06 / 2026-11-09"
+    },
+    {
+      "id": "emove-2026",
+      "title": "eMove360 电动与自动驾驶出行大会",
+      "topics": [
+        "智能汽车与电池",
+        "AI与算力"
+      ],
+      "region": "德国",
+      "summary": "在慕尼黑举行，主题为 AI 驱动出行。",
+      "kind": "事件",
+      "date": "2026-10-13",
+      "endDate": "2026-10-14",
+      "allDay": true,
+      "sourceId": "emove",
+      "source": "eMove360 主办方",
+      "url": "https://www.emove360.com/ready-for-the-next-chapter-emove360-europe-2026-ai-is-driving-the-mobility/",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-13 / 2026-10-14"
+    },
+    {
+      "id": "future-computing-2026",
+      "title": "Future of Computing 2026",
+      "topics": [
+        "半导体",
+        "AI与算力"
+      ],
+      "region": "美国",
+      "summary": "计算技术论坛。",
+      "kind": "事件",
+      "date": "2026-09-09",
+      "url": "https://www.semi.org/en/event/future-computing-2026",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-09"
+    },
+    {
+      "id": "genai-chip-2026",
+      "title": "生成式 AI 芯片设计与安全研讨会",
+      "topics": [
+        "半导体",
+        "AI与算力",
+        "网络安全"
+      ],
+      "region": "线上",
+      "summary": "芯片设计与安全验证。",
+      "kind": "事件",
+      "date": "2026-09-11",
+      "url": "https://www.semi.org/en/event/esd-alliance-webinar-gen-ai-chip-design-and-security",
+      "time": "00:00",
+      "timeNote": "官方为美西夏令时 9 月 10 日 09:00；北京时间为 9 月 11 日 00:00。",
+      "evidence": "2026-09-10 09:00:00 America/Los_Angeles",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "mstc-2026",
+      "title": "MSTC 微机电与传感器技术大会",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "传感器技术交流。",
+      "kind": "事件",
+      "date": "2026-09-16",
+      "url": "https://www.semi.org/en/connect/events/mems-and-sensors-technical-congress-mstc",
+      "endDate": "2026-09-17",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-16 / 2026-09-17"
+    },
+    {
+      "id": "semicon-india-2026",
+      "title": "SEMICON India 半导体展",
+      "topics": [
+        "半导体"
+      ],
+      "region": "印度",
+      "summary": "半导体产业展览。",
+      "kind": "事件",
+      "date": "2026-09-17",
+      "url": "https://www.semiconindia.org/",
+      "endDate": "2026-09-19",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-17 / 2026-09-19"
+    },
+    {
+      "id": "3dpi-2026",
+      "title": "SEMI 北美三维封装与集成标准会议",
+      "topics": [
+        "半导体"
+      ],
+      "region": "线上",
+      "summary": "三维封装标准讨论。",
+      "kind": "事件",
+      "date": "2026-09-22",
+      "url": "https://www.semi.org/en/event/3dpi-north-america-tc-chapter-fall-meeting-2026",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-22"
+    },
+    {
+      "id": "semi-agents-2026",
+      "title": "AI Agent 半导体设施维护研讨会",
+      "topics": [
+        "半导体",
+        "AI与算力"
+      ],
+      "region": "线上",
+      "summary": "智能设施维护。",
+      "kind": "事件",
+      "date": "2026-09-29",
+      "url": "https://www.semi.org/en/event/scaling-smarter-maintenance-semiconductor-facilities-ai-agents",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-29"
+    },
+    {
+      "id": "printed-electronics-2026",
+      "title": "FEMC 印刷电子与量子器件研讨会",
+      "topics": [
+        "半导体",
+        "量子科技"
+      ],
+      "region": "线上",
+      "summary": "印刷电子技术。",
+      "kind": "事件",
+      "date": "2026-09-30",
+      "url": "https://www.semi.org/en/event/femc31-advancing-printed-electronics-technology-macroelectronics-quantum-devices",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-30"
+    },
+    {
+      "id": "semicon-west-2026",
+      "title": "SEMICON West 半导体展",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "在旧金山举行。",
+      "kind": "事件",
+      "date": "2026-10-13",
+      "url": "https://www.semiconwest.org/",
+      "endDate": "2026-10-15",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-13 / 2026-10-15"
+    },
+    {
+      "id": "testvision-2026",
+      "title": "Test Vision 半导体测试技术论坛",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "芯片测试技术交流。",
+      "kind": "事件",
+      "date": "2026-10-14",
+      "url": "https://www.semi.org/en/connect/events/test-vision-symposium",
+      "endDate": "2026-10-15",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-14 / 2026-10-15"
+    },
+    {
+      "id": "powernext-2026",
+      "title": "Power Next 微电网与电网韧性论坛",
+      "topics": [
+        "能源与电力"
+      ],
+      "region": "中国台湾",
+      "summary": "微电网技术交流。",
+      "kind": "事件",
+      "date": "2026-10-14",
+      "url": "https://www.semi.org/zh/node/173961",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-14"
+    },
+    {
+      "id": "itpc-2026",
+      "title": "ITPC 国际半导体贸易伙伴大会",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "产业伙伴交流。",
+      "kind": "事件",
+      "date": "2026-11-01",
+      "url": "https://www.semi.org/en/event/international-trade-partners-conference-itpc",
+      "endDate": "2026-11-04",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-11-01 / 2026-11-04"
+    },
+    {
+      "id": "semicon-europa-2026",
+      "title": "SEMICON Europa 半导体展",
+      "topics": [
+        "半导体"
+      ],
+      "region": "德国",
+      "summary": "在慕尼黑举行。",
+      "kind": "事件",
+      "date": "2026-11-10",
+      "url": "https://www.semiconeuropa.org/",
+      "endDate": "2026-11-13",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-11-10 / 2026-11-13"
+    },
+    {
+      "id": "esgs-2026",
+      "title": "ESGS 电子特种气体与系统大会",
+      "topics": [
+        "半导体"
+      ],
+      "region": "美国",
+      "summary": "电子特种气体技术交流。",
+      "kind": "事件",
+      "date": "2026-11-10",
+      "url": "https://www.semi.org/en/event/electronic-specialty-gases-and-systems-conference-esgs",
+      "endDate": "2026-11-12",
+      "allDay": true,
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-11-10 / 2026-11-12"
+    },
+    {
+      "id": "blackhat-eu-2026",
+      "title": "Black Hat Europe 网络安全大会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "英国",
+      "summary": "在伦敦举行，含培训及技术大会。",
+      "kind": "事件",
+      "date": "2026-12-07",
+      "endDate": "2026-12-10",
+      "allDay": true,
+      "sourceId": "blackhat-eu",
+      "source": "Black Hat Europe 主办方",
+      "url": "https://blackhat.com/europe/registration.html",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-12-07 / 2026-12-10"
+    },
+    {
+      "id": "blackhat-mea-2026",
+      "title": "Black Hat MEA 网络安全大会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "沙特阿拉伯",
+      "summary": "在利雅得举行。",
+      "kind": "事件",
+      "date": "2026-12-01",
+      "endDate": "2026-12-03",
+      "allDay": true,
+      "sourceId": "blackhatmea",
+      "source": "Black Hat MEA 主办方",
+      "url": "https://blackhatmea.com/overview",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-12-01 / 2026-12-03"
+    },
+    {
+      "id": "sector-2026",
+      "title": "SecTor 2026 网络安全大会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "加拿大",
+      "summary": "在多伦多举行，6 日为主题峰会，7–8 日为技术大会。",
+      "kind": "事件",
+      "date": "2026-10-06",
+      "endDate": "2026-10-08",
+      "allDay": true,
+      "sourceId": "sector",
+      "source": "SecTor 主办方",
+      "url": "https://blackhat.com/sector/",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-10-06 / 2026-10-08"
+    },
+    {
+      "id": "rsac-leadership-2026",
+      "title": "RSAC 网络安全领导力与人才研讨会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "线上",
+      "summary": "网络安全管理与人才发展。",
+      "kind": "事件",
+      "date": "2026-09-10",
+      "url": "https://www.rsaconference.com/library/virtual%20seminar/hds-24-cyber-leadership-workforce-development",
+      "sourceId": "rsac",
+      "source": "RSA Conference 官方活动",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-10"
+    },
+    {
+      "id": "rsac-telecom-2026",
+      "title": "RSAC 电信骨干网隐蔽威胁研讨会",
+      "topics": [
+        "网络安全"
+      ],
+      "region": "线上",
+      "summary": "讨论电信基础设施的安全威胁。",
+      "kind": "事件",
+      "date": "2026-09-16",
+      "url": "https://www.rsaconference.com/library/top-rated-session-follow-up/sleeper-cells-in-the-telecom-backbone-covert-ops",
+      "sourceId": "rsac",
+      "source": "RSA Conference 官方活动",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-16"
+    },
+    {
+      "id": "rsac-frontier-2026",
+      "title": "RSAC 前沿 AI 时代的网络风险研讨会",
+      "topics": [
+        "网络安全",
+        "AI与算力"
+      ],
+      "region": "线上",
+      "summary": "探讨前沿 AI 带来的网络风险。",
+      "kind": "事件",
+      "date": "2026-09-22",
+      "url": "https://www.rsaconference.com/library/webcast/231-rethinking-cyber-risk-in-the-age-of-frontier-ai",
+      "sourceId": "rsac",
+      "source": "RSA Conference 官方活动",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "acquisition": "manual",
+      "evidence": "2026-09-22"
     }
   ]
 }

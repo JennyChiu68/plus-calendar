@@ -74,3 +74,34 @@ void test('ICS uses real titles and folds UTF-8 without corrupting content', () 
     assert.match(result, /END:VCALENDAR\r\n$/);
   }
 });
+
+void test('all expanded topics have at least five real events and no unknown tags', () => {
+  const names = [
+    'AI与算力',
+    '机器人与具身智能',
+    '半导体',
+    '智能汽车与电池',
+    '商业航天',
+    '创新药与医疗',
+    '量子科技',
+    '网络安全',
+    '能源与电力',
+    '政策与监管',
+  ];
+  for (const name of names)
+    assert.ok(
+      events.filter((e) => e.topics.some((t) => t === name)).length >= 5,
+      name,
+    );
+  for (const e of events) assert.ok(e.topics.every((t) => names.includes(t)));
+  assert.equal(new Set(events.map((e) => e.id)).size, events.length);
+});
+void test('new US events preserve the Beijing day rollover and November standard time', () => {
+  const chip = events.find((e) => e.id === 'genai-chip-2026')!;
+  assert.equal(chip.date, '2026-09-11');
+  assert.match(icsForEvent(chip)!, /DTSTART:20260910T160000Z/);
+  const ash = events.find((e) => e.id === 'ash-abstracts-2026')!;
+  assert.match(icsForEvent(ash)!, /DTSTART:20261104T140000Z/);
+  const sitc = events.find((e) => e.id === 'sitc-abstracts-2026')!;
+  assert.match(icsForEvent(sitc)!, /DTSTART:20261103T140000Z/);
+});

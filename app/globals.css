@@ -400,7 +400,7 @@ h1 {
 }
 .workspace-grid {
   display: grid;
-  grid-template-columns: 184px minmax(0, 1fr);
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: 20px;
   align-items: start;
 }
@@ -433,6 +433,7 @@ h1 {
 }
 .topic-button > svg {
   color: #65758b;
+  flex-shrink: 0;
 }
 .topic-button:hover {
   background: #f2f5fa;
@@ -447,6 +448,7 @@ h1 {
 }
 .topic-button b {
   margin-left: auto;
+  flex-shrink: 0;
   font-size: 12px;
   font-weight: 600;
 }
@@ -1201,7 +1203,7 @@ h1 {
     padding-right: 22px;
   }
   .workspace-grid {
-    grid-template-columns: 166px minmax(0, 1fr);
+    grid-template-columns: 210px minmax(0, 1fr);
     gap: 18px;
   }
   .header-inner {
