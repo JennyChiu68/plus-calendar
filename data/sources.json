@@ -937,119 +937,6 @@
     ]
   },
   {
-    "id": "q2b",
-    "cacheKey": "q2b",
-    "name": "QC Ware / Q2B",
-    "url": "https://q2b.qcware.com/",
-    "adapter": "pattern",
-    "events": [
-      {
-        "id": "q2b-copenhagen-2026",
-        "title": "Q2B 哥本哈根量子科技大会",
-        "topics": [
-          "量子科技"
-        ],
-        "region": "丹麦",
-        "summary": "交流量子技术及其产业应用。",
-        "kind": "事件",
-        "pattern": "September (?P<d>9)-(?P<ed>10), (?P<y>2026) Q2B Copenhagen",
-        "dateDefaults": {
-          "m": 9
-        },
-        "allDay": true
-      },
-      {
-        "id": "q2b-chicago-2026",
-        "title": "Q2B 芝加哥量子科技大会",
-        "topics": [
-          "量子科技"
-        ],
-        "region": "美国",
-        "summary": "在芝加哥举行，交流量子计算商业应用。",
-        "kind": "事件",
-        "pattern": "December (?P<d>8)-9-(?P<ed>10) (?P<y>2026) Q2B Chicago",
-        "dateDefaults": {
-          "m": 12
-        },
-        "allDay": true
-      }
-    ]
-  },
-  {
-    "id": "qweek",
-    "cacheKey": "qweek",
-    "name": "IEEE Quantum Week 主办方",
-    "url": "https://qce.quantum.ieee.org/2026/",
-    "adapter": "pattern",
-    "events": [
-      {
-        "id": "qweek-2026",
-        "title": "IEEE Quantum Week 量子计算与工程大会",
-        "topics": [
-          "量子科技"
-        ],
-        "region": "加拿大",
-        "summary": "在多伦多举行，涵盖量子计算与工程技术。",
-        "kind": "事件",
-        "pattern": "(?P<d>13) - (?P<ed>18) September (?P<y>2026)",
-        "dateDefaults": {
-          "m": 9
-        },
-        "allDay": true
-      }
-    ]
-  },
-  {
-    "id": "cern",
-    "cacheKey": "cern",
-    "name": "欧洲核子研究中心 CERN",
-    "url": "https://quantum.cern/events/",
-    "adapter": "pattern",
-    "events": [
-      {
-        "id": "cern-2026",
-        "title": "QT4HEP 量子技术与高能物理大会",
-        "topics": [
-          "量子科技"
-        ],
-        "region": "瑞士",
-        "summary": "在 CERN 举行，讨论量子技术在高能物理中的应用。",
-        "kind": "事件",
-        "pattern": "(?P<d>23)[–-](?P<ed>27) November (?P<y>2026)",
-        "dateDefaults": {
-          "m": 11
-        },
-        "allDay": true
-      }
-    ]
-  },
-  {
-    "id": "eqtc",
-    "cacheKey": "eqtc",
-    "name": "EQTC 主办方",
-    "url": "https://www.eqtc2026.eu/",
-    "adapter": "pattern",
-    "events": [
-      {
-        "id": "eqtc-2026",
-        "title": "欧洲量子技术大会 EQTC",
-        "topics": [
-          "量子科技"
-        ],
-        "region": "爱尔兰",
-        "summary": "在都柏林举行，交流量子技术研究、产业与政策。",
-        "kind": "事件",
-        "pattern": "(?P<d>30) November - (?P<ed>03) December (?P<y>2026)",
-        "dateDefaults": {
-          "m": 11,
-          "em": 12
-        },
-        "allDay": true,
-        "sourceNote": "采用主办方当前公布的 11 月 30 日至 12 月 3 日。"
-      }
-    ]
-  },
-  {
     "id": "cra",
     "cacheKey": "cra",
     "name": "欧盟委员会",
@@ -1060,7 +947,6 @@
         "id": "cra-2026",
         "title": "欧盟 CRA 漏洞与严重安全事件报告义务开始适用",
         "topics": [
-          "网络安全",
           "政策与监管"
         ],
         "region": "欧盟",

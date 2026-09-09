@@ -1,5 +1,5 @@
 {
-  "attemptedAt": "2026-09-09T04:01:31+00:00",
+  "attemptedAt": "2026-09-09T04:50:23+00:00",
   "sources": [
     {
       "id": "ras",
@@ -322,46 +322,6 @@
       "hash": "491ad9c021a5a6c08c070b627d28aea15bfd9717bc9651bcc4032b63f8b8c505"
     },
     {
-      "id": "q2b",
-      "name": "QC Ware / Q2B",
-      "url": "https://q2b.qcware.com/",
-      "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:49+00:00",
-      "count": 2,
-      "status": "ok",
-      "hash": "2fb8f132addf4d158db0a00d06f5add9bb320a7e60190d3f35be9c7e49a7d6ac"
-    },
-    {
-      "id": "qweek",
-      "name": "IEEE Quantum Week 主办方",
-      "url": "https://qce.quantum.ieee.org/2026/",
-      "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:48+00:00",
-      "count": 1,
-      "status": "ok",
-      "hash": "cdcac7642677303b9ae9d83487b5efc22747f0decf2f28adf20ba888ce124330"
-    },
-    {
-      "id": "cern",
-      "name": "欧洲核子研究中心 CERN",
-      "url": "https://quantum.cern/events/",
-      "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:52+00:00",
-      "count": 1,
-      "status": "ok",
-      "hash": "a86358114da48cd4fba886d05e2f53688141f4450b2e70f019ff863d457187c4"
-    },
-    {
-      "id": "eqtc",
-      "name": "EQTC 主办方",
-      "url": "https://www.eqtc2026.eu/",
-      "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:51+00:00",
-      "count": 1,
-      "status": "ok",
-      "hash": "0be8509af7f36085612fc5e07368c950e2d722ea1944ba1abc92c319c9070d39"
-    },
-    {
       "id": "cra",
       "name": "欧盟委员会",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
@@ -432,42 +392,12 @@
       "note": "已核对官方日程；本来源未建立自动解析适配。"
     },
     {
-      "id": "blackhat-eu",
-      "name": "Black Hat Europe 主办方",
-      "url": "https://blackhat.com/europe/registration.html",
-      "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 1,
-      "status": "reviewed",
-      "note": "已核对官方日程；本来源未建立自动解析适配。"
-    },
-    {
-      "id": "blackhatmea",
-      "name": "Black Hat MEA 主办方",
-      "url": "https://blackhatmea.com/overview",
-      "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 1,
-      "status": "reviewed",
-      "note": "已核对官方日程；本来源未建立自动解析适配。"
-    },
-    {
-      "id": "sector",
-      "name": "SecTor 主办方",
-      "url": "https://blackhat.com/sector/",
-      "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 1,
-      "status": "reviewed",
-      "note": "已核对官方日程；本来源未建立自动解析适配。"
-    },
-    {
       "id": "rsac",
       "name": "RSA Conference 官方活动",
       "url": "https://www.rsaconference.com/en",
       "mode": "manual",
       "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 3,
+      "count": 1,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
     }

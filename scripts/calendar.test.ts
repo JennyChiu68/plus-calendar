@@ -83,8 +83,6 @@ void test('all expanded topics have at least five real events and no unknown tag
     '智能汽车与电池',
     '商业航天',
     '创新药与医疗',
-    '量子科技',
-    '网络安全',
     '能源与电力',
     '政策与监管',
   ];

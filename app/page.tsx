@@ -25,8 +25,6 @@ import {
   Car,
   Rocket,
   HeartPulse,
-  Atom,
-  ShieldCheck,
   ArrowRight,
 } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -72,8 +70,6 @@ const icons = [
   Car,
   Rocket,
   HeartPulse,
-  Atom,
-  ShieldCheck,
   Zap,
   Landmark,
 ];
@@ -86,8 +82,6 @@ const color = (topic: string) =>
     'green',
     'blue',
     'violet',
-    'violet',
-    'blue',
     'green',
     'amber',
   ][topics.indexOf(topic as Topic)] || 'blue';

@@ -61,42 +61,12 @@
       "note": "已核对官方日程；本来源未建立自动解析适配。"
     },
     {
-      "id": "blackhat-eu",
-      "name": "Black Hat Europe 主办方",
-      "url": "https://blackhat.com/europe/registration.html",
-      "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 1,
-      "status": "reviewed",
-      "note": "已核对官方日程；本来源未建立自动解析适配。"
-    },
-    {
-      "id": "blackhatmea",
-      "name": "Black Hat MEA 主办方",
-      "url": "https://blackhatmea.com/overview",
-      "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 1,
-      "status": "reviewed",
-      "note": "已核对官方日程；本来源未建立自动解析适配。"
-    },
-    {
-      "id": "sector",
-      "name": "SecTor 主办方",
-      "url": "https://blackhat.com/sector/",
-      "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 1,
-      "status": "reviewed",
-      "note": "已核对官方日程；本来源未建立自动解析适配。"
-    },
-    {
       "id": "rsac",
       "name": "RSA Conference 官方活动",
       "url": "https://www.rsaconference.com/en",
       "mode": "manual",
       "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 3,
+      "count": 1,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
     }
@@ -420,8 +390,7 @@
       "title": "生成式 AI 芯片设计与安全研讨会",
       "topics": [
         "半导体",
-        "AI与算力",
-        "网络安全"
+        "AI与算力"
       ],
       "region": "线上",
       "summary": "芯片设计与安全验证。",
@@ -523,8 +492,7 @@
       "id": "printed-electronics-2026",
       "title": "FEMC 印刷电子与量子器件研讨会",
       "topics": [
-        "半导体",
-        "量子科技"
+        "半导体"
       ],
       "region": "线上",
       "summary": "印刷电子技术。",
@@ -664,111 +632,9 @@
       "evidence": "2026-11-10 / 2026-11-12"
     },
     {
-      "id": "blackhat-eu-2026",
-      "title": "Black Hat Europe 网络安全大会",
-      "topics": [
-        "网络安全"
-      ],
-      "region": "英国",
-      "summary": "在伦敦举行，含培训及技术大会。",
-      "kind": "事件",
-      "date": "2026-12-07",
-      "endDate": "2026-12-10",
-      "allDay": true,
-      "sourceId": "blackhat-eu",
-      "source": "Black Hat Europe 主办方",
-      "url": "https://blackhat.com/europe/registration.html",
-      "real": true,
-      "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "acquisition": "manual",
-      "evidence": "2026-12-07 / 2026-12-10"
-    },
-    {
-      "id": "blackhat-mea-2026",
-      "title": "Black Hat MEA 网络安全大会",
-      "topics": [
-        "网络安全"
-      ],
-      "region": "沙特阿拉伯",
-      "summary": "在利雅得举行。",
-      "kind": "事件",
-      "date": "2026-12-01",
-      "endDate": "2026-12-03",
-      "allDay": true,
-      "sourceId": "blackhatmea",
-      "source": "Black Hat MEA 主办方",
-      "url": "https://blackhatmea.com/overview",
-      "real": true,
-      "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "acquisition": "manual",
-      "evidence": "2026-12-01 / 2026-12-03"
-    },
-    {
-      "id": "sector-2026",
-      "title": "SecTor 2026 网络安全大会",
-      "topics": [
-        "网络安全"
-      ],
-      "region": "加拿大",
-      "summary": "在多伦多举行，6 日为主题峰会，7–8 日为技术大会。",
-      "kind": "事件",
-      "date": "2026-10-06",
-      "endDate": "2026-10-08",
-      "allDay": true,
-      "sourceId": "sector",
-      "source": "SecTor 主办方",
-      "url": "https://blackhat.com/sector/",
-      "real": true,
-      "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "acquisition": "manual",
-      "evidence": "2026-10-06 / 2026-10-08"
-    },
-    {
-      "id": "rsac-leadership-2026",
-      "title": "RSAC 网络安全领导力与人才研讨会",
-      "topics": [
-        "网络安全"
-      ],
-      "region": "线上",
-      "summary": "网络安全管理与人才发展。",
-      "kind": "事件",
-      "date": "2026-09-10",
-      "url": "https://www.rsaconference.com/library/virtual%20seminar/hds-24-cyber-leadership-workforce-development",
-      "sourceId": "rsac",
-      "source": "RSA Conference 官方活动",
-      "real": true,
-      "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "acquisition": "manual",
-      "evidence": "2026-09-10"
-    },
-    {
-      "id": "rsac-telecom-2026",
-      "title": "RSAC 电信骨干网隐蔽威胁研讨会",
-      "topics": [
-        "网络安全"
-      ],
-      "region": "线上",
-      "summary": "讨论电信基础设施的安全威胁。",
-      "kind": "事件",
-      "date": "2026-09-16",
-      "url": "https://www.rsaconference.com/library/top-rated-session-follow-up/sleeper-cells-in-the-telecom-backbone-covert-ops",
-      "sourceId": "rsac",
-      "source": "RSA Conference 官方活动",
-      "real": true,
-      "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "acquisition": "manual",
-      "evidence": "2026-09-16"
-    },
-    {
       "id": "rsac-frontier-2026",
       "title": "RSAC 前沿 AI 时代的网络风险研讨会",
       "topics": [
-        "网络安全",
         "AI与算力"
       ],
       "region": "线上",
