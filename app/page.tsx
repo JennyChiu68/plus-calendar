@@ -653,7 +653,7 @@ export default function Home() {
       </main>
       <footer className="page-footer">
         <span>金十 PLUS 日历</span>
-        <a href="/proposal.html">
+        <a href="./proposal.html">
           产品方案 <ArrowUpRight size={13} />
         </a>
       </footer>
@@ -851,7 +851,7 @@ export default function Home() {
                 />
               </label>
               <p className="muted">会员切换仅用于体验。</p>
-              <a className="primary-button" href="/proposal.html">
+              <a className="primary-button" href="./proposal.html">
                 阅读完整产品方案 <ArrowUpRight size={16} />
               </a>
             </div>

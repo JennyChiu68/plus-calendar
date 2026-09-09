@@ -26,3 +26,9 @@ AI 与算力、机器人与具身智能、半导体、智能汽车与电池、�
 类型检查、生产构建和 13 组数据/日期测试；变更文件 lint。全库 lint 的未修改脚手架通用组件仍有既有报错。未执行浏览器截图与交互测试。
 
 以静态文件发布至现有 Sites，不部署 Worker。脚手架构建/服务端依赖有既有审计提示；转为服务端产品前需重新审计，当前 Demo 不能作为服务端安全基线。
+
+## GitHub Pages 预览
+
+地址：https://jennychiu68.github.io/plus-calendar/ 。推送到 `main` 后，GitHub Actions 会检查并发布当前数据快照。该流程不自动采集新日程。
+
+GitHub Pages 构建设置 `NEXT_PUBLIC_BASE_PATH=/plus-calendar`；默认构建仍用于原 Sites 域名。
