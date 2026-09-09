@@ -10,7 +10,9 @@
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "sync:data": "python3 scripts/sync-calendar.py",
+    "test:data": "node --test scripts/calendar.test.ts && python3 -m unittest discover -s scripts -p \"test_*.py\""
   },
   "dependencies": {
     "react": "19.2.6",

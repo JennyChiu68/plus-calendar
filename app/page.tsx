@@ -49,7 +49,11 @@ import {
 import {
   events,
   topics,
-  inWeek,
+  dataset,
+  beijingToday,
+  mondayOf,
+  occursOn,
+  overlapsRange,
   shiftDate,
   icsForEvent,
   type Topic,
@@ -71,7 +75,8 @@ export default function Home() {
   const [kind, setKind] = useState('全部');
   const [view, setView] = useState('week');
   const [day, setDay] = useState('');
-  const [week, setWeek] = useState('2026-09-07');
+  const [today, setToday] = useState(beijingToday(new Date(dataset.updatedAt)));
+  const [week, setWeek] = useState(mondayOf(today));
   const [mine, setMine] = useState(false);
   const [member, setMember] = useState(true);
   const [selected, setSelected] = useState<CalendarEvent | null>(null);
@@ -83,18 +88,32 @@ export default function Home() {
   const [toast, setToast] = useState('');
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
+    const now = beijingToday();
+    // eslint-disable-next-line react/react-compiler -- Resolve the current local day only after hydration.
+    setToday(now);
+    setWeek(mondayOf(now));
     try {
       const data = JSON.parse(
         localStorage.getItem('plus-calendar-demo') || '{}',
       );
       // eslint-disable-next-line react/react-compiler -- Hydrate browser-only preferences after the static first render.
-      setSaved(data.saved || []);
+      setSaved(
+        (data.saved || []).filter((id: string) =>
+          events.some((e) => e.id === id),
+        ),
+      );
       setSubscribed(
         (data.subscribed || ['AI与算力']).filter((t: string) =>
           topics.includes(t as Topic),
         ),
       );
-      setReminders(data.reminders || {});
+      setReminders(
+        Object.fromEntries(
+          Object.entries(data.reminders || {}).filter(([id]) =>
+            events.some((e) => e.id === id),
+          ),
+        ) as Record<string, string>,
+      );
     } catch {}
     setLoaded(true);
   }, []);
@@ -144,7 +163,7 @@ export default function Home() {
     a.download = e.id + '.ics';
     a.click();
     URL.revokeObjectURL(url);
-    setToast('已导出日历演示文件；导入后请核对时间');
+    setToast('已导出日程；没有具体时间的条目按日期导出');
   }
   const base = events.filter(
     (e) =>
@@ -164,9 +183,24 @@ export default function Home() {
       (e) =>
         e.status !== '待确认' &&
         (view === 'month'
-          ? e.date.startsWith(week.slice(0, 7))
-          : inWeek(e.date, week)) &&
-        (!day || view === 'month' || e.date === day),
+          ? overlapsRange(
+              e,
+              week.slice(0, 7) + '-01',
+              shiftDate(
+                new Date(
+                  Date.UTC(
+                    Number(week.slice(0, 4)),
+                    Number(week.slice(5, 7)),
+                    1,
+                  ),
+                )
+                  .toISOString()
+                  .slice(0, 10),
+                -1,
+              ),
+            )
+          : overlapsRange(e, week, shiftDate(week, 6))) &&
+        (!day || view === 'month' || occursOn(e, day)),
     )
     .sort(
       (a, b) =>
@@ -190,7 +224,7 @@ export default function Home() {
     setQuery('');
     setMine(false);
     setDay('');
-    setWeek('2026-09-07');
+    setWeek(mondayOf(beijingToday()));
   }
   const monthStart = week.slice(0, 7) + '-01';
   const monthOffset = (new Date(monthStart + 'T00:00:00Z').getUTCDay() + 6) % 7;
@@ -203,6 +237,7 @@ export default function Home() {
     { length: Math.ceil((monthOffset + monthLength) / 7) * 7 },
     (_, i) => shiftDate(monthStart, i - monthOffset),
   );
+  const listDate = (e: CalendarEvent) => day || (e.date < week ? week : e.date);
   function row(e: CalendarEvent) {
     return (
       <article
@@ -210,7 +245,9 @@ export default function Home() {
         key={e.id}
       >
         <div className="event-time">
-          <strong>{e.time || '全天'}</strong>
+          <strong className={!e.time && !e.allDay ? 'date-only-label' : ''}>
+            {e.time || (e.allDay ? '全天' : '时间未公布')}
+          </strong>
           <span>{e.region}</span>
         </div>
         <div className="event-main">
@@ -221,7 +258,7 @@ export default function Home() {
             {e.title}
             <ChevronRight size={16} />
           </button>
-          {e.kind === '指标' ? (
+          {e.kind === '指标' && (e.previous || e.actual) ? (
             <div className="values">
               <span>
                 前值 <b>{e.previous || '—'}</b>
@@ -232,7 +269,7 @@ export default function Home() {
               <span>
                 公布{' '}
                 <b className={e.actual ? 'number' : ''}>
-                  {e.actual || '待公布'}
+                  {e.actual || '未收录'}
                 </b>
               </span>
               <small>{e.unit}</small>
@@ -241,7 +278,12 @@ export default function Home() {
             <p className="event-summary">{e.summary}</p>
           )}
           <div className="event-foot">
-            <span>{e.source.replace('（演示）', '')}</span>
+            <span>{e.source}</span>
+            {e.endDate && e.endDate !== e.date && (
+              <span>
+                {dateLabel(e.date)} — {dateLabel(e.endDate)}
+              </span>
+            )}
             {e.oldDate && (
               <span className="changed">
                 原定 {dateLabel(e.oldDate)} → {dateLabel(e.date)}
@@ -299,7 +341,7 @@ export default function Home() {
           <button
             className="avatar"
             onClick={() => setModal('demo')}
-            aria-label="打开演示设置"
+            aria-label="打开数据与功能说明"
           >
             J
           </button>
@@ -311,7 +353,7 @@ export default function Home() {
             <h1>财经日历</h1>
             <button className="sample-badge" onClick={() => setModal('demo')}>
               <Info size={13} />
-              示例日历 · 含模拟数据
+              数据更新 {beijingToday(new Date(dataset.updatedAt)).slice(5)}
             </button>
           </div>
           <div className="top-actions">
@@ -438,8 +480,9 @@ export default function Home() {
                 <button
                   className="today-button"
                   onClick={() => {
-                    setWeek('2026-09-07');
-                    setDay('2026-09-08');
+                    setWeek(mondayOf(beijingToday()));
+                    setToday(beijingToday());
+                    setDay(beijingToday());
                     setView('week');
                   }}
                 >
@@ -471,7 +514,7 @@ export default function Home() {
                     onClick={() => setDay(day === d ? '' : d)}
                     className={
                       (day === d ? 'chosen ' : '') +
-                      (d === '2026-09-08' ? 'today' : '')
+                      (d === today ? 'today' : '')
                     }
                     key={d}
                   >
@@ -520,18 +563,20 @@ export default function Home() {
             {view === 'week' ? (
               <div className="event-list">
                 {days
-                  .filter((d) => scheduled.some((e) => e.date === d))
+                  .filter((d) => scheduled.some((e) => listDate(e) === d))
                   .map((d) => (
                     <section key={d}>
                       <div className="day-heading">
                         <span>
                           {dateLabel(d)}
                           <small>星期{weekdays[days.indexOf(d)]}</small>
-                          {d === '2026-09-08' && <i>今日</i>}
+                          {d === today && <i>今日</i>}
                         </span>
-                        <b>{scheduled.filter((e) => e.date === d).length} 项</b>
+                        <b>
+                          {scheduled.filter((e) => listDate(e) === d).length} 项
+                        </b>
                       </div>
-                      {scheduled.filter((e) => e.date === d).map(row)}
+                      {scheduled.filter((e) => listDate(e) === d).map(row)}
                     </section>
                   ))}
               </div>
@@ -550,18 +595,20 @@ export default function Home() {
                     }
                     key={d}
                   >
-                    <span className={d === '2026-09-08' ? 'today-number' : ''}>
+                    <span className={d === today ? 'today-number' : ''}>
                       {Number(d.slice(8))}
                     </span>
                     {scheduled
-                      .filter((e) => e.date === d)
+                      .filter((e) => occursOn(e, d))
                       .map((e) => (
                         <button
                           onClick={() => setSelected(e)}
                           className={color(e.topics[0])}
                           key={e.id}
                         >
-                          <span>{e.time || '全天'}</span>
+                          <span>
+                            {e.time || (e.allDay ? '全天' : '时间未公布')}
+                          </span>
                           {e.title}
                         </button>
                       ))}
@@ -602,9 +649,10 @@ export default function Home() {
             </div>
             <SheetTitle>{selected?.title}</SheetTitle>
             <SheetDescription>
-              {selected?.real
-                ? '官方日程样本 · 来源核验于 2026-09-08'
-                : '示例事件 · 非真实日程'}
+              {selected?.source} ·{' '}
+              {selected?.checkedAt &&
+                beijingToday(new Date(selected.checkedAt))}{' '}
+              采集
             </SheetDescription>
           </SheetHeader>
           {selected && (
@@ -615,11 +663,16 @@ export default function Home() {
                   {selected.status === '待确认'
                     ? windowLabel(selected.date)
                     : selected.date}{' '}
-                  {selected.time ||
-                    (selected.status === '待确认' ? '日期待定' : '全天')}
+                  {selected.endDate && selected.endDate !== selected.date
+                    ? ' — ' + selected.endDate
+                    : ''}{' '}
+                  {selected.time || (selected.allDay ? '全天' : '时间未公布')}
                 </span>
                 <span className="detail-status">
-                  {selected.kind} · {selected.status}
+                  {selected.kind} ·{' '}
+                  {(selected.endDate || selected.date) < today
+                    ? '日程已过'
+                    : '官方已列日程'}
                 </span>
               </div>
               {selected.oldDate && (
@@ -644,10 +697,11 @@ export default function Home() {
                     一致预期<strong>—</strong>
                   </div>
                   <div>
-                    公布值<strong>{selected.actual || '待公布'}</strong>
+                    公布值<strong>{selected.actual || '未收录'}</strong>
                   </div>
                   <p>
-                    {selected.unit} · 统计期：{selected.period} · 未核实一致预期
+                    {selected.unit} · 统计期：{selected.period} ·
+                    当前收录发布日程，数值未接入
                   </p>
                 </div>
               )}
@@ -657,23 +711,24 @@ export default function Home() {
                   信息来源
                 </h3>
                 <b>{selected.source}</b>
+                <p>{selected.timeNote || '日期以主办方当地日程为准。'}</p>
+                {selected.sourceNote && <p>{selected.sourceNote}</p>}
                 <p>
-                  {selected.real
-                    ? '官方页面列示 2026-09-10 13:30，时区 Asia/Taipei，与北京时间同为 UTC+8。前值取官方 2026 年月营收页。'
-                    : '示例事件；链接仅供信源参考，不代表该事件已获确认。'}
+                  {selected.acquisition === 'automated'
+                    ? '公开页面采集'
+                    : '官方页面人工核对'}{' '}
+                  · {beijingToday(new Date(selected.checkedAt))}
                 </p>
                 <a href={selected.url} target="_blank" rel="noreferrer">
-                  {selected.real ? '查看官方日程' : '查看参考来源'}
-                  <ArrowUpRight size={15} />
+                  查看官方来源 <ArrowUpRight size={15} />
                 </a>
-                {selected.real && (
+                {selected.changeSourceUrl && (
                   <a
-                    href="https://investor.tsmc.com/english/monthly-revenue/2026"
+                    href={selected.changeSourceUrl}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    查看前值来源
-                    <ArrowUpRight size={15} />
+                    查看改期通知 <ArrowUpRight size={15} />
                   </a>
                 )}
               </section>
@@ -723,7 +778,7 @@ export default function Home() {
           <DialogHeader>
             <DialogTitle>
               {modal === 'demo'
-                ? '演示说明'
+                ? '数据与功能说明'
                 : modal === 'member'
                   ? 'PLUS 日历权益'
                   : modal === 'subscriptions'
@@ -737,9 +792,29 @@ export default function Home() {
           {modal === 'demo' && (
             <div className="dialog-body">
               <p>
-                当前为 2026 年 9
-                月样例日历。台积电营收日程已核对官方来源，其余事件与结果均为模拟。
+                已收录 {events.length} 项真实日程，来自 {dataset.sources.length}{' '}
+                个官方来源页面，覆盖 {dataset.coverageStart} 至{' '}
+                {dataset.coverageEnd}。当前为{' '}
+                {beijingToday(new Date(dataset.updatedAt))}{' '}
+                采集快照，尚未启用定时更新；营收等公布数值尚未接入。
               </p>
+              <div className="source-directory">
+                {dataset.sources.map((source) => (
+                  <a
+                    key={source.id}
+                    href={source.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>{source.name}</span>
+                    <small>
+                      {source.count} 项 ·{' '}
+                      {source.mode === 'automated' ? '页面采集' : '人工核对'} ·{' '}
+                      {beijingToday(new Date(source.checkedAt))}
+                    </small>
+                  </a>
+                ))}
+              </div>
               <label className="setting-line" htmlFor="member-view">
                 <span>体验 PLUS 会员视角</span>
                 <Switch

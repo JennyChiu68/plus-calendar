@@ -1,0 +1,370 @@
+[
+  {
+    "id": "eia",
+    "cacheKey": "eia",
+    "name": "美国能源信息署 EIA",
+    "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
+    "adapter": "eia-table",
+    "events": []
+  },
+  {
+    "id": "ras",
+    "cacheKey": "ras",
+    "name": "IEEE 机器人与自动化学会",
+    "url": "https://www.ieee-ras.org/events/month/2026-09/",
+    "adapter": "ras-jsonld",
+    "events": {
+      "COINS": {
+        "id": "coins-2026",
+        "title": "IEEE COINS 2026 国际会议",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "意大利",
+        "summary": "围绕物联网、人工智能及相关技术的国际会议。",
+        "kind": "事件"
+      },
+      "TAROS": {
+        "id": "taros-2026",
+        "title": "TAROS 2026 自主机器人系统会议",
+        "topics": [
+          "人形机器人"
+        ],
+        "region": "英国",
+        "summary": "自主机器人研究与应用会议，涵盖机器人感知、控制与学习。",
+        "kind": "事件"
+      },
+      "ICDL": {
+        "id": "icdl-2026",
+        "title": "IEEE ICDL 2026 发展与学习会议",
+        "topics": [
+          "人形机器人",
+          "AI与算力"
+        ],
+        "region": "日本",
+        "summary": "发展与学习领域会议，涉及机器人学习及认知系统。",
+        "kind": "事件"
+      },
+      "IROS": {
+        "id": "iros-2026",
+        "title": "IEEE/RSJ IROS 2026 智能机器人与系统会议",
+        "topics": [
+          "人形机器人",
+          "AI与算力"
+        ],
+        "region": "美国",
+        "summary": "在匹兹堡举行，日程包括主会及研讨会。",
+        "kind": "事件"
+      }
+    }
+  },
+  {
+    "id": "humanoids",
+    "cacheKey": "humanoids",
+    "name": "IEEE Humanoids 主办方",
+    "url": "https://2026.ieee-humanoids.org/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "humanoids-2026",
+        "title": "IEEE Humanoids 2026 人形机器人大会",
+        "topics": [
+          "人形机器人"
+        ],
+        "region": "美国",
+        "summary": "在加州圣克拉拉举行，聚焦人形机器人研究与技术。",
+        "kind": "事件",
+        "allDay": true,
+        "dateDefaults": {
+          "m": 12
+        },
+        "pattern": "December (?P<d>\\d+)\\s*[-–]\\s*(?P<ed>\\d+), (?P<y>2026)",
+        "sourceNote": "采用主办方当前首页列示的 12 月 6–9 日。"
+      }
+    ]
+  },
+  {
+    "id": "corl",
+    "cacheKey": "corl",
+    "name": "CoRL 主办方",
+    "url": "https://2026.corl.org/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "corl-2026",
+        "title": "CoRL 2026 机器人学习大会",
+        "topics": [
+          "人形机器人",
+          "AI与算力"
+        ],
+        "region": "美国",
+        "summary": "在奥斯汀举行，11 月 9–11 日为主会，12 日为研讨会。",
+        "kind": "事件",
+        "allDay": true,
+        "dateDefaults": {
+          "m": 11
+        },
+        "pattern": "November (?P<d>\\d+)-(?P<ed>\\d+)\\s*,\\s*(?P<y>2026)"
+      }
+    ]
+  },
+  {
+    "id": "huawei",
+    "cacheKey": "huawei",
+    "name": "华为活动官网",
+    "url": "https://www.huawei.com/cn/events/huaweiconnect",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "huawei-connect-2026",
+        "title": "华为全联接大会 2026",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "中国",
+        "summary": "在上海举行，议程涵盖 AI 基础设施、行业应用与开发者生态。",
+        "kind": "事件",
+        "allDay": true,
+        "pattern": "(?P<y>2026)年(?P<m>9)月(?P<d>17)-(?P<ed>19)日"
+      },
+      {
+        "id": "huawei-kunling-2026",
+        "title": "华为坤灵新品发布会",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "中国",
+        "summary": "在华为上海练秋湖园区举行。",
+        "kind": "事件",
+        "time": "10:00",
+        "timeNote": "官方时间为北京时间 9 月 16 日 10:00–12:00。",
+        "pattern": "(?P<y>2026)华为坤灵新品发布会 (?P<m>9)月(?P<d>16)日 10:00-12:00"
+      }
+    ]
+  },
+  {
+    "id": "apsara",
+    "cacheKey": "apsara",
+    "name": "阿里云云栖大会官网",
+    "url": "https://www.alibabacloud.com/en/apsara-conference/2026-about",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "apsara-2026",
+        "title": "2026 云栖大会",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "中国",
+        "summary": "在杭州国际博览中心举行，涵盖云计算与人工智能。",
+        "kind": "事件",
+        "allDay": true,
+        "dateDefaults": {
+          "m": 9
+        },
+        "pattern": "Sep (?P<d>\\d+)-(?P<ed>\\d+), (?P<y>2026)"
+      }
+    ]
+  },
+  {
+    "id": "nvidia",
+    "cacheKey": "nvidia",
+    "name": "NVIDIA GTC 官网",
+    "url": "https://www.nvidia.com/gtc/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "gtc-berlin-2026",
+        "title": "NVIDIA GTC 柏林",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "德国",
+        "summary": "NVIDIA 在欧洲举办的 AI 技术大会。",
+        "kind": "事件",
+        "allDay": true,
+        "dateDefaults": {
+          "y": 2026,
+          "m": 10
+        },
+        "pattern": "GTC Berlin October (?P<d>\\d+)[–-](?P<ed>\\d+)",
+        "requires": [
+          "GTC 2027"
+        ]
+      },
+      {
+        "id": "gtc-dc-2026",
+        "title": "NVIDIA GTC 华盛顿",
+        "topics": [
+          "AI与算力",
+          "政策与监管"
+        ],
+        "region": "美国",
+        "summary": "汇集政策制定者、科研人员及产业参与者，讨论 AI 技术与应用。",
+        "kind": "事件",
+        "allDay": true,
+        "dateDefaults": {
+          "y": 2026,
+          "m": 11,
+          "em": 12
+        },
+        "pattern": "GTC Washington, D.C. November (?P<d>\\d+)[–-]December (?P<ed>\\d+)",
+        "requires": [
+          "GTC 2027"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ms",
+    "cacheKey": "ms",
+    "name": "微软活动官网",
+    "url": "https://www.microsoft.com/en-us/events",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "ignite-2026",
+        "title": "Microsoft Ignite 2026",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "美国",
+        "summary": "在旧金山举行，内容涵盖 AI、云与安全技术。",
+        "kind": "事件",
+        "allDay": true,
+        "dateDefaults": {
+          "m": 11
+        },
+        "pattern": "November (?P<d>\\d+)[–-](?P<ed>\\d+), (?P<y>2026)"
+      }
+    ]
+  },
+  {
+    "id": "aws",
+    "cacheKey": "aws",
+    "name": "AWS re:Invent 官网",
+    "url": "https://aws.amazon.com/events/reinvent/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "reinvent-2026",
+        "title": "AWS re:Invent 2026",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "美国",
+        "summary": "在拉斯维加斯举行，议程涵盖云计算和 AI。",
+        "kind": "事件",
+        "allDay": true,
+        "dateDefaults": {
+          "m": 11,
+          "em": 12
+        },
+        "pattern": "AWS re:Invent (?P<y>2026).*?Nov (?P<d>\\d+)-Dec (?P<ed>\\d+)"
+      }
+    ]
+  },
+  {
+    "id": "miit",
+    "cacheKey": "miit",
+    "name": "工业和信息化部",
+    "url": "https://wap.miit.gov.cn/gzcy/yjzj/art/2026/art_cb9cca921b2946c595d897b14bf520a6.html",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "miit-deadline",
+        "title": "国家人形机器人产业标准体系建设指南征求意见截止",
+        "topics": [
+          "人形机器人",
+          "政策与监管"
+        ],
+        "region": "中国",
+        "summary": "工信部公开征求意见的反馈期限。",
+        "kind": "政策",
+        "timeNote": "官方仅列截止日期，未给出截止时刻。",
+        "pattern": "公示时间：2026年8月\\d+日—(?P<y>2026)年(?P<m>9)月(?P<d>23)日"
+      }
+    ]
+  },
+  {
+    "id": "miit-computer",
+    "cacheKey": "miit-computer",
+    "name": "工业和信息化部",
+    "url": "https://wap.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_e87f52b06edd430abb90fa6e35670f93.html",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "miit-computer-deadline",
+        "title": "通用计算机性能评测方法等 25 项标准报批公示截止",
+        "topics": [
+          "政策与监管",
+          "AI与算力"
+        ],
+        "region": "中国",
+        "summary": "工信部公开征求意见的反馈期限。",
+        "kind": "政策",
+        "timeNote": "官方仅列截止日期，未给出截止时刻。",
+        "pattern": "公示时间：2026年8月\\d+日—(?P<y>2026)年(?P<m>9)月(?P<d>12)日"
+      }
+    ]
+  },
+  {
+    "id": "iea",
+    "cacheKey": "iea",
+    "name": "国际能源署 IEA",
+    "url": "https://www.iea.org/events",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "iea-efficiency-2026",
+        "title": "IEA 企业能效多重收益研讨会",
+        "topics": [
+          "能源与电力"
+        ],
+        "region": "线上",
+        "summary": "围绕企业能效投资及其多重收益的线上研讨会。",
+        "kind": "事件",
+        "time": "21:00",
+        "timeNote": "巴黎时间 9 月 10 日 15:00 开始，换算北京时间为 21:00。",
+        "dateDefaults": {
+          "m": 9
+        },
+        "pattern": "(?P<d>10) Sep (?P<y>2026) 15:00",
+        "url": "https://www.iea.org/events/multiple-benefits-of-energy-efficiency-for-business-webinar"
+      },
+      {
+        "id": "iea-omr-2026-09",
+        "title": "IEA 9 月石油市场报告发布",
+        "topics": [
+          "能源与电力"
+        ],
+        "region": "全球",
+        "summary": "国际能源署发布月度石油市场报告。",
+        "kind": "事件",
+        "dateDefaults": {
+          "m": 9
+        },
+        "pattern": "(?P<d>11) Sep (?P<y>2026) Oil Market Report",
+        "timeNote": "官方仅列报告发布日；本站收录公开发布日程，不转载付费报告。",
+        "url": "https://www.iea.org/events/oil-market-report-september-2026"
+      },
+      {
+        "id": "iea-prices-2026",
+        "title": "IEA 能源价格数据质量研讨会",
+        "topics": [
+          "能源与电力"
+        ],
+        "region": "线上",
+        "summary": "邀请制研讨会，围绕能源价格数据质量开展交流。",
+        "kind": "事件",
+        "time": "20:00",
+        "timeNote": "巴黎时间 9 月 17 日 14:00 开始，换算北京时间为 20:00。",
+        "dateDefaults": {
+          "m": 9
+        },
+        "pattern": "(?P<d>17) Sep (?P<y>2026) 14:00",
+        "url": "https://www.iea.org/events/improving-the-quality-of-energy-prices-data-webinar"
+      }
+    ]
+  }
+]

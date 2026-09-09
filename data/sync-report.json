@@ -1,0 +1,156 @@
+{
+  "attemptedAt": "2026-09-09T03:05:28+00:00",
+  "sources": [
+    {
+      "id": "eia",
+      "name": "美国能源信息署 EIA",
+      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 5,
+      "status": "ok",
+      "hash": "ce0a5cd7fa5fc699c8bb9c9897054dd2a8ab94161eb397ea45c81bcd24751536"
+    },
+    {
+      "id": "ras",
+      "name": "IEEE 机器人与自动化学会",
+      "url": "https://www.ieee-ras.org/events/month/2026-09/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 4,
+      "status": "ok",
+      "hash": "519cc50dc44cc7ebc2dd81554e1d5452963c364b59bf0cde84cd82133874e1b6"
+    },
+    {
+      "id": "humanoids",
+      "name": "IEEE Humanoids 主办方",
+      "url": "https://2026.ieee-humanoids.org/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "4066e53107a16dc7ccb164ff05eab274292a3e41c38fcdfc57bb635a49df7dc8"
+    },
+    {
+      "id": "corl",
+      "name": "CoRL 主办方",
+      "url": "https://2026.corl.org/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "fe8d5f4d4ebc6b6fe6beb5d62b21332e736de2696290f041342d27658adfb189"
+    },
+    {
+      "id": "huawei",
+      "name": "华为活动官网",
+      "url": "https://www.huawei.com/cn/events/huaweiconnect",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 2,
+      "status": "ok",
+      "hash": "bbc379ce5a8161b58b7a8d86f4410aaea23866611161d3ae8d428f51c228a33f"
+    },
+    {
+      "id": "apsara",
+      "name": "阿里云云栖大会官网",
+      "url": "https://www.alibabacloud.com/en/apsara-conference/2026-about",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "ee905115c0abae2302cd5572657ecd3154480c81858fe9b940edc4084c67fc25"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA GTC 官网",
+      "url": "https://www.nvidia.com/gtc/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 2,
+      "status": "ok",
+      "hash": "1f806fc53724a15d78055d1ba5d78ba8caeee47e0c3e49b8bb3a0536ddacaff7"
+    },
+    {
+      "id": "ms",
+      "name": "微软活动官网",
+      "url": "https://www.microsoft.com/en-us/events",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "25da9e464c9207ce35a1427eaf72e79977e7706faf91e3d23a59cc9c9d95221e"
+    },
+    {
+      "id": "aws",
+      "name": "AWS re:Invent 官网",
+      "url": "https://aws.amazon.com/events/reinvent/",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "5d8d4c2e694a33b18391f35cc5ed6380e976d6eab9182b4637d55c4caa492077"
+    },
+    {
+      "id": "miit",
+      "name": "工业和信息化部",
+      "url": "https://wap.miit.gov.cn/gzcy/yjzj/art/2026/art_cb9cca921b2946c595d897b14bf520a6.html",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "622494875c9fd8eb1904c136181cfe37a798d90e04ca160c9ed2c6d3656e5bf7"
+    },
+    {
+      "id": "miit-computer",
+      "name": "工业和信息化部",
+      "url": "https://wap.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_e87f52b06edd430abb90fa6e35670f93.html",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 1,
+      "status": "ok",
+      "hash": "8c3c08b5253f5e9adccedc4168c4e9a39e65a1a08df85d2927bc2c5508ec9424"
+    },
+    {
+      "id": "iea",
+      "name": "国际能源署 IEA",
+      "url": "https://www.iea.org/events",
+      "mode": "automated",
+      "checkedAt": "2026-09-09T03:05:28+00:00",
+      "count": 3,
+      "status": "ok",
+      "hash": "460fd7e030944787fed83b5320c7fd2a88fd5bd76830e817f272fe5b9bfc6c01"
+    },
+    {
+      "id": "tsmc",
+      "name": "台积电投资者关系",
+      "url": "https://investor.tsmc.com/chinese/financial-calendar",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "count": 5,
+      "status": "reviewed",
+      "note": "官方网页人工核对；程序直接访问受限。"
+    },
+    {
+      "id": "sec",
+      "name": "美国证券交易委员会 SEC",
+      "url": "https://www.sec.gov/newsroom/meetings-events",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "count": 2,
+      "status": "reviewed",
+      "note": "官方网页人工核对；程序直接访问受限。"
+    },
+    {
+      "id": "ferc",
+      "name": "美国联邦能源监管委员会 FERC",
+      "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "count": 4,
+      "status": "reviewed",
+      "note": "官方网页人工核对；程序直接访问受限。"
+    }
+  ],
+  "datasetWritten": true
+}

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: '金十 PLUS 日历 · 多维主题日历',
   description:
-    '金十 PLUS 多维主题日历概念演示：事件、指标、政策进程与订阅。含模拟数据。',
+    '金十 PLUS 多维主题日历：AI、机器人、政策与能源的真实公开日程，附官方来源及采集时间。',
   robots: { index: false, follow: false },
 };
 

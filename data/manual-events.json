@@ -1,0 +1,281 @@
+{
+  "sources": [
+    {
+      "id": "tsmc",
+      "name": "台积电投资者关系",
+      "url": "https://investor.tsmc.com/chinese/financial-calendar",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "count": 5,
+      "status": "reviewed",
+      "note": "官方网页人工核对；程序直接访问受限。"
+    },
+    {
+      "id": "sec",
+      "name": "美国证券交易委员会 SEC",
+      "url": "https://www.sec.gov/newsroom/meetings-events",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "count": 2,
+      "status": "reviewed",
+      "note": "官方网页人工核对；程序直接访问受限。"
+    },
+    {
+      "id": "ferc",
+      "name": "美国联邦能源监管委员会 FERC",
+      "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
+      "mode": "manual",
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "count": 4,
+      "status": "reviewed",
+      "note": "官方网页人工核对；程序直接访问受限。"
+    }
+  ],
+  "events": [
+    {
+      "id": "tsmc-2026-08",
+      "title": "台积电 8 月营收报告",
+      "topics": [
+        "AI与算力"
+      ],
+      "region": "中国台湾",
+      "summary": "发布 2026 年 8 月营业额报告。",
+      "kind": "指标",
+      "date": "2026-09-10",
+      "time": "13:30",
+      "period": "2026年8月",
+      "unit": "百万新台币",
+      "timeNote": "官方时间为台北时间 13:30，与北京时间同为 UTC+8。此处接入发布日程，未接入营收数值。",
+      "evidence": "2026-09-10 13:30",
+      "sourceId": "tsmc",
+      "source": "台积电投资者关系",
+      "url": "https://investor.tsmc.com/chinese/financial-calendar",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "tsmc-2026-09",
+      "title": "台积电 9 月营收报告",
+      "topics": [
+        "AI与算力"
+      ],
+      "region": "中国台湾",
+      "summary": "发布 2026 年 9 月营业额报告。",
+      "kind": "指标",
+      "date": "2026-10-08",
+      "time": "13:30",
+      "period": "2026年9月",
+      "unit": "百万新台币",
+      "timeNote": "官方时间为台北时间 13:30，与北京时间同为 UTC+8。此处接入发布日程，未接入营收数值。",
+      "evidence": "2026-10-08 13:30",
+      "sourceId": "tsmc",
+      "source": "台积电投资者关系",
+      "url": "https://investor.tsmc.com/chinese/financial-calendar",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "tsmc-2026-10",
+      "title": "台积电 10 月营收报告",
+      "topics": [
+        "AI与算力"
+      ],
+      "region": "中国台湾",
+      "summary": "发布 2026 年 10 月营业额报告。",
+      "kind": "指标",
+      "date": "2026-11-10",
+      "time": "13:30",
+      "period": "2026年10月",
+      "unit": "百万新台币",
+      "timeNote": "官方时间为台北时间 13:30，与北京时间同为 UTC+8。此处接入发布日程，未接入营收数值。",
+      "evidence": "2026-11-10 13:30",
+      "sourceId": "tsmc",
+      "source": "台积电投资者关系",
+      "url": "https://investor.tsmc.com/chinese/financial-calendar",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "tsmc-2026-11",
+      "title": "台积电 11 月营收报告",
+      "topics": [
+        "AI与算力"
+      ],
+      "region": "中国台湾",
+      "summary": "发布 2026 年 11 月营业额报告。",
+      "kind": "指标",
+      "date": "2026-12-10",
+      "time": "13:30",
+      "period": "2026年11月",
+      "unit": "百万新台币",
+      "timeNote": "官方时间为台北时间 13:30，与北京时间同为 UTC+8。此处接入发布日程，未接入营收数值。",
+      "evidence": "2026-12-10 13:30",
+      "sourceId": "tsmc",
+      "source": "台积电投资者关系",
+      "url": "https://investor.tsmc.com/chinese/financial-calendar",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "tsmc-2026-12",
+      "title": "台积电 12 月营收报告",
+      "topics": [
+        "AI与算力"
+      ],
+      "region": "中国台湾",
+      "summary": "发布 2026 年 12 月营业额报告。",
+      "kind": "指标",
+      "date": "2027-01-08",
+      "time": "13:30",
+      "period": "2026年12月",
+      "unit": "百万新台币",
+      "timeNote": "官方时间为台北时间 13:30，与北京时间同为 UTC+8。此处接入发布日程，未接入营收数值。",
+      "evidence": "2027-01-08 13:30",
+      "sourceId": "tsmc",
+      "source": "台积电投资者关系",
+      "url": "https://investor.tsmc.com/chinese/financial-calendar",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "sec-iac-2026-09",
+      "title": "SEC 投资者咨询委员会会议",
+      "topics": [
+        "政策与监管",
+        "AI与算力"
+      ],
+      "region": "美国",
+      "summary": "议程涉及 AI 披露及市场结构等议题。",
+      "kind": "事件",
+      "date": "2026-09-10",
+      "time": "22:00",
+      "timeNote": "美东夏令时 10:00，换算北京时间为 22:00。",
+      "url": "https://www.sec.gov/newsroom/meetings-events/iac091026",
+      "evidence": "September 10, 2026 10:00 am",
+      "sourceId": "sec",
+      "source": "美国证券交易委员会 SEC",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "sec-trading-2026",
+      "title": "SEC 全天候交易准备圆桌会议",
+      "topics": [
+        "政策与监管"
+      ],
+      "region": "美国",
+      "summary": "讨论延长证券交易时段的准备工作。",
+      "kind": "事件",
+      "date": "2026-09-17",
+      "time": "22:00",
+      "timeNote": "美东夏令时 10:00，换算北京时间为 22:00。",
+      "url": "https://www.sec.gov/newsroom/meetings-events/roundtable-preparations-24-hour-trading",
+      "evidence": "September 17, 2026 10:00 am",
+      "sourceId": "sec",
+      "source": "美国证券交易委员会 SEC",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "ferc-2026-09-10",
+      "title": "FERC 9 月公开会议",
+      "topics": [
+        "能源与电力",
+        "政策与监管"
+      ],
+      "region": "美国",
+      "summary": "美国联邦能源监管委员会月度公开会议。",
+      "kind": "事件",
+      "date": "2026-09-10",
+      "evidence": "2026-09-10",
+      "timeNote": "美东夏令时 10:00，换算北京时间为 22:00。",
+      "time": "22:00",
+      "oldDate": "2026-09-17",
+      "url": "https://www.ferc.gov/news-events/events/september-10-2026-open-meeting-10082025",
+      "changeSourceUrl": "https://www.ferc.gov/sites/default/files/2026-01/Notice%20of%20Change%20in%20September%202026%20Meeting%20date.pdf",
+      "sourceId": "ferc",
+      "source": "美国联邦能源监管委员会 FERC",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "ferc-2026-10-15",
+      "title": "FERC 10 月公开会议",
+      "topics": [
+        "能源与电力",
+        "政策与监管"
+      ],
+      "region": "美国",
+      "summary": "美国联邦能源监管委员会月度公开会议。",
+      "kind": "事件",
+      "date": "2026-10-15",
+      "evidence": "2026-10-15",
+      "timeNote": "官方年度安排列示日期；本条未录入具体开始时间。",
+      "sourceId": "ferc",
+      "source": "美国联邦能源监管委员会 FERC",
+      "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "ferc-2026-11-19",
+      "title": "FERC 11 月公开会议",
+      "topics": [
+        "能源与电力",
+        "政策与监管"
+      ],
+      "region": "美国",
+      "summary": "美国联邦能源监管委员会月度公开会议。",
+      "kind": "事件",
+      "date": "2026-11-19",
+      "evidence": "2026-11-19",
+      "timeNote": "官方年度安排列示日期；本条未录入具体开始时间。",
+      "sourceId": "ferc",
+      "source": "美国联邦能源监管委员会 FERC",
+      "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    },
+    {
+      "id": "ferc-2026-12-17",
+      "title": "FERC 12 月公开会议",
+      "topics": [
+        "能源与电力",
+        "政策与监管"
+      ],
+      "region": "美国",
+      "summary": "美国联邦能源监管委员会月度公开会议。",
+      "kind": "事件",
+      "date": "2026-12-17",
+      "evidence": "2026-12-17",
+      "timeNote": "官方年度安排列示日期；本条未录入具体开始时间。",
+      "sourceId": "ferc",
+      "source": "美国联邦能源监管委员会 FERC",
+      "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
+      "status": "已确认",
+      "real": true,
+      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "acquisition": "manual"
+    }
+  ]
+}

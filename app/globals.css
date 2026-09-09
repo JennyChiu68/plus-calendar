@@ -1567,3 +1567,36 @@ h1 {
     gap: 32px;
   }
 }
+
+.event-time strong.date-only-label {
+  font-size: 12px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+.settings-dialog {
+  max-height: 88dvh;
+  overflow-y: auto;
+}
+.source-directory {
+  max-height: 240px;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.source-directory a {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.source-directory a:last-child {
+  border-bottom: 0;
+}
+.source-directory a:hover {
+  background: #f4f7fc;
+}
+.source-directory small {
+  color: var(--soft);
+  font-size: 11px;
+}
