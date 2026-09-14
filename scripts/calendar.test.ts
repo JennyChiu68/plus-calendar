@@ -34,8 +34,11 @@ void test('Taipei and US daylight times export as the correct UTC instants', () 
   assert.match(icsForEvent(tsmc)!, /DTSTART:20260910T053000Z/);
   const sec = events.find((e) => e.id === 'sec-iac-2026-09')!;
   assert.match(icsForEvent(sec)!, /DTSTART:20260910T140000Z/);
-  assert.equal(tsmc.actual, undefined);
-  assert.equal(tsmc.previous, undefined);
+  assert.equal(tsmc.actual, '514,806');
+  assert.equal(tsmc.previous, '467,580');
+  assert.equal(tsmc.unit, '百万新台币');
+  assert.equal(tsmc.status, '已公布');
+  assert.match(tsmc.url, /monthly-revenue\/2026$/);
 });
 void test('multi-day meetings appear in every overlapping range, without duplicate records', () => {
   const e = events.find((e) => e.id === 'iros-2026')!;
@@ -102,4 +105,8 @@ void test('new US events preserve the Beijing day rollover and November standard
   assert.match(icsForEvent(ash)!, /DTSTART:20261104T140000Z/);
   const sitc = events.find((e) => e.id === 'sitc-abstracts-2026')!;
   assert.match(icsForEvent(sitc)!, /DTSTART:20261103T140000Z/);
+  const japan = events.find((e) => e.id === 'semi-japan-design-2026')!;
+  assert.match(icsForEvent(japan)!, /DTSTART:20260915T013000Z/);
+  const ferc = events.find((e) => e.id === 'ferc-reliability-2026')!;
+  assert.match(icsForEvent(ferc)!, /DTSTART:20261021T140000Z/);
 });

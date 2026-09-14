@@ -5,7 +5,7 @@
       "name": "台积电投资者关系",
       "url": "https://investor.tsmc.com/chinese/financial-calendar",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 5,
       "status": "reviewed",
       "note": "官方网页人工核对；程序直接访问受限。"
@@ -15,7 +15,7 @@
       "name": "美国证券交易委员会 SEC",
       "url": "https://www.sec.gov/newsroom/meetings-events",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 2,
       "status": "reviewed",
       "note": "官方网页人工核对；程序直接访问受限。"
@@ -25,7 +25,7 @@
       "name": "美国联邦能源监管委员会 FERC",
       "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 4,
       "status": "reviewed",
       "note": "官方网页人工核对；程序直接访问受限。"
@@ -35,7 +35,7 @@
       "name": "美国心脏协会 AHA",
       "url": "https://professional.heart.org/en/meetings/scientific-sessions",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 1,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
@@ -45,7 +45,7 @@
       "name": "eMove360 主办方",
       "url": "https://www.emove360.com/ready-for-the-next-chapter-emove360-europe-2026-ai-is-driving-the-mobility/",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 1,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
@@ -55,8 +55,8 @@
       "name": "SEMI 官方活动日历",
       "url": "https://www.semi.org/en/expositions-events/calendar",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 13,
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "count": 17,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
     },
@@ -65,10 +65,20 @@
       "name": "RSA Conference 官方活动",
       "url": "https://www.rsaconference.com/en",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 1,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "ferc-reliability",
+      "name": "FERC 电力可靠性专题会议",
+      "url": "https://cms.ferc.gov/news-events/events/commissioner-led-reliability-technical-conference-06122026",
+      "mode": "manual",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "依据官方会议详情核对日期与时区；URL 中的数字不作为会议日期。"
     }
   ],
   "events": [
@@ -80,21 +90,24 @@
         "AI与算力"
       ],
       "region": "中国台湾",
-      "summary": "发布 2026 年 8 月营业额报告。",
+      "summary": "2026 年 8 月合并营收 514,806 百万新台币，同比增长 53.3%。",
       "kind": "指标",
       "date": "2026-09-10",
       "time": "13:30",
       "period": "2026年8月",
       "unit": "百万新台币",
-      "timeNote": "官方时间为台北时间 13:30，与北京时间同为 UTC+8。此处接入发布日程，未接入营收数值。",
-      "evidence": "2026-09-10 13:30",
+      "timeNote": "官方原定发布时刻为台北时间 9 月 10 日 13:30，与北京时间相同；9 月 14 日已核对正式公布值。",
+      "evidence": "2026年每月营业额报告；单位：新台币百万元；七月 467,580；八月 514,806，年度增减 53.3%。",
       "sourceId": "tsmc",
       "source": "台积电投资者关系",
-      "url": "https://investor.tsmc.com/chinese/financial-calendar",
-      "status": "已确认",
+      "url": "https://investor.tsmc.com/chinese/monthly-revenue/2026",
+      "status": "已公布",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
-      "acquisition": "manual"
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "acquisition": "manual",
+      "actual": "514,806",
+      "previous": "467,580",
+      "sourceNote": "发布日期由官方营运报告行事历核对；公布值及前值来自官方 2026 年每月营业额报告，2026 年数值未经审计。"
     },
     {
       "id": "tsmc-2026-09",
@@ -117,7 +130,7 @@
       "url": "https://investor.tsmc.com/chinese/financial-calendar",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -141,7 +154,7 @@
       "url": "https://investor.tsmc.com/chinese/financial-calendar",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -165,7 +178,7 @@
       "url": "https://investor.tsmc.com/chinese/financial-calendar",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -189,7 +202,7 @@
       "url": "https://investor.tsmc.com/chinese/financial-calendar",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -211,7 +224,7 @@
       "source": "美国证券交易委员会 SEC",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -232,7 +245,7 @@
       "source": "美国证券交易委员会 SEC",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -256,7 +269,7 @@
       "source": "美国联邦能源监管委员会 FERC",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -277,7 +290,7 @@
       "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -298,7 +311,7 @@
       "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -319,7 +332,7 @@
       "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
       "status": "已确认",
       "real": true,
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -339,7 +352,7 @@
       "url": "https://professional.heart.org/en/meetings/scientific-sessions",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-11-06 / 2026-11-09"
     },
@@ -361,7 +374,7 @@
       "url": "https://www.emove360.com/ready-for-the-next-chapter-emove360-europe-2026-ai-is-driving-the-mobility/",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-10-13 / 2026-10-14"
     },
@@ -381,7 +394,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-09-09"
     },
@@ -404,7 +417,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual"
     },
     {
@@ -424,7 +437,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-09-16 / 2026-09-17"
     },
@@ -445,7 +458,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-09-17 / 2026-09-19"
     },
@@ -464,7 +477,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-09-22"
     },
@@ -484,7 +497,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-09-29"
     },
@@ -503,7 +516,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-09-30"
     },
@@ -524,7 +537,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-10-13 / 2026-10-15"
     },
@@ -545,7 +558,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-10-14 / 2026-10-15"
     },
@@ -564,7 +577,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-10-14"
     },
@@ -585,7 +598,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-11-01 / 2026-11-04"
     },
@@ -606,7 +619,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-11-10 / 2026-11-13"
     },
@@ -627,7 +640,7 @@
       "source": "SEMI 官方活动日历",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-11-10 / 2026-11-12"
     },
@@ -646,9 +659,117 @@
       "source": "RSA Conference 官方活动",
       "real": true,
       "status": "已确认",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "acquisition": "manual",
       "evidence": "2026-09-22"
+    },
+    {
+      "id": "semi-japan-design-2026",
+      "title": "SEMI 日本半导体设计与 AI 芯片研讨会",
+      "date": "2026-09-15",
+      "topics": [
+        "半导体",
+        "AI与算力"
+      ],
+      "region": "日本",
+      "summary": "讨论定制芯片设计与 AI 半导体企业实践。",
+      "kind": "事件",
+      "url": "https://www.semi.org/jp/events/semi-business-update-20260915",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "acquisition": "manual",
+      "evidence": "2026年9月15日 10:30–11:55 JST",
+      "time": "09:30",
+      "timeNote": "日本标准时间 10:30，换算为北京时间 09:30。"
+    },
+    {
+      "id": "semi-northeast-2026",
+      "title": "SEMI 东北秋季论坛：先进封装与未来计算",
+      "date": "2026-09-15",
+      "topics": [
+        "半导体",
+        "AI与算力"
+      ],
+      "region": "美国",
+      "summary": "纽约奥尔巴尼举行，涵盖先进封装、AI 和半导体产业人才。",
+      "kind": "事件",
+      "url": "https://www.semi.org/en/connect/events/northeast-fall-forum",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "acquisition": "manual",
+      "evidence": "September 15, 2026; 11:30 am–6:00 pm EDT",
+      "time": "23:30",
+      "timeNote": "美国东部夏令时 9 月 15 日 11:30，换算为北京时间当日 23:30；该时刻为官方活动起始时间。"
+    },
+    {
+      "id": "3dpi-japan-2026",
+      "title": "SEMI 日本三维封装与集成标准会议",
+      "date": "2026-09-25",
+      "topics": [
+        "半导体"
+      ],
+      "region": "日本",
+      "summary": "三维封装与集成技术委员会会议，采用线上与线下结合形式。",
+      "kind": "事件",
+      "url": "https://www.semi.org/en/event/3d-packaging-integration-japan-tc-chapter-meeting-21",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "acquisition": "manual",
+      "evidence": "September 25, 2026; 2:00 PM–4:00 PM JST",
+      "time": "13:00",
+      "timeNote": "日本标准时间 14:00，换算为北京时间 13:00。"
+    },
+    {
+      "id": "semicon-japan-2026",
+      "title": "SEMICON Japan 半导体展",
+      "date": "2026-12-09",
+      "topics": [
+        "半导体"
+      ],
+      "region": "日本",
+      "summary": "在东京举行，涵盖半导体制造设备、材料与相关技术。",
+      "kind": "事件",
+      "url": "https://www.semiconjapan.org/",
+      "sourceId": "semi",
+      "source": "SEMI 官方活动日历",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "acquisition": "manual",
+      "evidence": "SEMI official calendar: SEMICON Japan 2026, Dec 9–11, Tokyo.",
+      "allDay": true,
+      "endDate": "2026-12-11"
+    },
+    {
+      "id": "ferc-reliability-2026",
+      "title": "FERC 电力可靠性技术会议",
+      "date": "2026-10-21",
+      "topics": [
+        "能源与电力",
+        "政策与监管"
+      ],
+      "region": "美国",
+      "summary": "讨论水电条件、资源充裕度与负荷增长对电力系统可靠性的影响。",
+      "kind": "事件",
+      "url": "https://cms.ferc.gov/news-events/events/commissioner-led-reliability-technical-conference-06122026",
+      "sourceId": "ferc-reliability",
+      "source": "FERC 电力可靠性专题会议",
+      "real": true,
+      "status": "已确认",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "acquisition": "manual",
+      "evidence": "Wednesday, Oct 21, 2026, 10:00 am–2:40 pm EDT; updated September 10, 2026.",
+      "time": "22:00",
+      "timeNote": "美国东部夏令时 10:00，换算为北京时间 22:00。"
     }
   ]
 }

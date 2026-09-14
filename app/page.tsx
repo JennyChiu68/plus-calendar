@@ -723,7 +723,7 @@ export default function Home() {
                   </div>
                   <p>
                     {selected.unit} · 统计期：{selected.period} ·
-                    当前收录发布日程，数值未接入
+                    {selected.actual ? '公布值已按官方报告核对' : '当前收录发布日程，数值未收录'}
                   </p>
                 </div>
               )}
@@ -823,7 +823,7 @@ export default function Home() {
                 个官方信源入口，覆盖 {dataset.coverageStart} 至{' '}
                 {dataset.coverageEnd}。当前为{' '}
                 {beijingToday(new Date(dataset.updatedAt))}{' '}
-                采集快照，尚未启用定时更新；营收等公布数值尚未接入。
+                采集快照，尚未启用定时更新；已收录的公布值附官方出处。
               </p>
               <div className="source-directory">
                 {dataset.sources.map((source) => (

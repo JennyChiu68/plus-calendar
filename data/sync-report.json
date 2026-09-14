@@ -1,52 +1,52 @@
 {
-  "attemptedAt": "2026-09-09T04:50:23+00:00",
+  "attemptedAt": "2026-09-14T06:29:24+00:00",
   "sources": [
     {
       "id": "ras",
       "name": "IEEE 机器人与自动化学会",
       "url": "https://www.ieee-ras.org/events/month/2026-09/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:57:02+00:00",
+      "checkedAt": "2026-09-14T06:25:30+00:00",
       "count": 4,
       "status": "ok",
-      "hash": "65c12ee503a4ceb44e6a5b7f03117a37e4a1ef8e789796aa3282d5490d71d97b"
+      "hash": "5e4afa2e9e3816fec90580084a64c74d0793040bcef3e55ec323d295ae3456b3"
     },
     {
       "id": "humanoids",
       "name": "IEEE Humanoids 主办方",
       "url": "https://2026.ieee-humanoids.org/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:57:00+00:00",
+      "checkedAt": "2026-09-14T06:25:29+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "0f6092d9e6eb7d22ac358e0224a90f8728242aebd475d9572ba2976a4df5e9c0"
+      "hash": "494ef4e95474640b7faf42a486f2a232daddadb5fcab0f4092e1850ed2ff4442"
     },
     {
       "id": "corl",
       "name": "CoRL 主办方",
       "url": "https://2026.corl.org/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:57:02+00:00",
+      "checkedAt": "2026-09-14T06:25:28+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "e11166370e58ba79f7bf9c389a2bf74a0d2a2cd95d732e8257adcd4dc6c74381"
+      "hash": "21c7f561fdba2bbccc4b641f86258c61a14eb714e142f011e81c99fd65df1e12"
     },
     {
       "id": "huawei",
       "name": "华为活动官网",
       "url": "https://www.huawei.com/cn/events/huaweiconnect",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:56:59+00:00",
+      "checkedAt": "2026-09-14T06:25:26+00:00",
       "count": 2,
       "status": "ok",
-      "hash": "d095799abbee9b74d40be1470e573adb309382f7ace2ce2782c0c29680f7ab4f"
+      "hash": "30cd24aa39ac9c74249668cc44dbbf2c4600694ab25f58d337738e5b2ce7ad6a"
     },
     {
       "id": "apsara",
       "name": "阿里云云栖大会官网",
       "url": "https://www.alibabacloud.com/en/apsara-conference/2026-about",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:57:00+00:00",
+      "checkedAt": "2026-09-14T06:25:27+00:00",
       "count": 1,
       "status": "ok",
       "hash": "4e7f530280d8a3c3de506671393ba18faebb1b0ddd2812b0f90fd44e3c064660"
@@ -56,47 +56,47 @@
       "name": "NVIDIA GTC 官网",
       "url": "https://www.nvidia.com/gtc/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:57:02+00:00",
+      "checkedAt": "2026-09-14T06:25:27+00:00",
       "count": 2,
       "status": "ok",
-      "hash": "84ca14b5f0dbfb7378fcab9ee36c63354a4cd5c9fcdc2298fbb305917a339c54"
+      "hash": "baaeb90589f0e2d4ea79b2ab3490e0c3dabe31d2777c94f8c968bf5a8ab9c4df"
     },
     {
       "id": "ms",
       "name": "微软活动官网",
       "url": "https://www.microsoft.com/en-us/events",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:57:05+00:00",
+      "checkedAt": "2026-09-14T06:25:28+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "4136f9cb5864d67e7510b845b09a7b35ce3ad71d33dff3c53d06d57faec9474e"
+      "hash": "f9b24bb21b0e9d7cde93848557ac2f1afe82aef65c800d5ff71e6c8d6a5a221b"
     },
     {
       "id": "aws",
       "name": "AWS re:Invent 官网",
       "url": "https://aws.amazon.com/events/reinvent/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:57:03+00:00",
+      "checkedAt": "2026-09-14T06:25:29+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "c317e49cc3724e75d57014a3c804122b6a1bb21a1e9c76375d4235e8cc36e34e"
+      "hash": "ce8a9f337ee7e9ddfd4f292918afc88d22c1fb494d8e54b5bcac45be30a4029d"
     },
     {
       "id": "miit",
       "name": "工业和信息化部",
       "url": "https://wap.miit.gov.cn/gzcy/yjzj/art/2026/art_cb9cca921b2946c595d897b14bf520a6.html",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:56:58+00:00",
+      "checkedAt": "2026-09-14T06:25:29+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "b25f70697019d4a34dce23c63dbfb7bbcebe029d5c6a2ecf4ad83c3f5ac8888f"
+      "hash": "eaeeb6a1aeeadf71f93bb43750a67d0429fc9c30d871e1a33188a5901f01ea49"
     },
     {
       "id": "miit-computer",
       "name": "工业和信息化部",
       "url": "https://wap.miit.gov.cn/jgsj/kjs/jscx/bzgf/art/2026/art_e87f52b06edd430abb90fa6e35670f93.html",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:56:58+00:00",
+      "checkedAt": "2026-09-14T06:25:29+00:00",
       "count": 1,
       "status": "ok",
       "hash": "6ada8ba565da2370db1900bdd4d765d09b59a7f9d94819903dfc1efdfd4ccfa2"
@@ -106,57 +106,57 @@
       "name": "国际能源署 IEA",
       "url": "https://www.iea.org/events",
       "mode": "automated",
-      "checkedAt": "2026-09-09T02:57:05+00:00",
+      "checkedAt": "2026-09-14T06:25:31+00:00",
       "count": 2,
       "status": "ok",
-      "hash": "460fd7e030944787fed83b5320c7fd2a88fd5bd76830e817f272fe5b9bfc6c01"
+      "hash": "c1c3335513b4d085d18e784059e49899de9f387198e76fad531579805e356caf"
     },
     {
       "id": "ras-oct",
       "name": "IEEE RAS 10 月日历",
       "url": "https://www.ieee-ras.org/events/month/2026-10/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "checkedAt": "2026-09-14T06:25:32+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "0f50cc0c7ad234eaa4d4aa7e74da7c0010e4eb6cc357aaabe7bd1b504094e223"
+      "hash": "3169b61864bc40af664f9284cf28d9f48e78b2aa66002e573096c2b3abe1f3ba"
     },
     {
       "id": "ras-nov",
       "name": "IEEE RAS 11 月日历",
       "url": "https://www.ieee-ras.org/events/month/2026-11/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:30+00:00",
+      "checkedAt": "2026-09-14T06:25:33+00:00",
       "count": 4,
       "status": "ok",
-      "hash": "73cd73079ac519023d0c510f608d2d751aa474a57b5234a8bbef710cb0e8802c"
+      "hash": "702296eebba9d4eca21247b53872709a20829f3972360fc3193aaa7e410d736d"
     },
     {
       "id": "ras-dec",
       "name": "IEEE RAS 12 月日历",
       "url": "https://www.ieee-ras.org/events/month/2026-12/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "checkedAt": "2026-09-14T06:25:33+00:00",
       "count": 2,
       "status": "ok",
-      "hash": "7b21b7d6e7821cf459eb3762b90cdff86ce7818c02e5b36bfef485114b9d2de0"
+      "hash": "5f628b8b2264d47b988d0047905d7311b865e0a1196d2e95eff85be826083ef9"
     },
     {
       "id": "neurips",
       "name": "NeurIPS 主办方",
       "url": "https://nips.cc/Conferences/2026",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:32+00:00",
+      "checkedAt": "2026-09-14T06:25:33+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "9fdb5ceee7f44d083a62b3f568ce4bfa739548c239d094ef2d6dcf742ee7a01f"
+      "hash": "e9715e9a390e4fb3459cd9c67c8ce5550769dd51eda9ed6cac4d1e089f4d8165"
     },
     {
       "id": "emnlp",
       "name": "ACL SIGDAT / EMNLP",
       "url": "https://2026.emnlp.org/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:33+00:00",
+      "checkedAt": "2026-09-14T06:25:32+00:00",
       "count": 1,
       "status": "ok",
       "hash": "870d36e2ab39acac9ff95504f77013bc5c6610858ce3d2f477912f006c2d5887"
@@ -166,47 +166,47 @@
       "name": "美国血液学会 ASH",
       "url": "https://www.hematology.org/meetings/annual-meeting",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:28+00:00",
+      "checkedAt": "2026-09-14T06:25:35+00:00",
       "count": 3,
       "status": "ok",
-      "hash": "d9ec35910e71ef10e5b79fcff2f9e7bdd59f908e40dd1c0cff76d57a462b993d"
+      "hash": "703281ae06b785c1c0c218594f7ad0d7622c18284827c51a174ed3a1fc003ee4"
     },
     {
       "id": "sitc",
       "name": "肿瘤免疫治疗学会 SITC",
       "url": "https://www.sitcancer.org/2026/home",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:29+00:00",
+      "checkedAt": "2026-09-14T06:25:36+00:00",
       "count": 2,
       "status": "ok",
-      "hash": "f7160b510417ab53d35f5ac053af5408d6299ef3a8aa6fa488c7c2154d077649"
+      "hash": "ebcfff38181eaf6072387f859829293d5cb165f795248a46bc8cd382588389bf"
     },
     {
       "id": "fda-ped",
       "name": "FDA 儿科咨询委员会",
       "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/pediatric-advisory-committee-meeting-announcement-09162026",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:50+00:00",
+      "checkedAt": "2026-09-14T06:25:34+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "e09b74bd59b238727b62898941390b9d5c9aa8219f244cfddf76312b056fec9b"
+      "hash": "0435e0307db1c0b0057b44d81ef1da1008fdf07be113a4ae90787cb13155b510"
     },
     {
       "id": "fda-gen",
       "name": "FDA 分子与临床遗传学专家组",
       "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/september-23-2026-molecular-and-clinical-genetics-panel-medical-devices-advisory-committee-meeting",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:51+00:00",
+      "checkedAt": "2026-09-14T06:25:34+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "d09fa6de1e236f9f85f0821c0c5cfae02eda7bd7758bd0746667c6fd7a645795"
+      "hash": "58eefd989ca5ad9e144e84c82f4d1bd2bff0d689a8ee034489680e9da3f721a4"
     },
     {
       "id": "windchina",
       "name": "北京国际风能大会主办方",
       "url": "https://www.chinawind.org.cn/index_en",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:33+00:00",
+      "checkedAt": "2026-09-14T06:25:33+00:00",
       "count": 1,
       "status": "ok",
       "hash": "d1670714ba41d74bab8d454517e48c5d705562f2c3e57f1f23a687fd4c472eb9"
@@ -216,127 +216,147 @@
       "name": "RE+ 主办方",
       "url": "https://www.re-plus.com/attend/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "checkedAt": "2026-09-14T06:25:36+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "94c1f96168ae0d7452fa0e500b4c7050d7114d505f23fad922bd3fe178f0c7e8"
+      "hash": "0e54855cfd7e567f4edc99ffd031eff32375fb4850634256af210d4f6df02258"
     },
     {
       "id": "windjapan",
       "name": "RX Japan / WIND EXPO",
-      "url": "https://www.wsew.jp/hub/ja-jp/about/wd.html",
+      "url": "https://www.wsew.jp/hub/ja-jp/exhibit/wd.html",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:37+00:00",
+      "checkedAt": "2026-09-14T06:27:36+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "374ae862c22c8d3f53b0d90928a7f8ac8095b04323e9035d29fc71b734424e29"
+      "hash": "962bc94b187cab484dfa313d1c29b3d868bfe2c75028515b488e805eadce2bc1"
     },
     {
       "id": "energyeurope",
       "name": "Battery & Energy Storage Tech Europe",
       "url": "https://www.batterytechexpoeurope.com/buy-your-ticket/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "checkedAt": "2026-09-14T06:25:37+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "21aa4f1fda3d565ea6f268d776c395bea0659baaae493ccf7a6af6465b8038fd"
+      "hash": "c1e79839253ed43c82b0960b889cb38f4215ce48dfddbcb132f7ac2e724fb30f"
     },
     {
       "id": "batteryshow",
       "name": "The Battery Show 主办方",
       "url": "https://www.thebatteryshow.com/attend/why-attend/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:34+00:00",
+      "checkedAt": "2026-09-14T06:25:38+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "cd9c5980bce51e704e9e3d0fa20acc3692673deeecb0e95e41ba69a0206bc18a"
+      "hash": "8c4c234168be6d5616936480315cbae2ca38fb021a0e336ec273a2057cebda66"
     },
     {
       "id": "paris",
       "name": "巴黎车展主办方",
       "url": "https://mondial.paris/en/practical-info",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:47+00:00",
+      "checkedAt": "2026-09-14T06:25:38+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "af89b23a2ab1618ee746c066c06b405c1e638a1ac2334ccbd66750234a2b1b02"
+      "hash": "fe59e34ba08c6e4a326e789096164c90c6ceed0f9966b691fb03387f49af1d7f"
     },
     {
       "id": "guangzhou",
       "name": "广州国际车展主办方",
       "url": "https://www.autoguangzhou.org.cn/index.html",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:44+00:00",
+      "checkedAt": "2026-09-14T06:25:37+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "e8e285351060f85968eb9a4dcb0876144e7d5a53263cb7e27db5a26572ae1b2c"
+      "hash": "1e481992ccfe74d005f64abe17e2b5eadae358992905fc5054248df0451773c2"
     },
     {
       "id": "eliv",
       "name": "德国工程师协会 VDI",
       "url": "https://www.vdiconference.com/eliv/program/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:48+00:00",
+      "checkedAt": "2026-09-14T06:25:40+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "78e984fc1da0379a72b825fd9ed6a64f8b0779b1ab21ab9d1f9464664e473b82"
+      "hash": "55f8f1b84b485afc52f9c937222bf962b54c5803de2242f1f543544ad9bd4057"
     },
     {
       "id": "iac",
       "name": "国际宇航大会主办方",
       "url": "https://iac2026.org/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:31+00:00",
+      "checkedAt": "2026-09-14T06:25:40+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "e38bcf66068e8b195d53893bbb96aec58c35770a820c7d12f087892e27430f14"
+      "hash": "24d82e700488f34816f57e087c67874937f56fa9a183e0f755b72097a33d4fb7"
     },
     {
       "id": "spacetech",
       "name": "Space Tech Expo Europe 主办方",
       "url": "https://www.spacetechexpo-europe.com/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:46+00:00",
+      "checkedAt": "2026-09-14T06:25:40+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "7f81b2a4cbd085dfac6ce299fd8cfea0733adb5c56a19ad0f71c11b80b80c354"
+      "hash": "f4c783928b2658547512dbce11afc1b83e1b0b5e284095a71348686b522de3fb"
     },
     {
       "id": "wsbw",
       "name": "Novaspace / WSBW",
       "url": "https://wsbw.com/about/about-wsbw/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:49+00:00",
+      "checkedAt": "2026-09-14T06:25:43+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "708c6036efad297201736468f7c521b6df46fb29145040a34016af5bec0f310e"
+      "hash": "f172fd224215146c571b33756597377dfdd0b0bc5a02076ca04ca2c0cb2c6173"
     },
     {
       "id": "nasaexpo",
       "name": "美国国家航空航天局 NASA",
       "url": "https://www.nasa.gov/news-release/nasa-announces-max-power-americas-newest-aerospace-expo-airshow/",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:49:36+00:00",
+      "checkedAt": "2026-09-14T06:25:44+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "491ad9c021a5a6c08c070b627d28aea15bfd9717bc9651bcc4032b63f8b8c505"
+      "hash": "6c742b5598273f84d54bf535de2f57bdeb26d63c8735c3d8bd385dd813fce097"
     },
     {
       "id": "cra",
       "name": "欧盟委员会",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
       "mode": "automated",
-      "checkedAt": "2026-09-09T03:52:52+00:00",
+      "checkedAt": "2026-09-14T06:25:43+00:00",
       "count": 1,
       "status": "ok",
-      "hash": "2f90ab655dd54beba73df3d3624cc094faffaad0b61ac0799ed0bf69bc921fb1"
+      "hash": "e8b04bee927ba17b694b252d668a2a251b847a37f1b00198ef5b2e3c7d5cdd10"
+    },
+    {
+      "id": "nvidia-ai-days",
+      "name": "NVIDIA AI Day 官方活动",
+      "url": "https://www.nvidia.com/en-us/ai-days/",
+      "mode": "automated",
+      "checkedAt": "2026-09-14T06:27:33+00:00",
+      "count": 2,
+      "status": "ok",
+      "hash": "6500c79f65cb49ac3aa1c6fea44c511886977956dab3ebda981dc6b0464513f9"
+    },
+    {
+      "id": "huawei-energy",
+      "name": "华为数字能源官方活动",
+      "url": "https://digitalpower.huawei.com/cn/events/idee2026",
+      "mode": "automated",
+      "checkedAt": "2026-09-14T06:27:32+00:00",
+      "count": 2,
+      "status": "ok",
+      "hash": "5dd1de385159bace9ddaba64dad4ea53615036ba688aa80b361ddfce7de08d0d"
     },
     {
       "id": "tsmc",
       "name": "台积电投资者关系",
       "url": "https://investor.tsmc.com/chinese/financial-calendar",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 5,
       "status": "reviewed",
       "note": "官方网页人工核对；程序直接访问受限。"
@@ -346,7 +366,7 @@
       "name": "美国证券交易委员会 SEC",
       "url": "https://www.sec.gov/newsroom/meetings-events",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 2,
       "status": "reviewed",
       "note": "官方网页人工核对；程序直接访问受限。"
@@ -356,7 +376,7 @@
       "name": "美国联邦能源监管委员会 FERC",
       "url": "https://www.ferc.gov/news-events/news/ferc-announces-2026-commission-meeting-schedule",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:05:08+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 4,
       "status": "reviewed",
       "note": "官方网页人工核对；程序直接访问受限。"
@@ -366,7 +386,7 @@
       "name": "美国心脏协会 AHA",
       "url": "https://professional.heart.org/en/meetings/scientific-sessions",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 1,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
@@ -376,7 +396,7 @@
       "name": "eMove360 主办方",
       "url": "https://www.emove360.com/ready-for-the-next-chapter-emove360-europe-2026-ai-is-driving-the-mobility/",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 1,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
@@ -386,8 +406,8 @@
       "name": "SEMI 官方活动日历",
       "url": "https://www.semi.org/en/expositions-events/calendar",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
-      "count": 13,
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "count": 17,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
     },
@@ -396,10 +416,20 @@
       "name": "RSA Conference 官方活动",
       "url": "https://www.rsaconference.com/en",
       "mode": "manual",
-      "checkedAt": "2026-09-09T03:57:12+00:00",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
       "count": 1,
       "status": "reviewed",
       "note": "已核对官方日程；本来源未建立自动解析适配。"
+    },
+    {
+      "id": "ferc-reliability",
+      "name": "FERC 电力可靠性专题会议",
+      "url": "https://cms.ferc.gov/news-events/events/commissioner-led-reliability-technical-conference-06122026",
+      "mode": "manual",
+      "checkedAt": "2026-09-14T06:29:24+00:00",
+      "count": 1,
+      "status": "reviewed",
+      "note": "依据官方会议详情核对日期与时区；URL 中的数字不作为会议日期。"
     }
   ],
   "datasetWritten": true

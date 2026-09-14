@@ -117,7 +117,7 @@
         "summary": "在上海举行，议程涵盖 AI 基础设施、行业应用与开发者生态。",
         "kind": "事件",
         "allDay": true,
-        "pattern": "(?P<y>2026)年(?P<m>9)月(?P<d>17)-(?P<ed>19)日"
+        "pattern": "(?P<y>2026)年0?(?P<m>9)月(?P<d>17)日?[-–](?P<ed>19)日"
       },
       {
         "id": "huawei-kunling-2026",
@@ -130,7 +130,7 @@
         "kind": "事件",
         "time": "10:00",
         "timeNote": "官方时间为北京时间 9 月 16 日 10:00–12:00。",
-        "pattern": "(?P<y>2026)华为坤灵新品发布会 (?P<m>9)月(?P<d>16)日 10:00-12:00"
+        "pattern": "(?P<y>2026)华为坤灵新品发布会 (?P<m>9)月(?P<d>16)日 10[:：]00-12[:：]00"
       }
     ]
   },
@@ -697,7 +697,7 @@
     "id": "windjapan",
     "cacheKey": "windjapan",
     "name": "RX Japan / WIND EXPO",
-    "url": "https://www.wsew.jp/hub/ja-jp/about/wd.html",
+    "url": "https://www.wsew.jp/hub/ja-jp/exhibit/wd.html",
     "adapter": "pattern",
     "events": [
       {
@@ -709,9 +709,10 @@
         "region": "日本",
         "summary": "在幕张展览馆举行，聚焦风电产业。",
         "kind": "事件",
-        "pattern": "(?P<y>2026)年(?P<m>9)月(?P<d>9)日（水）～(?P<ed>11)日",
+        "pattern": "(?P<y>2026)年(?P<m>9)月(?P<d>9)日\\[水\\]～(?P<ed>11)日",
         "dateDefaults": {},
-        "allDay": true
+        "allDay": true,
+        "sourceNote": "主办方主页已切换下一届，本届日期由官方出展说明页的历史特企信息核对。"
       }
     ]
   },
@@ -957,6 +958,80 @@
           "m": 9
         },
         "timeNote": "适用日期来自欧盟委员会；与 2027 年主体义务全面适用日期区分。"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-ai-days",
+    "cacheKey": "nvidia-ai-days",
+    "name": "NVIDIA AI Day 官方活动",
+    "url": "https://www.nvidia.com/en-us/ai-days/",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "nvidia-ai-day-singapore-2026",
+        "title": "NVIDIA AI Day 新加坡站",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "新加坡",
+        "summary": "围绕开放模型、AI 基础设施和开发框架的开发者活动。",
+        "kind": "事件",
+        "allDay": true,
+        "pattern": "September (?P<d>22)[–-](?P<ed>23), (?P<y>2026) AI Day Singapore",
+        "dateDefaults": {
+          "m": "9"
+        }
+      },
+      {
+        "id": "nvidia-ai-day-seoul-2026",
+        "title": "NVIDIA AI Day 首尔站",
+        "topics": [
+          "AI与算力"
+        ],
+        "region": "韩国",
+        "summary": "面向当地 AI 生态的技术交流、开发框架与基础设施活动。",
+        "kind": "事件",
+        "allDay": true,
+        "pattern": "November (?P<d>9)[–-](?P<ed>10), (?P<y>2026) AI Day Seoul",
+        "dateDefaults": {
+          "m": "11"
+        }
+      }
+    ]
+  },
+  {
+    "id": "huawei-energy",
+    "cacheKey": "huawei-energy",
+    "name": "华为数字能源官方活动",
+    "url": "https://digitalpower.huawei.com/cn/events/idee2026",
+    "adapter": "pattern",
+    "events": [
+      {
+        "id": "idee-2026",
+        "title": "国际数字能源展 2026",
+        "topics": [
+          "能源与电力"
+        ],
+        "region": "中国",
+        "summary": "深圳福田会展中心，展示光储充、构网技术与数据中心能源方案。",
+        "kind": "事件",
+        "allDay": true,
+        "pattern": "(?P<y>2026)年0?(?P<m>9)月(?P<d>15)日[-–](?P<ed>17)日"
+      },
+      {
+        "id": "global-low-carbon-forum-2026",
+        "title": "全球低碳产业论坛：构网技术与 AI 数据中心能源",
+        "topics": [
+          "能源与电力",
+          "AI与算力"
+        ],
+        "region": "中国",
+        "summary": "深圳举行，议程涵盖 AIDC 扩张、电网稳定与储能应用。",
+        "kind": "事件",
+        "time": "14:30",
+        "timeNote": "官方时间为北京时间 9 月 15 日 14:30–17:20，14:30 起签到；具体议程以主办方当日安排为准。",
+        "pattern": "Day 1 0?(?P<m>9)/(?P<d>15) Day 2 09/16 Day 3 09/17 2026国际数字能源展开幕式 08:30-12:00 (?P<y>2026)全球低碳产业论坛 14:30-17:20"
       }
     ]
   }
